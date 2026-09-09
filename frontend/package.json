@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:i18n": "node --experimental-strip-types --test tests/i18n.test.ts"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
     "axios": "^1.20.0",
     "pinia": "^4.0.3",
     "vue": "^3.5.41",
+    "vue-i18n": "^11.4.10",
     "vue-router": "^5.3.1",
     "vuetify": "^4.2.0"
   },

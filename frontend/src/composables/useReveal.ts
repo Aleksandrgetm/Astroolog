@@ -1,0 +1,2 @@
+import { onMounted, onUnmounted } from 'vue'
+export function useReveal() { let observer: IntersectionObserver | undefined; onMounted(() => { if (matchMedia('(prefers-reduced-motion: reduce)').matches) return; observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer?.unobserve(e.target) } }), { threshold: 0.08 }); document.querySelectorAll('[data-reveal]').forEach(e => { e.classList.add('reveal-ready'); observer?.observe(e) }) }); onUnmounted(() => observer?.disconnect()) }

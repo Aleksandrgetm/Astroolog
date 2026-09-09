@@ -1,0 +1,151 @@
+{
+  "services": [
+    {
+      "slug": "first-step",
+      "fields": {
+        "title": {
+          "ru": "Познакомься с собой",
+          "en": "Get to know yourself",
+          "lv": "Iepazīsti sevi"
+        },
+        "short_description": {
+          "ru": "Бережное знакомство с собой и ответы на первые вопросы.",
+          "en": "A gentle introduction to yourself and space for your first questions.",
+          "lv": "Saudzīga iepazīšanās ar sevi un atbildes uz pirmajiem jautājumiem."
+        },
+        "description": {
+          "ru": "Вводная встреча для тех, кто хочет познакомиться с подходом. Обсудим ваш запрос, обратим внимание на сильные стороны и определим, с чего начать. После встречи у вас будет краткий конспект и один небольшой шаг для самостоятельной работы.",
+          "en": "An introductory session for anyone curious about my approach. We’ll discuss your question, notice your strengths and work out where to begin. Afterwards, you’ll receive a short summary and one small step to explore on your own.",
+          "lv": "Ievadsaruna, lai iepazītos ar manu pieeju. Pārrunāsim tavu jautājumu, pievērsīsim uzmanību stiprajām pusēm un noskaidrosim, ar ko sākt. Pēc sarunas saņemsi īsu kopsavilkumu un vienu nelielu soli patstāvīgam darbam."
+        },
+        "duration": {
+          "ru": "30 минут · онлайн",
+          "en": "30 minutes · online",
+          "lv": "30 minūtes · tiešsaistē"
+        }
+      }
+    },
+    {
+      "slug": "personal-matrix",
+      "fields": {
+        "title": {
+          "ru": "Моя матрица возможностей",
+          "en": "My matrix of possibilities",
+          "lv": "Mana iespēju matrica"
+        },
+        "short_description": {
+          "ru": "Ваши сильные стороны, внутренние опоры и возможности для роста.",
+          "en": "Your strengths, inner resources and opportunities for growth.",
+          "lv": "Tavas stiprās puses, iekšējie resursi un izaugsmes iespējas."
+        },
+        "description": {
+          "ru": "Индивидуальная встреча о ваших качествах, привычных сценариях и желаниях. Используем нумерологический разбор как повод для размышления, а не как предсказание. Вы получите запись встречи по согласованию и письменные вопросы для самостоятельной работы.",
+          "en": "An individual conversation about your qualities, familiar patterns and wishes. We use numerology as a prompt for reflection, not a prediction. With your agreement, you’ll receive a recording of the session, along with written questions to explore in your own time.",
+          "lv": "Individuāla saruna par tavām īpašībām, ierastajiem rīcības modeļiem un vēlmēm. Numeroloģisko analīzi izmantojam kā ierosmi pārdomām, nevis paredzējumu. Pēc vienošanās saņemsi sarunas ierakstu un rakstiskus jautājumus patstāvīgam darbam."
+        },
+        "duration": {
+          "ru": "90 минут · онлайн",
+          "en": "90 minutes · online",
+          "lv": "90 minūtes · tiešsaistē"
+        }
+      }
+    },
+    {
+      "slug": "growth-point",
+      "fields": {
+        "title": {
+          "ru": "Точка роста",
+          "en": "A point of growth",
+          "lv": "Izaugsmes punkts"
+        },
+        "short_description": {
+          "ru": "Один важный запрос. Больше ясности. Конкретный следующий шаг.",
+          "en": "One meaningful question. More clarity. A practical next step.",
+          "lv": "Viens svarīgs jautājums. Vairāk skaidrības. Konkrēts nākamais solis."
+        },
+        "description": {
+          "ru": "Сфокусированная консультация о работе, деньгах, отношениях или родительстве. Разберём текущую ситуацию, отделим ваши желания от ожиданий окружающих и составим реалистичный план действий. В детских запросах обсуждаем поддержку ребёнка без ярлыков и прогнозов.",
+          "en": "A focused session about work, money, relationships or parenting. We’ll look at your current situation, separate your wishes from other people’s expectations and create a realistic action plan. When discussing children, we focus on support without labels or predictions.",
+          "lv": "Mērķēta konsultācija par darbu, naudu, attiecībām vai bērnu audzināšanu. Aplūkosim pašreizējo situāciju, nošķirsim tavas vēlmes no citu gaidām un izveidosim reālistisku rīcības plānu. Jautājumos par bērniem runājam par atbalstu bez birkām un prognozēm."
+        },
+        "duration": {
+          "ru": "60 минут · онлайн",
+          "en": "60 minutes · online",
+          "lv": "60 minūtes · tiešsaistē"
+        }
+      }
+    },
+    {
+      "slug": "path-to-self",
+      "fields": {
+        "title": {
+          "ru": "Путь к себе",
+          "en": "A path back to yourself",
+          "lv": "Ceļš pie sevis"
+        },
+        "short_description": {
+          "ru": "Личное сопровождение, чтобы перенести понимание в повседневную жизнь.",
+          "en": "Personal support to bring your insights into everyday life.",
+          "lv": "Individuāls atbalsts, lai iegūto izpratni ieviestu ikdienā."
+        },
+        "description": {
+          "ru": "Четыре индивидуальные встречи в течение месяца. На первой определим запрос и критерии прогресса. Между встречами — небольшие практики и наблюдения. Вместе будем уточнять план и поддерживать изменения в комфортном для вас темпе.",
+          "en": "Four individual sessions over one month. In the first, we’ll clarify your question and what progress would look like for you. Between sessions, you’ll have small practices and observations to explore. Together, we’ll adjust the plan and support change at a pace that feels right.",
+          "lv": "Četras individuālas sarunas viena mēneša laikā. Pirmajā noskaidrosim tavu jautājumu un to, kā tev izskatītos progress. Starp sarunām — nelieli vingrinājumi un novērojumi. Kopā precizēsim plānu un atbalstīsim pārmaiņas tev piemērotā tempā."
+        },
+        "duration": {
+          "ru": "4 встречи · 1 месяц",
+          "en": "4 sessions · 1 month",
+          "lv": "4 sarunas · 1 mēnesis"
+        }
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "client_name": "Анна · пример отзыва",
+      "fields": {
+        "client_name": {
+          "ru": "Анна · пример отзыва",
+          "en": "Анна · example testimonial",
+          "lv": "Анна · atsauksmes piemērs"
+        },
+        "text": {
+          "ru": "После встречи стало проще услышать себя. Вместо длинного списка «надо» появился один понятный шаг, который я действительно хочу сделать.",
+          "en": "After the session, it felt easier to listen to myself. Instead of a long list of things I ‘should’ do, I had one clear step I actually wanted to take.",
+          "lv": "Pēc sarunas bija vieglāk sadzirdēt sevi. Gara saraksta ar to, kas man «jādara», vietā parādījās viens skaidrs solis, ko patiešām vēlos spert."
+        }
+      }
+    },
+    {
+      "client_name": "Мария · пример отзыва",
+      "fields": {
+        "client_name": {
+          "ru": "Мария · пример отзыва",
+          "en": "Мария · example testimonial",
+          "lv": "Мария · atsauksmes piemērs"
+        },
+        "text": {
+          "ru": "Для меня самым ценным оказалась спокойная атмосфера. Можно было говорить честно, без страха показаться неправильной.",
+          "en": "The calm atmosphere meant the most to me. I could speak honestly without worrying about saying the wrong thing.",
+          "lv": "Visvērtīgākā man bija mierīgā atmosfēra. Varēju runāt atklāti, nebaidoties pateikt kaut ko nepareizu."
+        }
+      }
+    },
+    {
+      "client_name": "Ольга · пример отзыва",
+      "fields": {
+        "client_name": {
+          "ru": "Ольга · пример отзыва",
+          "en": "Ольга · example testimonial",
+          "lv": "Ольга · atsauksmes piemērs"
+        },
+        "text": {
+          "ru": "Я пришла с вопросом о работе, а ушла с пониманием, что для меня важно. Теперь есть над чем подумать и с чего начать.",
+          "en": "I came with a question about work and left with a clearer sense of what matters to me. Now I have something to reflect on and a place to start.",
+          "lv": "Atnācu ar jautājumu par darbu, bet aizgāju ar skaidrāku izpratni par to, kas man ir svarīgi. Tagad ir gan par ko padomāt, gan ar ko sākt."
+        }
+      }
+    }
+  ]
+}

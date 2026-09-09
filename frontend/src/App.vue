@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import SiteLayout from './layouts/SiteLayout.vue'
 </script>
-
-<template>
-  <HelloWorld />
-</template>
+<template><v-app><SiteLayout><router-view /></SiteLayout></v-app></template>
