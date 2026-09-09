@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: astroolog-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: astroolog
+      POSTGRES_USER: astroolog
+      POSTGRES_PASSWORD: astroolog
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - astroolog_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  astroolog_postgres_data:
