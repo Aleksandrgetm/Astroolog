@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "test:i18n": "node --experimental-strip-types --test tests/i18n.test.ts"
+    "test:i18n": "node --experimental-strip-types --test tests/i18n.test.ts",
+    "test:whatsapp": "node --experimental-strip-types --test tests/whatsapp.test.ts"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",

@@ -245,6 +245,13 @@ export default {
     "en": "Angļu"
   },
   "feedback": {
+    "thankYou": "Paldies!",
+    "bookingSaved": "Tavs pieteikums ir veiksmīgi nosūtīts.",
+    "questionSaved": "Tavs jautājums ir veiksmīgi nosūtīts.",
+    "whatsappInvitation": "Lai turpinātu sarunu, vari man uzrakstīt WhatsApp.",
+    "continueWhatsApp": "Turpināt sarunu WhatsApp",
+    "close": "Aizvērt",
+
     "success": "Paldies! Tavs pieteikums ir saglabāts. Atbildēsim uz norādīto e-pastu.",
     "network": "Neizdevās sazināties ar serveri. Lūdzu, mēģini vēlreiz.",
     "server_error": "Neizdevās apstrādāt pieprasījumu. Lūdzu, mēģini vēlāk.",

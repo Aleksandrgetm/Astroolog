@@ -245,6 +245,13 @@ export default {
     "en": "English"
   },
   "feedback": {
+    "thankYou": "Thank you!",
+    "bookingSaved": "Your booking request has been sent successfully.",
+    "questionSaved": "Your question has been sent successfully.",
+    "whatsappInvitation": "To continue the conversation, you can message me on WhatsApp.",
+    "continueWhatsApp": "Continue on WhatsApp",
+    "close": "Close",
+
     "success": "Thank you! Your request has been saved. We’ll reply to the email you provided.",
     "network": "Unable to reach the server. Please try again.",
     "server_error": "We couldn’t process your request. Please try again later.",
