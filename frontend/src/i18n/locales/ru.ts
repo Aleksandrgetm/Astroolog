@@ -101,6 +101,7 @@ export default {
     "askAQuestion": "Задать вопрос"
   },
   "home": {
+    "heroExpertPortrait": "{name} — нумеролог и коуч",
     "numerologySupportiveCoaching": "НУМЕРОЛОГИЯ И БЕРЕЖНЫЙ КОУЧИНГ",
     "understandYourself": "Понять себя.",
     "discoverYourStrength": "Почувствовать силу.",

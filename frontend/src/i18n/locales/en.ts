@@ -103,6 +103,7 @@ export default {
     "askAQuestion": "Ask a question"
   },
   "home": {
+    "heroExpertPortrait": "{name} — numerologist and coach",
     "numerologySupportiveCoaching": "NUMEROLOGY & SUPPORTIVE COACHING",
     "understandYourself": "Understand yourself.",
     "discoverYourStrength": "Discover your strength.",

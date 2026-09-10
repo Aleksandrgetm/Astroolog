@@ -103,6 +103,7 @@ export default {
     "askAQuestion": "Uzdot jautājumu"
   },
   "home": {
+    "heroExpertPortrait": "{name} — numeroloģe un koučs",
     "numerologySupportiveCoaching": "NUMEROLOĢIJA UN SAUDZĪGS KOUČINGS",
     "understandYourself": "Izproti sevi.",
     "discoverYourStrength": "Atklāj savu spēku.",
