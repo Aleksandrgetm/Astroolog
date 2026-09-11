@@ -8,7 +8,7 @@ export default {
     "monogramFirst": "Е",
     "monogramSecond": "З",
     "expertName": "Елена Захарова",
-    "numerologistCoach": "NUMEROLOGIST · COACH",
+    "numerologistCoach": "NUMEROLOGIST · COACH FOR WOMEN",
     "mainNavigation": "Main navigation",
     "bookASession": "Book a session",
     "openMenu": "Open menu",
@@ -73,7 +73,7 @@ export default {
     "aboutMe": "ABOUT ME",
     "hereToHelpYou": "Here to help you",
     "hearYourself": "hear yourself.",
-    "imANumerologistAndCoach": "I’m Елена Захарова — a numerologist and coach.",
+    "imANumerologistAndCoach": "I’m Елена Захарова — a numerologist and coach for women.",
     "myApproachBeginsWithASimpleQuestion": "My approach begins with a simple question: “What do you really want?” We often know what others expect of us, yet rarely make time for our own wishes.",
     "inOurSessionsWeExploreYourStrengths": "In our sessions, we explore your strengths, look at recurring situations and find choices that fit your life. Numerology opens the conversation; coaching questions help turn reflection into something practical.",
     "theDecisionsAreAlwaysYoursIDont": "The decisions are always yours. I don’t promise a predetermined outcome or offer one-size-fits-all answers.",
@@ -107,7 +107,7 @@ export default {
     "askAQuestion": "Ask a question"
   },
   "home": {
-    "heroExpertPortrait": "{name} — numerologist and coach",
+    "heroExpertPortrait": "{name} — numerologist and coach for women",
     "numerologySupportiveCoaching": "NUMEROLOGY & SUPPORTIVE COACHING",
     "understandYourself": "Understand yourself.",
     "discoverYourStrength": "Discover your strength.",

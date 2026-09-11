@@ -8,7 +8,7 @@ export default {
     "monogramFirst": "Е",
     "monogramSecond": "З",
     "expertName": "Елена Захарова",
-    "numerologistCoach": "NUMEROLOĢE · KOUČS",
+    "numerologistCoach": "NUMEROLOĢE · KOUČS SIEVIETĒM",
     "mainNavigation": "Galvenā navigācija",
     "bookASession": "Pieteikties",
     "openMenu": "Atvērt izvēlni",
@@ -73,7 +73,7 @@ export default {
     "aboutMe": "PAR MANI",
     "hereToHelpYou": "Līdzās, lai tu",
     "hearYourself": "sadzirdētu sevi.",
-    "imANumerologistAndCoach": "Esmu Елена Захарова — numeroloģe un koučs.",
+    "imANumerologistAndCoach": "Esmu Елена Захарова — numeroloģe un koučs sievietēm.",
     "myApproachBeginsWithASimpleQuestion": "Mans darbs sākas ar vienkāršu jautājumu: «Ko vēlies tieši tu?» Mēs bieži labi zinām, ko no mums sagaida citi, bet reti atvēlam laiku savām vēlmēm.",
     "inOurSessionsWeExploreYourStrengths": "Sarunās pētām tavas stiprās puses, aplūkojam situācijas, kas atkārtojas, un meklējam tavai dzīvei piemērotus risinājumus. Numeroloģija palīdz sākt sarunu, bet koučinga jautājumi — piešķirt tai praktisku virzienu.",
     "theDecisionsAreAlwaysYoursIDont": "Lēmumi vienmēr paliek tavā ziņā. Es nesolu iepriekš noteiktu rezultātu un nepiedāvāju vienu risinājumu visiem.",
@@ -107,7 +107,7 @@ export default {
     "askAQuestion": "Uzdot jautājumu"
   },
   "home": {
-    "heroExpertPortrait": "{name} — numeroloģe un koučs",
+    "heroExpertPortrait": "{name} — numeroloģe un koučs sievietēm",
     "numerologySupportiveCoaching": "NUMEROLOĢIJA UN SAUDZĪGS KOUČINGS",
     "understandYourself": "Izproti sevi.",
     "discoverYourStrength": "Atklāj savu spēku.",

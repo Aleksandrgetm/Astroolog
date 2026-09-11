@@ -6,7 +6,7 @@ export default {
     "monogramFirst": "Е",
     "monogramSecond": "З",
     "expertName": "Елена Захарова",
-    "numerologistCoach": "НУМЕРОЛОГ · КОУЧ",
+    "numerologistCoach": "НУМЕРОЛОГ · ЖЕНСКИЙ КОУЧ",
     "mainNavigation": "Главное меню",
     "bookASession": "Записаться",
     "openMenu": "Открыть меню",
@@ -71,7 +71,7 @@ export default {
     "aboutMe": "ОБО МНЕ",
     "hereToHelpYou": "Рядом, чтобы ты",
     "hearYourself": "услышала себя.",
-    "imANumerologistAndCoach": "Я Елена Захарова — нумеролог и коуч.",
+    "imANumerologistAndCoach": "Я Елена Захарова — нумеролог и женский коуч.",
     "myApproachBeginsWithASimpleQuestion": "Мой подход начинается с простого вопроса: «А чего хочешь именно ты?» Мы часто хорошо знаем ожидания окружающих, но редко оставляем время на собственные желания.",
     "inOurSessionsWeExploreYourStrengths": "На встречах мы исследуем твои сильные стороны, обсуждаем повторяющиеся ситуации и ищем решения, которые подходят твоей жизни. Нумерология помогает начать этот разговор, а коучинговые вопросы — сделать его практичным.",
     "theDecisionsAreAlwaysYoursIDont": "Решения всегда остаются за тобой. Я не обещаю заранее определённого результата и не предлагаю универсальных рецептов.",
@@ -105,7 +105,7 @@ export default {
     "askAQuestion": "Задать вопрос"
   },
   "home": {
-    "heroExpertPortrait": "{name} — нумеролог и коуч",
+    "heroExpertPortrait": "{name} — нумеролог и женский коуч",
     "numerologySupportiveCoaching": "НУМЕРОЛОГИЯ И БЕРЕЖНЫЙ КОУЧИНГ",
     "understandYourself": "Понять себя.",
     "discoverYourStrength": "Почувствовать силу.",
