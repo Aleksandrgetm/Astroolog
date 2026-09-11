@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { setLocale, supportedLocales } from '../i18n'
+import { supportedLocales, type Locale } from '../i18n'
+import { useRoute, useRouter } from 'vue-router'
 const { t, locale } = useI18n()
+const route = useRoute(), router = useRouter()
+function changeLocale(language: Locale) {
+  return router.push({ path: route.path, query: { ...route.query, lang: language }, hash: route.hash })
+}
 </script>
 
 <template>
@@ -14,7 +19,7 @@ const { t, locale } = useI18n()
       :aria-label="t(`language.${language}`)"
       :aria-pressed="locale === language"
       :class="{ active: locale === language }"
-      @click="setLocale(language)"
+      @click="changeLocale(language)"
     >{{ language.toUpperCase() }}</button>
   </div>
 </template>

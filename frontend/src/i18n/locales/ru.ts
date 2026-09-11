@@ -1,6 +1,7 @@
 export default {
   "siteLayout": {
     "skipToContent": "Перейти к содержимому",
+    "home": "Главная",
     "homeLabel": "Елена Захарова — главная",
     "monogramFirst": "Е",
     "monogramSecond": "З",
@@ -12,13 +13,13 @@ export default {
     "expertNameUppercase": "ЕЛЕНА ЗАХАРОВА",
     "closeMenu": "Закрыть меню",
     "mobileNavigation": "Мобильное меню",
-    "bookASession13": "Записаться на встречу ↗",
+    "bookASession13": "Записаться на встречу",
     "closerToYourself": "Ближе к себе.",
     "closerToALifeYouChoose": "Ближе к жизни, которую выбираешь.",
     "footerNavigation": "Меню в подвале",
     "aboutMe": "Обо мне",
     "sessions": "Услуги",
-    "getInTouch": "Написать мне ↗",
+    "getInTouch": "Написать мне",
     "onlineInYourOwnSpace": "Онлайн · в вашем пространстве",
     "privacy": "Конфиденциальность",
     "demoWebsiteThePortraitIsAigeneratedAnd": "Демонстрационная версия: портрет создан ИИ, тексты и отзывы — примеры. Контакты и сведения об эксперте уточняются.",
@@ -34,7 +35,7 @@ export default {
     "youDontNeedAllTheAnswers": "Не обязательно знать все ответы.",
     "oneHonestConversationIsEnoughToBegin": "Можно начать с одного честного разговора.",
     "iWantToUnderstandMyself": "Хочу разобраться в себе",
-    "askAQuestionFirst": "Сначала задать вопрос ↗"
+    "askAQuestionFirst": "Сначала задать вопрос"
   },
   "requestForm": {
     "youveTakenTheFirstStep": "Первый шаг сделан",
@@ -74,7 +75,7 @@ export default {
     "myApproachBeginsWithASimpleQuestion": "Мой подход начинается с простого вопроса: «А чего хочешь именно ты?» Мы часто хорошо знаем ожидания окружающих, но редко оставляем время на собственные желания.",
     "inOurSessionsWeExploreYourStrengths": "На встречах мы исследуем твои сильные стороны, обсуждаем повторяющиеся ситуации и ищем решения, которые подходят твоей жизни. Нумерология помогает начать этот разговор, а коучинговые вопросы — сделать его практичным.",
     "theDecisionsAreAlwaysYoursIDont": "Решения всегда остаются за тобой. Я не обещаю заранее определённого результата и не предлагаю универсальных рецептов.",
-    "letsMeetForASession": "Познакомиться на встрече ↗",
+    "letsMeetForASession": "Познакомиться на встрече",
     "illustrativePortraitOfTheExpertTemporaryImage": "Иллюстративный портрет эксперта — временное изображение",
     "01Attention": "01 / ВНИМАНИЕ",
     "yourStoryComesFirst": "Сначала — твоя история",
@@ -88,6 +89,10 @@ export default {
     "draftCopyForApprovalTheBiographyTraining": "Текст-заготовка для согласования. Биография, обучение и профессиональные документы будут добавлены после подтверждения экспертом."
   },
   "contacts": {
+    "phoneLabel": "Телефон",
+    "emailLabel": "Email",
+    "messageWhatsApp": "Написать в WhatsApp",
+
     "letsKeepInTouch": "БУДЕМ НА СВЯЗИ",
     "everyJourney": "Любой путь",
     "startsWith": "начинается",
@@ -96,7 +101,6 @@ export default {
     "illHelpYouFindYourNextStep": "Я помогу выбрать следующий шаг.",
     "weMeetOnline": "Встречаемся онлайн",
     "fromAnywhereInTheWorldInA": "Из любой точки мира, в удобном для тебя пространстве.",
-    "directContactDetailsWillBeAddedOnce": "Прямые контакты будут добавлены после согласования. Сейчас можно воспользоваться формой.",
     "enquiryType": "Тип обращения",
     "askAQuestion": "Задать вопрос"
   },
@@ -191,7 +195,7 @@ export default {
     "butTheresAlways": "Но есть",
     "aNewBeginning": "новое начало.",
     "theLinkMayHaveChangedLetsGo": "Возможно, ссылка изменилась. Давайте вернёмся туда, где всё начинается.",
-    "backToHome": "На главную ↗"
+    "backToHome": "На главную"
   },
   "privacy": {
     "takingCareOfYourData": "БЕРЕЖНО К ВАШИМ ДАННЫМ",
@@ -213,7 +217,7 @@ export default {
     "theControllersFullNameAndContactDetails": "Необходимо указать полное имя и контакт оператора, применимую юрисдикцию, срок хранения, хостинг и получателей данных. Этот черновик описывает текущую работу форм и требует согласования до публичного использования."
   },
   "service": {
-    "allSessions": "← Все форматы",
+    "allSessions": "Все форматы",
     "loadingSessionDetails": "Загружаем консультацию…",
     "sessionNotFound": "Услуга не найдена",
     "unableToLoadThisSession": "Не удалось загрузить услугу",
@@ -234,7 +238,7 @@ export default {
     "notSure": "Пока не знаешь,",
     "whatToChoose": "что выбрать?",
     "tellMeALittleAboutYourSituation": "Расскажи немного о своей ситуации — вместе определим подходящий формат.",
-    "askAQuestion": "Задать вопрос ↗"
+    "askAQuestion": "Задать вопрос"
   },
   "language": {
     "label": "Язык сайта",
@@ -246,7 +250,8 @@ export default {
     "thankYou": "Спасибо!",
     "bookingSaved": "Ваша заявка успешно отправлена.",
     "questionSaved": "Ваш вопрос успешно отправлен.",
-    "whatsappInvitation": "Чтобы продолжить общение, вы можете написать мне в WhatsApp.",
+    "whatsappInvitation": "Чтобы продолжить общение, выберите удобный мессенджер.",
+    "continueTelegram": "Продолжить в Telegram",
     "continueWhatsApp": "Продолжить в WhatsApp",
     "close": "Закрыть",
 

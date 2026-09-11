@@ -3,6 +3,7 @@ import type { MessageSchema } from '../schema'
 export default {
   "siteLayout": {
     "skipToContent": "Skip to content",
+    "home": "Home",
     "homeLabel": "Елена Захарова — home",
     "monogramFirst": "Е",
     "monogramSecond": "З",
@@ -14,13 +15,13 @@ export default {
     "expertNameUppercase": "ЕЛЕНА ЗАХАРОВА",
     "closeMenu": "Close menu",
     "mobileNavigation": "Mobile navigation",
-    "bookASession13": "Book a session ↗",
+    "bookASession13": "Book a session",
     "closerToYourself": "Closer to yourself.",
     "closerToALifeYouChoose": "Closer to a life you choose.",
     "footerNavigation": "Footer navigation",
     "aboutMe": "About me",
     "sessions": "Sessions",
-    "getInTouch": "Get in touch ↗",
+    "getInTouch": "Get in touch",
     "onlineInYourOwnSpace": "Online · in your own space",
     "privacy": "Privacy",
     "demoWebsiteThePortraitIsAigeneratedAnd": "Demo website: the portrait is AI-generated, and the copy and testimonials are examples. Contact details and the expert’s information are awaiting confirmation.",
@@ -36,7 +37,7 @@ export default {
     "youDontNeedAllTheAnswers": "You don’t need all the answers.",
     "oneHonestConversationIsEnoughToBegin": "One honest conversation is enough to begin.",
     "iWantToUnderstandMyself": "I want to understand myself",
-    "askAQuestionFirst": "Ask a question first ↗"
+    "askAQuestionFirst": "Ask a question first"
   },
   "requestForm": {
     "youveTakenTheFirstStep": "You’ve taken the first step",
@@ -76,7 +77,7 @@ export default {
     "myApproachBeginsWithASimpleQuestion": "My approach begins with a simple question: “What do you really want?” We often know what others expect of us, yet rarely make time for our own wishes.",
     "inOurSessionsWeExploreYourStrengths": "In our sessions, we explore your strengths, look at recurring situations and find choices that fit your life. Numerology opens the conversation; coaching questions help turn reflection into something practical.",
     "theDecisionsAreAlwaysYoursIDont": "The decisions are always yours. I don’t promise a predetermined outcome or offer one-size-fits-all answers.",
-    "letsMeetForASession": "Let’s meet for a session ↗",
+    "letsMeetForASession": "Let’s meet for a session",
     "illustrativePortraitOfTheExpertTemporaryImage": "Illustrative portrait of the expert — temporary image",
     "01Attention": "01 / ATTENTION",
     "yourStoryComesFirst": "Your story comes first",
@@ -90,6 +91,10 @@ export default {
     "draftCopyForApprovalTheBiographyTraining": "Draft copy for approval. The biography, training and professional credentials will be added once confirmed by the expert."
   },
   "contacts": {
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "messageWhatsApp": "Message on WhatsApp",
+
     "letsKeepInTouch": "LET’S KEEP IN TOUCH",
     "everyJourney": "Every journey",
     "startsWith": "starts with",
@@ -98,7 +103,6 @@ export default {
     "illHelpYouFindYourNextStep": "I’ll help you find your next step.",
     "weMeetOnline": "We meet online",
     "fromAnywhereInTheWorldInA": "From anywhere in the world, in a space where you feel comfortable.",
-    "directContactDetailsWillBeAddedOnce": "Direct contact details will be added once confirmed. For now, you can use the form.",
     "enquiryType": "Enquiry type",
     "askAQuestion": "Ask a question"
   },
@@ -193,7 +197,7 @@ export default {
     "butTheresAlways": "But there’s always",
     "aNewBeginning": "a new beginning.",
     "theLinkMayHaveChangedLetsGo": "The link may have changed. Let’s go back to where it all begins.",
-    "backToHome": "Back to home ↗"
+    "backToHome": "Back to home"
   },
   "privacy": {
     "takingCareOfYourData": "TAKING CARE OF YOUR DATA",
@@ -215,7 +219,7 @@ export default {
     "theControllersFullNameAndContactDetails": "The controller’s full name and contact details, applicable jurisdiction, retention period, hosting provider and data recipients need to be specified. This draft describes how the forms currently work and requires approval before public use."
   },
   "service": {
-    "allSessions": "← All sessions",
+    "allSessions": "All sessions",
     "loadingSessionDetails": "Loading session details…",
     "sessionNotFound": "Session not found",
     "unableToLoadThisSession": "Unable to load this session",
@@ -236,7 +240,7 @@ export default {
     "notSure": "Not sure",
     "whatToChoose": "what to choose?",
     "tellMeALittleAboutYourSituation": "Tell me a little about your situation and we’ll find the right format together.",
-    "askAQuestion": "Ask a question ↗"
+    "askAQuestion": "Ask a question"
   },
   "language": {
     "label": "Website language",
@@ -248,7 +252,8 @@ export default {
     "thankYou": "Thank you!",
     "bookingSaved": "Your booking request has been sent successfully.",
     "questionSaved": "Your question has been sent successfully.",
-    "whatsappInvitation": "To continue the conversation, you can message me on WhatsApp.",
+    "whatsappInvitation": "To continue the conversation, choose a convenient messenger.",
+    "continueTelegram": "Continue in Telegram",
     "continueWhatsApp": "Continue on WhatsApp",
     "close": "Close",
 

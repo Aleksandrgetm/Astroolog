@@ -3,6 +3,7 @@ import type { MessageSchema } from '../schema'
 export default {
   "siteLayout": {
     "skipToContent": "Pāriet uz saturu",
+    "home": "Sākumlapa",
     "homeLabel": "Елена Захарова — sākumlapa",
     "monogramFirst": "Е",
     "monogramSecond": "З",
@@ -14,13 +15,13 @@ export default {
     "expertNameUppercase": "ЕЛЕНА ЗАХАРОВА",
     "closeMenu": "Aizvērt izvēlni",
     "mobileNavigation": "Mobilā navigācija",
-    "bookASession13": "Pieteikties sarunai ↗",
+    "bookASession13": "Pieteikties sarunai",
     "closerToYourself": "Tuvāk sev.",
     "closerToALifeYouChoose": "Tuvāk dzīvei, ko izvēlies pati.",
     "footerNavigation": "Kājenes navigācija",
     "aboutMe": "Par mani",
     "sessions": "Konsultācijas",
-    "getInTouch": "Sazināties ↗",
+    "getInTouch": "Sazināties",
     "onlineInYourOwnSpace": "Tiešsaistē · tavā vidē",
     "privacy": "Privātums",
     "demoWebsiteThePortraitIsAigeneratedAnd": "Vietnes demonstrācijas versija: portrets veidots ar mākslīgo intelektu, teksti un atsauksmes ir piemēri. Kontaktinformācija un ziņas par speciālisti vēl tiek precizētas.",
@@ -36,7 +37,7 @@ export default {
     "youDontNeedAllTheAnswers": "Tev nav jāzina visas atbildes.",
     "oneHonestConversationIsEnoughToBegin": "Sākumam pietiek ar vienu atklātu sarunu.",
     "iWantToUnderstandMyself": "Vēlos labāk izprast sevi",
-    "askAQuestionFirst": "Vispirms uzdot jautājumu ↗"
+    "askAQuestionFirst": "Vispirms uzdot jautājumu"
   },
   "requestForm": {
     "youveTakenTheFirstStep": "Pirmais solis ir sperts",
@@ -76,7 +77,7 @@ export default {
     "myApproachBeginsWithASimpleQuestion": "Mans darbs sākas ar vienkāršu jautājumu: «Ko vēlies tieši tu?» Mēs bieži labi zinām, ko no mums sagaida citi, bet reti atvēlam laiku savām vēlmēm.",
     "inOurSessionsWeExploreYourStrengths": "Sarunās pētām tavas stiprās puses, aplūkojam situācijas, kas atkārtojas, un meklējam tavai dzīvei piemērotus risinājumus. Numeroloģija palīdz sākt sarunu, bet koučinga jautājumi — piešķirt tai praktisku virzienu.",
     "theDecisionsAreAlwaysYoursIDont": "Lēmumi vienmēr paliek tavā ziņā. Es nesolu iepriekš noteiktu rezultātu un nepiedāvāju vienu risinājumu visiem.",
-    "letsMeetForASession": "Iepazīsimies sarunā ↗",
+    "letsMeetForASession": "Iepazīsimies sarunā",
     "illustrativePortraitOfTheExpertTemporaryImage": "Ilustratīvs speciālistes portrets — pagaidu attēls",
     "01Attention": "01 / UZMANĪBA",
     "yourStoryComesFirst": "Vispirms — tavs stāsts",
@@ -90,6 +91,10 @@ export default {
     "draftCopyForApprovalTheBiographyTraining": "Teksta projekts saskaņošanai. Biogrāfija, izglītība un profesionālie dokumenti tiks pievienoti pēc speciālistes apstiprinājuma."
   },
   "contacts": {
+    "phoneLabel": "Tālrunis",
+    "emailLabel": "E-pasts",
+    "messageWhatsApp": "Rakstīt WhatsApp",
+
     "letsKeepInTouch": "SAZINĀSIMIES",
     "everyJourney": "Katrs ceļš",
     "startsWith": "sākas",
@@ -98,7 +103,6 @@ export default {
     "illHelpYouFindYourNextStep": "Palīdzēšu atrast nākamo soli.",
     "weMeetOnline": "Tiekamies tiešsaistē",
     "fromAnywhereInTheWorldInA": "No jebkuras vietas pasaulē, tev ērtā un mierīgā vidē.",
-    "directContactDetailsWillBeAddedOnce": "Tiešā kontaktinformācija tiks pievienota pēc saskaņošanas. Pagaidām vari izmantot veidlapu.",
     "enquiryType": "Saziņas veids",
     "askAQuestion": "Uzdot jautājumu"
   },
@@ -193,7 +197,7 @@ export default {
     "butTheresAlways": "Taču ir",
     "aNewBeginning": "jauns sākums.",
     "theLinkMayHaveChangedLetsGo": "Iespējams, saite ir mainījusies. Atgriezīsimies tur, kur viss sākas.",
-    "backToHome": "Uz sākumlapu ↗"
+    "backToHome": "Uz sākumlapu"
   },
   "privacy": {
     "takingCareOfYourData": "AR RŪPĒM PAR TAVIEM DATIEM",
@@ -215,7 +219,7 @@ export default {
     "theControllersFullNameAndContactDetails": "Jānorāda pārziņa pilns vārds un kontaktinformācija, piemērojamā jurisdikcija, glabāšanas termiņš, mitināšanas pakalpojuma sniedzējs un datu saņēmēji. Šis projekts apraksta veidlapu pašreizējo darbību un pirms publiskas izmantošanas ir jāsaskaņo."
   },
   "service": {
-    "allSessions": "← Visas konsultācijas",
+    "allSessions": "Visas konsultācijas",
     "loadingSessionDetails": "Ielādē konsultācijas informāciju…",
     "sessionNotFound": "Konsultācija nav atrasta",
     "unableToLoadThisSession": "Neizdevās ielādēt konsultāciju",
@@ -236,7 +240,7 @@ export default {
     "notSure": "Vēl nezini,",
     "whatToChoose": "ko izvēlēties?",
     "tellMeALittleAboutYourSituation": "Pastāsti mazliet par savu situāciju — kopā atradīsim piemērotu formātu.",
-    "askAQuestion": "Uzdot jautājumu ↗"
+    "askAQuestion": "Uzdot jautājumu"
   },
   "language": {
     "label": "Vietnes valoda",
@@ -248,7 +252,8 @@ export default {
     "thankYou": "Paldies!",
     "bookingSaved": "Tavs pieteikums ir veiksmīgi nosūtīts.",
     "questionSaved": "Tavs jautājums ir veiksmīgi nosūtīts.",
-    "whatsappInvitation": "Lai turpinātu sarunu, vari man uzrakstīt WhatsApp.",
+    "whatsappInvitation": "Lai turpinātu sarunu, izvēlies sev ērtāko saziņas lietotni.",
+    "continueTelegram": "Turpināt Telegram",
     "continueWhatsApp": "Turpināt sarunu WhatsApp",
     "close": "Aizvērt",
 

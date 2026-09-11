@@ -1,6 +1,7 @@
 import { watch } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { i18n } from '../i18n'
+import { installLocaleRouting } from '../i18n/routing'
 import { setPageMeta } from '../i18n/seo'
 
 const router = createRouter({
@@ -14,10 +15,12 @@ const router = createRouter({
     { path: '/privacy', component: () => import('../pages/PrivacyPage.vue'), meta: { seo: 'privacy' } },
     { path: '/:pathMatch(.*)*', component: () => import('../pages/NotFoundPage.vue'), meta: { seo: 'notFound' } },
   ],
-  scrollBehavior(to) {
-    return to.hash ? { el: to.hash, top: 110, behavior: 'smooth' } : { top: 0 }
+  scrollBehavior(to, from) {
+    if (to.path === from.path && to.hash === from.hash) return false
+    return to.hash ? { el: to.hash, top: 110, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' } : { top: 0 }
   },
 })
+installLocaleRouting(router)
 function updateRouteMeta() {
   const key = router.currentRoute.value.meta.seo
   if (key) setPageMeta(i18n.global.t(`seo.${key}Title`), i18n.global.t(`seo.${key}Description`))

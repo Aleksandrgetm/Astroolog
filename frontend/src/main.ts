@@ -3,6 +3,8 @@ import { createPinia } from 'pinia'
 import vuetify from './plugins/vuetify'
 import router from './router'
 import App from './App.vue'
+import LocaleLink from './components/LocaleLink.vue'
+import ArrowIcon from './components/ArrowIcon.vue'
 import { i18n } from './i18n'
 import './style.css'
-createApp(App).use(i18n).use(createPinia()).use(router).use(vuetify).mount('#app')
+createApp(App).use(i18n).use(createPinia()).use(router).use(vuetify).component('LocaleLink', LocaleLink).component('ArrowIcon', ArrowIcon).mount('#app')

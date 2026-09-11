@@ -201,7 +201,7 @@ p {
 .desktop-nav a {
   padding:12px 0
 }
-.desktop-nav a:hover,.desktop-nav .router-link-active {
+.desktop-nav a:hover,.desktop-nav .is-nav-active {
   color:#99704c
 }
 .header-cta {
@@ -347,7 +347,7 @@ p {
   transform:scale(1.045)
 }
 .portrait-card img {
-  object-position:50% 36%
+  object-position:76% 20%
 }
 .relationship-card img {
   object-position:center
@@ -1710,3 +1710,9 @@ p {
 .success-panel .whatsapp-continue .v-icon {
   color: inherit;
 }
+
+img.expert-photo {
+  object-position:76% 20%;
+}
+
+.form-submit-arrow { margin-inline-start: 8px; }

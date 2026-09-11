@@ -8,17 +8,12 @@ import en from './locales/en'
 export const supportedLocales = ['ru', 'lv', 'en'] as const
 export type Locale = typeof supportedLocales[number]
 export const defaultLocale: Locale = 'ru'
-export const localeStorageKey = 'astroolog_locale'
 export function isLocale(value: unknown): value is Locale {
   return supportedLocales.some(locale => locale === value)
 }
 function initialLocale(): Locale {
-  try {
-    const saved = localStorage.getItem(localeStorageKey)
-    return isLocale(saved) ? saved : defaultLocale
-  } catch {
-    return defaultLocale
-  }
+  const values = new URLSearchParams(window.location.search).getAll('lang')
+  return values.length === 1 && isLocale(values[0]) ? values[0] : defaultLocale
 }
 export const i18n = createI18n({
   legacy: false,
@@ -35,5 +30,4 @@ export function setLocale(locale: Locale) {
 }
 watch(i18n.global.locale, locale => {
   document.documentElement.lang = locale
-  try { localStorage.setItem(localeStorageKey, locale) } catch { /* Storage may be disabled. */ }
 }, { immediate: true, flush: 'sync' })

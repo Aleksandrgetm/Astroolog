@@ -9,7 +9,7 @@ const { t } = useI18n()
     <div class="home-hero__visual">
       <img
         class="home-hero__photo"
-        src="/images/hero/hero-main.webp"
+        src="/images/Hero-new.png"
         :alt="t('home.heroExpertPortrait', { name: t('siteLayout.expertName') })"
         width="1672"
         height="941"
@@ -30,15 +30,15 @@ const { t } = useI18n()
           <em>{{ t('home.findYourOwnPath') }}</em>
         </h1>
         <p class="home-hero__description">{{ t('home.iHelpWomenListenToThemselvesSee') }}</p>
-        <router-link class="button home-hero__cta" to="/contacts?booking=1">
+        <LocaleLink class="button home-hero__cta" to="/contacts?booking=1">
           {{ t('finalCta.iWantToUnderstandMyself') }}
-          <span aria-hidden="true">↗</span>
-        </router-link>
-        <router-link class="home-hero__question" to="/contacts">
+          <span aria-hidden="true"><ArrowIcon /></span>
+        </LocaleLink>
+        <LocaleLink class="home-hero__question" to="/contacts">
           <v-icon icon="mdi-message-outline" size="18" aria-hidden="true" />
           {{ t('home.askAQuestionFirst') }}
-          <span aria-hidden="true">↗</span>
-        </router-link>
+          <span aria-hidden="true"><ArrowIcon /></span>
+        </LocaleLink>
         <p class="home-hero__note">
           <span aria-hidden="true"></span>
           {{ t('home.lessFixingYourselfMoreBeingYourself') }}
