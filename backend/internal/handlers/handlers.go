@@ -69,3 +69,12 @@ func (h Handler) Submit(c *gin.Context, booking bool) {
 	}
 	c.JSON(http.StatusCreated, gin.H{"message": "Спасибо! Заявка сохранена. Мы свяжемся с вами по указанному email.", "code": "request_created"})
 }
+
+func (h Handler) BookingOptions(c *gin.Context) {
+	options, err := h.Repo.BookingOptions()
+	if err != nil {
+		fail(c, err)
+		return
+	}
+	c.JSON(200, options)
+}

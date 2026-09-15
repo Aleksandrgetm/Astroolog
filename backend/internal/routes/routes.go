@@ -13,6 +13,7 @@ func Register(r *gin.Engine, db *gorm.DB) {
 	repo := repositories.Repository{DB: db}
 	h := handlers.Handler{Repo: repo, Requests: services.Requests{Repo: repo}}
 	api := r.Group("/api")
+	api.GET("/booking-options", h.BookingOptions)
 	api.GET("/services", h.ListServices)
 	api.GET("/services/:slug", h.Service)
 	api.GET("/testimonials", h.Testimonials)

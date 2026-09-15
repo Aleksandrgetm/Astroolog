@@ -1,6 +1,8 @@
+import reviews from '../reviews/en.json' with { type: 'json' }
 import type { MessageSchema } from '../schema'
 
 export default {
+  reviews,
   "siteLayout": {
     "skipToContent": "Skip to content",
     "home": "Home",
@@ -69,6 +71,19 @@ export default {
     "askMeAQuestion": "Ask me a question",
     "learnMore": "Learn more"
   },
+  "certificates": {
+    "eyebrow": "EDUCATION & TRAINING",
+    "title": "The training behind my practice",
+    "intro": "I continue to develop professionally in coaching and numerology, combining a gentle approach with practical tools.",
+    "coachTitle": "ICTA Coach-Practitioner",
+    "coachSubtitle": "Coach and consultant for women",
+    "numerologyTitle": "Digital Numerologist",
+    "numerologySubtitle": "Course in karmic digital psychology",
+    "coachAlt": "ICTA certificate — {name}",
+    "numerologyAlt": "Digital numerology certificate — {name}",
+    "open": "Open certificate: {title}",
+    "close": "Close certificate"
+},
   "about": {
     "aboutMe": "ABOUT ME",
     "hereToHelpYou": "Here to help you",
@@ -88,8 +103,14 @@ export default {
     "03Practice": "03 / PRACTICE",
     "turnInsightIntoAStepForward": "Turn insight into a step forward",
     "weEndWithASpecificActionThat": "We end with a specific action that you choose for yourself.",
-    "draftCopyForApprovalTheBiographyTraining": "Draft copy for approval. The biography, training and professional credentials will be added once confirmed by the expert."
   },
+  "catalog": { "free": "Free", "fromPrice": "From {price}" },
+  "bookingChoice": {
+    "service": "Service",
+    "cost": "Price",
+    "choose": "Choose an option",
+    "pricePending": "To be confirmed",
+},
   "contacts": {
     "phoneLabel": "Phone",
     "emailLabel": "Email",
@@ -159,12 +180,17 @@ export default {
     "iBringNumerologyAndCoachingQuestionsTogether": "I bring numerology and coaching questions together to help you understand yourself and feel more grounded in your own decisions.",
     "iCareAboutCreatingASpaceWhere": "I care about creating a space where you feel heard. Where you don’t have to fit in, rush or become a “better version”. You can simply be yourself.",
     "aLittleMoreAboutMe": "A little more about me",
+    "testimonials": {
+      "author": "Client",
+      "first": "This was not just a reading of my date of birth, but a real session of self-discovery. I really liked both the way the information was presented and its depth. Afterwards, I felt lighter and had a clear plan of action.",
+      "second": "The consultation became a real journey of self-discovery for me. I received answers to questions that had been on my mind for a long time, and afterwards I felt more confident in myself and my possibilities.",
+      "third": "Very precise, insightful and easy to understand. After our conversation, I felt more confident, had greater clarity and understood my strengths better. I definitely recommend it to anyone who wants to get to know themselves better."
+},
     "afterOurSessions": "AFTER OUR SESSIONS",
     "wordsThat": "Words that",
     "stayWithMe": "stay with me",
     "previousTestimonial": "Previous testimonial",
     "nextTestimonial": "Next testimonial",
-    "exampleTestimonialsForTheLayoutRealStories": "Example testimonials for the layout. Real stories will be shared with clients’ permission.",
     "loadingTestimonials": "Loading testimonials…",
     "clientStoriesWillAppearHereSoon": "Client stories will appear here soon.",
     "testimonialsScrollToReadMore": "Testimonials — scroll to read more",
@@ -268,6 +294,8 @@ export default {
     "rating": "{rating} out of 5"
   },
   "seo": {
+    reviewsTitle: reviews.seoTitle.replace('|', "{'|'}"),
+    reviewsDescription: reviews.seoDescription,
     "homeTitle": "Understand yourself. Find your path",
     "homeDescription": "Individual sessions with Елена Захарова. Numerology and coaching to explore your strengths, relationships and next steps.",
     "aboutTitle": "About me",

@@ -1,4 +1,6 @@
 export interface WhatsAppRequest {
+  service_title?: string
+  price_label?: string
   name: string
   email: string
   phone?: string | null
@@ -11,6 +13,8 @@ export function buildWhatsAppMessage(kind: 'contact' | 'bookings', data: WhatsAp
   const lines = [kind === 'bookings' ? 'Новая запись с сайта' : 'Новый вопрос с сайта', '', `Имя: ${data.name}`, `Email: ${data.email}`]
   if (data.phone?.trim()) lines.push(`Телефон: ${data.phone}`)
   if (kind === 'bookings') {
+    if (data.service_title?.trim()) lines.push(`Услуга: ${data.service_title}`)
+    if (data.price_label?.trim()) lines.push(`Стоимость: ${data.price_label}`)
     if (serviceTitle.trim()) lines.push(`Формат встречи: ${serviceTitle}`)
     if (data.preferred_date?.trim()) lines.push(`Желаемая дата: ${data.preferred_date}`)
   }

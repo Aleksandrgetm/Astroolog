@@ -13,6 +13,9 @@ import (
 var ErrInvalid = errors.New("invalid request")
 
 type Input struct {
+	ServiceType string `json:"service_type"`
+	Price       *int64 `json:"price"`
+
 	Name          string `json:"name" binding:"required,max=100"`
 	Email         string `json:"email" binding:"required,email,max=254"`
 	Phone         string `json:"phone" binding:"omitempty,max=30"`
@@ -39,7 +42,7 @@ func (s Requests) Book(i Input) error {
 	if err := i.Normalize(); err != nil {
 		return err
 	}
-	if i.ServiceID == 0 {
+	if i.ServiceID == 0 || i.ServiceType == "" {
 		return ErrInvalid
 	}
 	if err := s.Repo.ActiveService(i.ServiceID); err != nil {
@@ -47,6 +50,20 @@ func (s Requests) Book(i Input) error {
 			return ErrInvalid
 		}
 		return err
+	}
+	option, err := s.Repo.BookingOption(i.ServiceType)
+	if errors.Is(err, gorm.ErrRecordNotFound) {
+		return ErrInvalid
+	}
+	if err != nil {
+		return err
+	}
+	// Reject stale/tampered quotes; never silently store a price the visitor did not see.
+	if option.ServiceID != i.ServiceID {
+		return ErrInvalid
+	}
+	if (option.Price == nil) != (i.Price == nil) || (option.Price != nil && *option.Price != *i.Price) {
+		return ErrInvalid
 	}
 	var date *time.Time
 	if i.PreferredDate != "" {
@@ -56,7 +73,7 @@ func (s Requests) Book(i Input) error {
 		}
 		date = &d
 	}
-	return s.Repo.Booking(&models.Booking{Name: i.Name, Email: i.Email, Phone: i.Phone, ServiceID: i.ServiceID, PreferredDate: date, Message: i.Message, Status: "new"})
+	return s.Repo.Booking(&models.Booking{ServiceType: option.Code, Price: option.Price, Currency: "EUR", Name: i.Name, Email: i.Email, Phone: i.Phone, ServiceID: i.ServiceID, PreferredDate: date, Message: i.Message, Status: "new"})
 }
 func (s Requests) Contact(i Input) error {
 	if err := i.Normalize(); err != nil {

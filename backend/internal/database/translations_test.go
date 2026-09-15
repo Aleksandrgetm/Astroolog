@@ -11,7 +11,7 @@ func TestDemoTranslationsAreCompleteAndPreserveNames(t *testing.T) {
 	if err := json.Unmarshal(translationJSON, &data); err != nil {
 		t.Fatal(err)
 	}
-	if len(data.Services) != 4 || len(data.Testimonials) != 3 {
+	if len(data.Services) != 3 || len(data.Testimonials) != 3 {
 		t.Fatal("incomplete demo seed")
 	}
 	for _, service := range data.Services {

@@ -1,6 +1,8 @@
+import reviews from '../reviews/lv.json' with { type: 'json' }
 import type { MessageSchema } from '../schema'
 
 export default {
+  reviews,
   "siteLayout": {
     "skipToContent": "Pāriet uz saturu",
     "home": "Sākumlapa",
@@ -69,6 +71,19 @@ export default {
     "askMeAQuestion": "Uzdod savu jautājumu",
     "learnMore": "Uzzināt vairāk"
   },
+  "certificates": {
+    "eyebrow": "IZGLĪTĪBA UN PROFESIONĀLĀ SAGATAVOTĪBA",
+    "title": "Izglītība, uz kuras balstās mana prakse",
+    "intro": "Es turpinu profesionāli pilnveidoties koučingā un numeroloģijā, lai apvienotu saudzīgu pieeju ar praktiskiem instrumentiem.",
+    "coachTitle": "ICTA koučs-praktiķis",
+    "coachSubtitle": "Koučs un konsultants sievietēm",
+    "numerologyTitle": "Digitālais numerologs",
+    "numerologySubtitle": "Kurss karmiskajā digitālajā psiholoģijā",
+    "coachAlt": "ICTA sertifikāts — {name}",
+    "numerologyAlt": "Digitālās numeroloģijas sertifikāts — {name}",
+    "open": "Atvērt sertifikātu: {title}",
+    "close": "Aizvērt sertifikātu"
+},
   "about": {
     "aboutMe": "PAR MANI",
     "hereToHelpYou": "Līdzās, lai tu",
@@ -88,8 +103,14 @@ export default {
     "03Practice": "03 / PRAKSE",
     "turnInsightIntoAStepForward": "Izpratne pārtop nākamajā solī",
     "weEndWithASpecificActionThat": "Sarunu noslēdzam ar konkrētu soli, ko izvēlies pati.",
-    "draftCopyForApprovalTheBiographyTraining": "Teksta projekts saskaņošanai. Biogrāfija, izglītība un profesionālie dokumenti tiks pievienoti pēc speciālistes apstiprinājuma."
   },
+  "catalog": { "free": "Bezmaksas", "fromPrice": "No {price}" },
+  "bookingChoice": {
+    "service": "Pakalpojums",
+    "cost": "Cena",
+    "choose": "Izvēlies variantu",
+    "pricePending": "Tiks precizēta",
+},
   "contacts": {
     "phoneLabel": "Tālrunis",
     "emailLabel": "E-pasts",
@@ -159,12 +180,17 @@ export default {
     "iBringNumerologyAndCoachingQuestionsTogether": "Savā darbā apvienoju numeroloģiju un koučinga jautājumus, lai palīdzētu tev labāk izprast sevi un rast pārliecību par saviem lēmumiem.",
     "iCareAboutCreatingASpaceWhere": "Man ir svarīgi radīt telpu, kurā tevi sadzird. Kur nav jāatbilst gaidām, jāsteidzas vai jākļūst par «labāku versiju». Vari vienkārši būt tu pati.",
     "aLittleMoreAboutMe": "Mazliet vairāk par mani",
+    "testimonials": {
+      "author": "Kliente",
+      "first": "Tā nebija tikai dzimšanas datuma analīze, bet gan īsta sevis izzināšanas sesija. Man ļoti patika gan pasniegšanas veids, gan informācijas dziļums. Pēc analīzes radās viegluma sajūta un skaidrs rīcības plāns.",
+      "second": "Konsultācija man kļuva par īstu ceļojumu pie sevis. Es saņēmu atbildes uz jautājumiem, kas mani jau sen nodarbināja, un pēc tikšanās jutos pārliecinātāka par sevi un savām iespējām.",
+      "third": "Ļoti precīzi, padziļināti un vienlaikus saprotami. Pēc sarunas radās lielāka pārliecība, skaidrība un izpratne par savām stiprajām pusēm. Noteikti iesaku ikvienai, kura vēlas labāk iepazīt sevi."
+},
     "afterOurSessions": "PĒC MŪSU SARUNĀM",
     "wordsThat": "Vārdi, kas",
     "stayWithMe": "sasilda",
     "previousTestimonial": "Iepriekšējā atsauksme",
     "nextTestimonial": "Nākamā atsauksme",
-    "exampleTestimonialsForTheLayoutRealStories": "Atsauksmju noformējuma piemēri. Patiesi stāsti tiks publicēti ar klientu piekrišanu.",
     "loadingTestimonials": "Ielādē atsauksmes…",
     "clientStoriesWillAppearHereSoon": "Drīzumā šeit būs klientu stāsti.",
     "testimonialsScrollToReadMore": "Atsauksmes — ritini, lai lasītu nākamās",
@@ -268,6 +294,8 @@ export default {
     "rating": "{rating} no 5"
   },
   "seo": {
+    reviewsTitle: reviews.seoTitle.replace('|', "{'|'}"),
+    reviewsDescription: reviews.seoDescription,
     "homeTitle": "Izproti sevi. Atrodi savu ceļu",
     "homeDescription": "Individuālas konsultācijas — Елена Захарова. Numeroloģija un koučings: tavas stiprās puses, attiecības un soļi pārmaiņu virzienā.",
     "aboutTitle": "Par mani",

@@ -7,7 +7,9 @@ import { setPageMeta } from '../i18n/seo'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
+    { path: '/services/growth-point', redirect: to => ({ path: '/services', query: to.query }) },
     { path: '/', component: () => import('../pages/HomePage.vue'), meta: { seo: 'home' } },
+    { path: '/reviews', component: () => import('../pages/ReviewsPage.vue'), meta: { seo: 'reviews' } },
     { path: '/about', component: () => import('../pages/AboutPage.vue'), meta: { seo: 'about' } },
     { path: '/services', component: () => import('../pages/ServicesPage.vue'), meta: { seo: 'services' } },
     { path: '/services/:slug', component: () => import('../pages/ServicePage.vue'), meta: { seo: 'service' } },
@@ -23,7 +25,7 @@ const router = createRouter({
 installLocaleRouting(router)
 function updateRouteMeta() {
   const key = router.currentRoute.value.meta.seo
-  if (key) setPageMeta(i18n.global.t(`seo.${key}Title`), i18n.global.t(`seo.${key}Description`))
+  if (key) setPageMeta(i18n.global.t(`seo.${key}Title`), i18n.global.t(`seo.${key}Description`), key !== 'reviews')
 }
 router.afterEach(updateRouteMeta)
 // ServicePage owns its metadata after the API response arrives.

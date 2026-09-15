@@ -18,6 +18,8 @@ export interface Testimonial extends LocalizedFields<'text' | 'client_name'> {
   rating: number
 }
 export interface RequestInput {
+  service_type?: string
+  price?: number | null
   name: string
   email: string
   phone: string
@@ -25,4 +27,13 @@ export interface RequestInput {
   consent: boolean
   service_id?: number
   preferred_date?: string
+}
+
+export interface BookingOption extends LocalizedFields<'title' | 'format'> {
+ code: string
+ service_id: number
+ price: number | null
+ title: string
+ format: string
+ sort_order: number
 }

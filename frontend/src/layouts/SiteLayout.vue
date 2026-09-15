@@ -7,7 +7,7 @@ import { useRoute } from 'vue-router'
 import LanguageSwitcher from '../components/LanguageSwitcher.vue'
 import MobileNavigation from '../components/MobileNavigation.vue'
 const route=useRoute()
-const links=computed(()=>[[t('siteLayout.aboutMe'),'/about'],[t('siteLayout.areasOfFocus'),'/#directions'],[t('siteLayout.sessions'),'/services'],[t('siteLayout.testimonials'),'/#testimonials'],[t('siteLayout.contact'),'/contacts']])
+const links=computed(()=>[[t('siteLayout.aboutMe'),'/about'],[t('siteLayout.areasOfFocus'),'/#directions'],[t('siteLayout.sessions'),'/services'],[t('siteLayout.testimonials'),'/reviews'],[t('siteLayout.contact'),'/contacts']])
 function isNavigationActive(target: string) {
   const [path, hash] = target.split('#')
   if (hash) return route.path === path && route.hash === `#${hash}`

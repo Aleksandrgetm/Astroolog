@@ -1,5 +1,5 @@
 import axios from 'axios'
-import type { Service, Testimonial, RequestInput } from '../types'
+import type { Service, Testimonial, RequestInput, BookingOption } from '../types'
 export const api = axios.create({ baseURL: import.meta.env.VITE_API_URL || '/api', timeout: 15000, headers: { 'Content-Type': 'application/json' } })
 export const getServices = () => api.get<Service[]>('/services').then(r => r.data)
 export const getService = (slug: string) => api.get<Service>(`/services/${encodeURIComponent(slug)}`).then(r => r.data)
@@ -17,3 +17,5 @@ export function errorKey(error: unknown): ErrorKey {
   if (error.response.status === 400) return 'feedback.validation_error'
   return 'feedback.server_error'
 }
+
+export const getBookingOptions = () => api.get<BookingOption[]>('/booking-options').then(r => r.data)

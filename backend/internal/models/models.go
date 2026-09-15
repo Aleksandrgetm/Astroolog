@@ -51,7 +51,31 @@ type Testimonial struct {
 	IsActive   bool   `json:"is_active" gorm:"index"`
 	SortOrder  int    `json:"sort_order"`
 }
+type CatalogRevision struct {
+	ID string `gorm:"primaryKey"`
+}
+type BookingOption struct {
+	ServiceID uint   `json:"service_id"`
+	IsActive  bool   `json:"is_active"`
+	SortOrder int    `json:"sort_order"`
+	Title     string `json:"title"`
+	TitleRU   string `json:"title_ru"`
+	TitleLV   string `json:"title_lv"`
+	TitleEN   string `json:"title_en"`
+	Format    string `json:"format"`
+	FormatRU  string `json:"format_ru"`
+	FormatLV  string `json:"format_lv"`
+	FormatEN  string `json:"format_en"`
+
+	Code  string `json:"code" gorm:"primaryKey"`
+	Price *int64 `json:"price" gorm:"check:price >= 0"` // EUR cents; NULL until confirmed.
+}
+
 type Booking struct {
+	ServiceType string `json:"service_type"`
+	Price       *int64 `json:"price"` // Snapshot in EUR cents, not a formatted string.
+	Currency    string `json:"currency"`
+
 	Base
 	Name          string     `json:"name"`
 	Email         string     `json:"email"`

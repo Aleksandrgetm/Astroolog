@@ -28,3 +28,14 @@ func (r Repository) Testimonials() ([]models.Testimonial, error) {
 }
 func (r Repository) Booking(v *models.Booking) error        { return r.DB.Create(v).Error }
 func (r Repository) Contact(v *models.ContactRequest) error { return r.DB.Create(v).Error }
+
+func (r Repository) BookingOptions() ([]models.BookingOption, error) {
+	options := []models.BookingOption{}
+	err := r.DB.Where("is_active = ?", true).Order("sort_order, code").Find(&options).Error
+	return options, err
+}
+func (r Repository) BookingOption(code string) (models.BookingOption, error) {
+	var option models.BookingOption
+	err := r.DB.Where("code = ? AND is_active = ?", code, true).First(&option).Error
+	return option, err
+}

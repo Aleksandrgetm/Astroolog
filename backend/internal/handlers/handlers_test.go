@@ -18,6 +18,7 @@ func TestRejectInvalidRequests(t *testing.T) {
 		{"whitespace name", `{"name":"  ","email":"anna@example.com","message":"Вопрос","consent":true}`, false},
 		{"empty contact message", `{"name":"Анна","email":"anna@example.com","message":"  ","consent":true}`, false},
 		{"invalid phone", `{"name":"Анна","email":"anna@example.com","phone":"abcdef","message":"Вопрос","consent":true}`, false},
+		{"missing service type", `{"name":"Анна","email":"anna@example.com","consent":true,"service_id":1}`, true},
 		{"missing service", `{"name":"Анна","email":"anna@example.com","consent":true}`, true},
 		{"malformed JSON", `{`, false},
 	}

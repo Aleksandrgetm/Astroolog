@@ -51,31 +51,6 @@
       }
     },
     {
-      "slug": "growth-point",
-      "fields": {
-        "title": {
-          "ru": "Точка роста",
-          "en": "A point of growth",
-          "lv": "Izaugsmes punkts"
-        },
-        "short_description": {
-          "ru": "Один важный запрос. Больше ясности. Конкретный следующий шаг.",
-          "en": "One meaningful question. More clarity. A practical next step.",
-          "lv": "Viens svarīgs jautājums. Vairāk skaidrības. Konkrēts nākamais solis."
-        },
-        "description": {
-          "ru": "Сфокусированная консультация о работе, деньгах, отношениях или родительстве. Разберём текущую ситуацию, отделим ваши желания от ожиданий окружающих и составим реалистичный план действий. В детских запросах обсуждаем поддержку ребёнка без ярлыков и прогнозов.",
-          "en": "A focused session about work, money, relationships or parenting. We’ll look at your current situation, separate your wishes from other people’s expectations and create a realistic action plan. When discussing children, we focus on support without labels or predictions.",
-          "lv": "Mērķēta konsultācija par darbu, naudu, attiecībām vai bērnu audzināšanu. Aplūkosim pašreizējo situāciju, nošķirsim tavas vēlmes no citu gaidām un izveidosim reālistisku rīcības plānu. Jautājumos par bērniem runājam par atbalstu bez birkām un prognozēm."
-        },
-        "duration": {
-          "ru": "60 минут · онлайн",
-          "en": "60 minutes · online",
-          "lv": "60 minūtes · tiešsaistē"
-        }
-      }
-    },
-    {
       "slug": "path-to-self",
       "fields": {
         "title": {
