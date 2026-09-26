@@ -156,7 +156,7 @@ export default {
     "yourDateOfBirthCanBeA": "Дата рождения может стать отправной точкой для разговора о тебе: твоих качествах, желаниях и привычных сценариях.",
     "wereNotLookingForAFixedDestiny": "Мы не ищем готовую судьбу в цифрах. Мы задаём вопросы, замечаем важное и переводим это понимание в реальные решения.",
     "exploreMySessions": "Посмотреть мои разборы",
-    "aToolForSelfreflectionNotScientificAssessment": "Инструмент саморефлексии, а не научная диагностика или предсказание будущего.",
+    "aToolForSelfreflectionNotScientificAssessment": "Иногда нам не нужно становиться кем-то другим. Нам нужно лучше понять себя — и научиться опираться на то, что уже есть внутри нас.",
     "yourQuestionsAreYourOwn": "У КАЖДОЙ — СВОЙ ЗАПРОС",
     "whatWeCan": "С чем я",
     "exploreTogether": "работаю",

@@ -158,7 +158,7 @@ export default {
     "yourDateOfBirthCanBeA": "Your date of birth can be a starting point for a conversation about your qualities, wishes and familiar patterns.",
     "wereNotLookingForAFixedDestiny": "We’re not looking for a fixed destiny in numbers. We ask questions, notice what matters and turn that understanding into real-life choices.",
     "exploreMySessions": "Explore my sessions",
-    "aToolForSelfreflectionNotScientificAssessment": "A tool for self-reflection, not scientific assessment or a prediction of the future.",
+    "aToolForSelfreflectionNotScientificAssessment": "Sometimes we don’t need to become someone else. We need to understand ourselves better — and learn to draw strength from what is already within us.",
     "yourQuestionsAreYourOwn": "YOUR QUESTIONS ARE YOUR OWN",
     "whatWeCan": "What we can",
     "exploreTogether": "explore together",

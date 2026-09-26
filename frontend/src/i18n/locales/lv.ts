@@ -158,7 +158,7 @@ export default {
     "yourDateOfBirthCanBeA": "Dzimšanas datums var būt sākumpunkts sarunai par tevi — tavām īpašībām, vēlmēm un ierastajiem rīcības modeļiem.",
     "wereNotLookingForAFixedDestiny": "Mēs nemeklējam skaitļos iepriekš noteiktu likteni. Uzdodam jautājumus, pamanām būtisko un pārvēršam izpratni reālos lēmumos.",
     "exploreMySessions": "Apskatīt konsultācijas",
-    "aToolForSelfreflectionNotScientificAssessment": "Pašrefleksijas rīks, nevis zinātniska diagnostika vai nākotnes paredzēšana.",
+    "aToolForSelfreflectionNotScientificAssessment": "Dažreiz mums nav jākļūst par kādu citu. Mums vienkārši vajag labāk izprast sevi — un iemācīties rast atbalstu tajā, kas mūsos jau ir.",
     "yourQuestionsAreYourOwn": "KATRAI — SAVS JAUTĀJUMS",
     "whatWeCan": "Ar ko es",
     "exploreTogether": "strādāju",
