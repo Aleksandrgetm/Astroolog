@@ -11,13 +11,8 @@ export interface Service extends LocalizedFields<'title' | 'short_description' |
   is_active: boolean
   sort_order: number
 }
-export interface Testimonial extends LocalizedFields<'text' | 'client_name'> {
-  id: number
-  client_name: string
-  text: string
-  rating: number
-}
 export interface RequestInput {
+  language?: string
   service_type?: string
   price?: number | null
   name: string

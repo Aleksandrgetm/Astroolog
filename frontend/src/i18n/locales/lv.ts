@@ -1,8 +1,11 @@
+import directions from '../directions/lv.json' with { type: 'json' }
 import reviews from '../reviews/lv.json' with { type: 'json' }
 import type { MessageSchema } from '../schema'
 
 export default {
+  navigation: { services: "Pakalpojumi", home: "Sākums", breadcrumbs: "Navigācijas ceļš" },
   reviews,
+  directions,
   "siteLayout": {
     "skipToContent": "Pāriet uz saturu",
     "home": "Sākumlapa",
@@ -238,7 +241,7 @@ export default {
     "toRequestACorrectionOrDeletionOf": "Lai lūgtu precizēt vai dzēst savus datus, izmanto",
     "contactForm": "saziņas veidlapu",
     "pleaseDontIncludeSensitiveInformationThatIsnt": ". Lūdzu, neiekļauj ziņā sensitīvu informāciju, kas nav nepieciešama atbildei.",
-    "languagePreference": "Vietne saglabā izvēlēto valodu localStorage ar atslēgu astroolog_locale, lai iestatījums saglabātos pēc lapas pārlādes.",
+    "languagePreference": "Izvēlēto valodu nosaka lapas adrese. Valodas iestatījums netiek saglabāts localStorage.",
     "technicalInformation": "Tehniskie dati",
     "theCurrentSiteHasNoAdvertisingTrackers": "Pašreizējā vietnes versijā nav reklāmas izsekotāju un analītikas sīkdatņu. Serveris var veidot tehniskus pieprasījumu žurnālus.",
     "detailsToConfirmBeforePublication": "Informācija pirms publicēšanas",
@@ -275,6 +278,8 @@ export default {
     "en": "Angļu"
   },
   "feedback": {
+    "stale_price": "Izvēlētā formāta cena ir mainījusies. Pārbaudiet jauno cenu un apstipriniet nosūtīšanu.",
+    "idempotency_conflict": "Šis pieprasījums jau izmantots ar citiem datiem. Pirms jaunas nosūtīšanas pārlādējiet lapu.",
     "thankYou": "Paldies!",
     "bookingSaved": "Tavs pieteikums ir veiksmīgi nosūtīts.",
     "questionSaved": "Tavs jautājums ir veiksmīgi nosūtīts.",
@@ -296,12 +301,12 @@ export default {
   "seo": {
     reviewsTitle: reviews.seoTitle.replace('|', "{'|'}"),
     reviewsDescription: reviews.seoDescription,
-    "homeTitle": "Izproti sevi. Atrodi savu ceļu",
+    "homeTitle": "Numeroloģe un sieviešu koučs",
     "homeDescription": "Individuālas konsultācijas — Елена Захарова. Numeroloģija un koučings: tavas stiprās puses, attiecības un soļi pārmaiņu virzienā.",
     "aboutTitle": "Par mani",
     "aboutDescription": "Елена Захарова: saudzīga pieeja sevis izzināšanai un personīgām pārmaiņām.",
     "servicesTitle": "Konsultācijas",
-    "servicesDescription": "Izvēlies savu formātu: iepazīšanās saruna, iespēju matrica, mērķēta konsultācija vai individuāls atbalsts.",
+    "servicesDescription": "Bezmaksas iepazīšanās, atsevišķas un pilnas numeroloģiskās analīzes, koučinga sarunas un individuāls atbalsts.",
     "serviceTitle": "Individuāla konsultācija",
     "serviceDescription": "Konsultācijas formāts, tavs jautājums un pieteikšanās.",
     "contactsTitle": "Kontakti un pieteikšanās",

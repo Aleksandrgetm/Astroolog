@@ -16,7 +16,6 @@ func Register(r *gin.Engine, db *gorm.DB) {
 	api.GET("/booking-options", h.BookingOptions)
 	api.GET("/services", h.ListServices)
 	api.GET("/services/:slug", h.Service)
-	api.GET("/testimonials", h.Testimonials)
 	api.POST("/bookings", middleware.BodyLimit(), func(c *gin.Context) { h.Submit(c, true) })
 	api.POST("/contact", middleware.BodyLimit(), func(c *gin.Context) { h.Submit(c, false) })
 }

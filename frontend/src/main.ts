@@ -7,4 +7,5 @@ import LocaleLink from './components/LocaleLink.vue'
 import ArrowIcon from './components/ArrowIcon.vue'
 import { i18n } from './i18n'
 import './style.css'
-createApp(App).use(i18n).use(createPinia()).use(router).use(vuetify).component('LocaleLink', LocaleLink).component('ArrowIcon', ArrowIcon).mount('#app')
+const app = createApp(App).use(i18n).use(createPinia()).use(router).use(vuetify).component('LocaleLink', LocaleLink).component('ArrowIcon', ArrowIcon)
+router.isReady().then(() => app.mount('#app'))

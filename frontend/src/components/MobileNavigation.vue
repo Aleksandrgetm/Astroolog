@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { basePath } from '../i18n/urls'
 import { useI18n } from 'vue-i18n'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 const props = defineProps<{ links: string[][] }>()
@@ -12,8 +13,9 @@ const closeButton = ref<HTMLButtonElement | null>(null)
 const mobileLinks = computed(() => [[t('siteLayout.home'), '/'], ...props.links])
 function active(target: string) {
   const [path, hash] = target.split('#')
-  if (path === '/') return route.path === '/' && route.hash === (hash ? `#${hash}` : '')
-  return route.path === path || route.path.startsWith(`${path}/`)
+  if (hash === 'directions' && basePath(route.path).startsWith('/directions/')) return true
+  if (path === '/') return basePath(route.path) === '/' && route.hash === (hash ? `#${hash}` : '')
+  return basePath(route.path) === path || basePath(route.path).startsWith(`${path}/`)
 }
 watch(() => `${route.path}${route.hash}`, () => { open.value = false })
 let breakpoint: MediaQueryList | undefined

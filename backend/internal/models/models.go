@@ -32,7 +32,7 @@ type Service struct {
 	ShortDescription string `json:"short_description"`
 	Description      string `json:"description"`
 	Image            string `json:"image"`
-	Price            *int64 `json:"price"` // Minor currency units; nil until prices are confirmed.
+	Price            *int64 `json:"price" gorm:"check:price >= 0"` // Legacy stored price; public price is derived from active variants. Minor currency units; nil until prices are confirmed.
 	Duration         string `json:"duration"`
 	IsActive         bool   `json:"is_active" gorm:"index"`
 	SortOrder        int    `json:"sort_order"`
@@ -55,26 +55,33 @@ type CatalogRevision struct {
 	ID string `gorm:"primaryKey"`
 }
 type BookingOption struct {
-	ServiceID uint   `json:"service_id"`
-	IsActive  bool   `json:"is_active"`
-	SortOrder int    `json:"sort_order"`
-	Title     string `json:"title"`
-	TitleRU   string `json:"title_ru"`
-	TitleLV   string `json:"title_lv"`
-	TitleEN   string `json:"title_en"`
-	Format    string `json:"format"`
-	FormatRU  string `json:"format_ru"`
-	FormatLV  string `json:"format_lv"`
-	FormatEN  string `json:"format_en"`
+	ServiceID uint      `json:"service_id" gorm:"not null;index"`
+	Service   Service   `json:"-" gorm:"constraint:OnDelete:RESTRICT"`
+	CreatedAt time.Time `json:"created_at"`
+	UpdatedAt time.Time `json:"updated_at"`
+	IsActive  bool      `json:"is_active"`
+	SortOrder int       `json:"sort_order"`
+	Title     string    `json:"title"`
+	TitleRU   string    `json:"title_ru"`
+	TitleLV   string    `json:"title_lv"`
+	TitleEN   string    `json:"title_en"`
+	Format    string    `json:"format"`
+	FormatRU  string    `json:"format_ru"`
+	FormatLV  string    `json:"format_lv"`
+	FormatEN  string    `json:"format_en"`
 
 	Code  string `json:"code" gorm:"primaryKey"`
 	Price *int64 `json:"price" gorm:"check:price >= 0"` // EUR cents; NULL until confirmed.
 }
 
 type Booking struct {
-	ServiceType string `json:"service_type"`
-	Price       *int64 `json:"price"` // Snapshot in EUR cents, not a formatted string.
-	Currency    string `json:"currency"`
+	ServiceTitle *string `json:"service_title"`
+	OptionTitle  *string `json:"option_title"`
+	OptionFormat *string `json:"option_format"`
+	Language     *string `json:"language"`
+	ServiceType  string  `json:"service_type"`
+	Price        *int64  `json:"price" gorm:"check:price >= 0"` // Snapshot in EUR cents, not a formatted string.
+	Currency     string  `json:"currency"`
 
 	Base
 	Name          string     `json:"name"`
@@ -87,10 +94,22 @@ type Booking struct {
 	Status        string     `json:"status" gorm:"default:new;check:status IN ('new','confirmed','completed','cancelled')"`
 }
 type ContactRequest struct {
-	ID        uint      `json:"id" gorm:"primaryKey"`
-	Name      string    `json:"name"`
-	Email     string    `json:"email"`
-	Phone     string    `json:"phone"`
-	Message   string    `json:"message"`
-	CreatedAt time.Time `json:"created_at"`
+	Status       string    `json:"status" gorm:"not null;default:new;check:status IN ('new','in_progress','completed','archived')"`
+	InternalNote string    `json:"-"`
+	UpdatedAt    time.Time `json:"updated_at"`
+	Language     string    `json:"language"`
+	ID           uint      `json:"id" gorm:"primaryKey"`
+	Name         string    `json:"name"`
+	Email        string    `json:"email"`
+	Phone        string    `json:"phone"`
+	Message      string    `json:"message"`
+	CreatedAt    time.Time `json:"created_at"`
+}
+
+// Claim and the resulting request are committed in one transaction.
+type SubmissionKey struct {
+	Key         string `gorm:"primaryKey;size:128"`
+	Kind        string `gorm:"not null"`
+	Fingerprint string `gorm:"not null"`
+	CreatedAt   time.Time
 }

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { basePath } from '../i18n/urls'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
@@ -10,8 +11,9 @@ const route=useRoute()
 const links=computed(()=>[[t('siteLayout.aboutMe'),'/about'],[t('siteLayout.areasOfFocus'),'/#directions'],[t('siteLayout.sessions'),'/services'],[t('siteLayout.testimonials'),'/reviews'],[t('siteLayout.contact'),'/contacts']])
 function isNavigationActive(target: string) {
   const [path, hash] = target.split('#')
-  if (hash) return route.path === path && route.hash === `#${hash}`
-  return route.path === path || route.path.startsWith(`${path}/`)
+  if (hash === 'directions' && basePath(route.path).startsWith('/directions/')) return true
+  if (hash) return basePath(route.path) === path && route.hash === `#${hash}`
+  return basePath(route.path) === path || basePath(route.path).startsWith(`${path}/`)
 }
 </script>
 <template>

@@ -2,9 +2,12 @@ package main
 
 import (
 	"astroolog/backend/internal/routes"
+	"astroolog/backend/internal/web"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
+	"time"
 
 	"astroolog/backend/internal/config"
 	"astroolog/backend/internal/database"
@@ -13,17 +16,15 @@ import (
 )
 
 func main() {
-	cfg := config.Load()
+	cfg, err := config.Load()
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	db := database.Connect(cfg)
 
 	if err := database.Migrate(db); err != nil {
 		panic(err)
-	}
-	if os.Getenv("SEED_DEMO") == "true" {
-		if err := database.SeedDemo(db); err != nil {
-			panic(err)
-		}
 	}
 	router := gin.Default()
 	_ = router.SetTrustedProxies(nil)
@@ -54,9 +55,16 @@ func main() {
 		})
 	})
 
+	if directory := os.Getenv("SITE_DIST_DIR"); directory != "" {
+		if err := web.Register(router, directory, db); err != nil {
+			log.Fatal(err)
+		}
+	}
+
 	address := fmt.Sprintf(":%s", cfg.AppPort)
 
-	if err := router.Run(address); err != nil {
+	server := &http.Server{Addr: address, Handler: router, ReadHeaderTimeout: 5 * time.Second, ReadTimeout: 15 * time.Second, WriteTimeout: 30 * time.Second, IdleTimeout: 60 * time.Second}
+	if err := server.ListenAndServe(); err != nil {
 		panic(err)
 	}
 }

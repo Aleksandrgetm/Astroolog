@@ -7,7 +7,7 @@ const router = useRouter()
 const route = useRoute()
 const destination = computed(() => {
   // Track query-only language changes as well as path changes.
-  void route.query.lang
+  void route.path
   return localizedRoute(router, props.to)
 })
 </script>

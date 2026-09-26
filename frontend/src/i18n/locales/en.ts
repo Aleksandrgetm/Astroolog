@@ -1,8 +1,11 @@
+import directions from '../directions/en.json' with { type: 'json' }
 import reviews from '../reviews/en.json' with { type: 'json' }
 import type { MessageSchema } from '../schema'
 
 export default {
+  navigation: { services: "Services", home: "Home", breadcrumbs: "Breadcrumbs" },
   reviews,
+  directions,
   "siteLayout": {
     "skipToContent": "Skip to content",
     "home": "Home",
@@ -238,7 +241,7 @@ export default {
     "toRequestACorrectionOrDeletionOf": "To request a correction or deletion of your data, please use the",
     "contactForm": "contact form",
     "pleaseDontIncludeSensitiveInformationThatIsnt": ". Please don’t include sensitive information that isn’t needed to answer your enquiry.",
-    "languagePreference": "The site stores your chosen language in localStorage under astroolog_locale so your preference remains after a page refresh.",
+    "languagePreference": "The page address determines the selected language. The language preference is not stored in localStorage.",
     "technicalInformation": "Technical information",
     "theCurrentSiteHasNoAdvertisingTrackers": "The current site has no advertising trackers or analytics cookies. The server may keep technical request logs.",
     "detailsToConfirmBeforePublication": "Details to confirm before publication",
@@ -275,6 +278,8 @@ export default {
     "en": "English"
   },
   "feedback": {
+    "stale_price": "The selected option’s price has changed. Please review the new price and submit again.",
+    "idempotency_conflict": "This request was already used with different details. Refresh the page before submitting a new request.",
     "thankYou": "Thank you!",
     "bookingSaved": "Your booking request has been sent successfully.",
     "questionSaved": "Your question has been sent successfully.",
@@ -296,12 +301,12 @@ export default {
   "seo": {
     reviewsTitle: reviews.seoTitle.replace('|', "{'|'}"),
     reviewsDescription: reviews.seoDescription,
-    "homeTitle": "Understand yourself. Find your path",
+    "homeTitle": "Numerologist and women’s coach",
     "homeDescription": "Individual sessions with Елена Захарова. Numerology and coaching to explore your strengths, relationships and next steps.",
     "aboutTitle": "About me",
     "aboutDescription": "Елена Захарова: a supportive approach to self-discovery and personal change.",
     "servicesTitle": "Sessions",
-    "servicesDescription": "Choose your format: an introductory session, a personal matrix, a focused consultation or ongoing support.",
+    "servicesDescription": "A free introduction, individual and complete numerology readings, coaching sessions and ongoing support.",
     "serviceTitle": "Individual session",
     "serviceDescription": "Session details, your questions and booking information.",
     "contactsTitle": "Contact and booking",

@@ -6,8 +6,13 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import RequestForm from '../components/RequestForm.vue'
 const route=useRoute(),router=useRouter(),booking=computed(()=>route.query.booking==='1')
+function changeMode(isBooking:boolean){
+ const query={...route.query}
+ if(isBooking)query.booking='1';else delete query.booking
+ router.replace({path:route.path,query,hash:route.hash})
+}
 </script>
-<template><section class="section container contacts-layout"><div><span class="eyebrow">{{ t('contacts.letsKeepInTouch') }}</span><h1>{{ t('contacts.everyJourney') }}<br>{{ t('contacts.startsWith') }}<br><em>{{ t('contacts.aConversation') }}</em></h1><p class="lead">{{ t('contacts.tellMeWhatMattersToYouRight') }}<br>{{ t('contacts.illHelpYouFindYourNextStep') }}</p><div class="contact-detail"><v-icon icon="mdi-earth"/><div><h3>{{ t('contacts.weMeetOnline') }}</h3><p>{{ t('contacts.fromAnywhereInTheWorldInA') }}</p></div></div><div class="owner-contacts">
+<template><section class="section container contacts-layout"><div><span class="eyebrow">{{ t('contacts.letsKeepInTouch') }}</span><h1>{{ t('contacts.everyJourney') }}<br>{{ t('contacts.startsWith') }}<br><em>{{ t('contacts.aConversation') }}</em></h1><p class="lead">{{ t('contacts.tellMeWhatMattersToYouRight') }}<br>{{ t('contacts.illHelpYouFindYourNextStep') }}</p><div class="contact-detail"><v-icon icon="mdi-earth"/><div><h2>{{ t('contacts.weMeetOnline') }}</h2><p>{{ t('contacts.fromAnywhereInTheWorldInA') }}</p></div></div><div class="owner-contacts">
   <div class="owner-contact">
     <v-icon icon="mdi-phone-outline" aria-hidden="true" />
     <div class="owner-contact-copy">
@@ -24,7 +29,7 @@ const route=useRoute(),router=useRouter(),booking=computed(()=>route.query.booki
     </div>
   </div>
 </div>
-</div><div class="contact-form-panel"><div class="form-tabs" role="group" :aria-label="t('contacts.enquiryType')"><button :class="{active:!booking}" @click="router.replace('/contacts')" :aria-pressed="!booking">{{ t('contacts.askAQuestion') }}</button><button :class="{active:booking}" @click="router.replace('/contacts?booking=1')" :aria-pressed="booking">{{ t('siteLayout.bookASession') }}</button></div><RequestForm :key="String(booking)" :booking="booking"/></div></section></template>
+</div><div class="contact-form-panel"><div class="form-tabs" role="group" :aria-label="t('contacts.enquiryType')"><button :class="{active:!booking}" @click="changeMode(false)" :aria-pressed="!booking">{{ t('contacts.askAQuestion') }}</button><button :class="{active:booking}" @click="changeMode(true)" :aria-pressed="booking">{{ t('siteLayout.bookASession') }}</button></div><RequestForm :key="String(booking)" :booking="booking"/></div></section></template>
 
 <style scoped>
 .owner-contacts { display: grid; gap: 28px; margin-top: 38px; }

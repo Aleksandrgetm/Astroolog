@@ -1,4 +1,5 @@
 import { watch } from 'vue'
+import { localeFromPath } from './urls'
 import { createI18n } from 'vue-i18n'
 import { ru as vuetifyRu, lv as vuetifyLv, en as vuetifyEn } from 'vuetify/locale'
 import ru from './locales/ru'
@@ -12,8 +13,7 @@ export function isLocale(value: unknown): value is Locale {
   return supportedLocales.some(locale => locale === value)
 }
 function initialLocale(): Locale {
-  const values = new URLSearchParams(window.location.search).getAll('lang')
-  return values.length === 1 && isLocale(values[0]) ? values[0] : defaultLocale
+  return localeFromPath(window.location.pathname)
 }
 export const i18n = createI18n({
   legacy: false,

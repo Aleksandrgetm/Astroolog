@@ -39,26 +39,22 @@ func (h Handler) Service(c *gin.Context) {
 	}
 	c.JSON(200, v)
 }
-func (h Handler) Testimonials(c *gin.Context) {
-	v, err := h.Repo.Testimonials()
-	if err != nil {
-		fail(c, err)
-		return
-	}
-	c.JSON(200, v)
-}
 func (h Handler) Submit(c *gin.Context, booking bool) {
 	var input services.Input
 	if err := c.ShouldBindJSON(&input); err != nil {
 		c.JSON(400, gin.H{"error": "Проверьте имя, email, длину полей и согласие на обработку данных.", "code": "validation_error"})
 		return
 	}
-	var err error
-	if booking {
-		err = h.Requests.Book(input)
-	} else {
-		err = h.Requests.Contact(input)
+	err := h.Requests.Submit(input, booking, c.GetHeader("Idempotency-Key"))
+	if errors.Is(err, services.ErrStalePrice) {
+		c.JSON(409, gin.H{"code": "stale_price"})
+		return
 	}
+	if errors.Is(err, services.ErrIdempotency) {
+		c.JSON(409, gin.H{"code": "idempotency_conflict"})
+		return
+	}
+
 	if errors.Is(err, services.ErrInvalid) {
 		c.JSON(400, gin.H{"error": "Проверьте поля: услуга должна быть доступна, дата — не в прошлом, сообщение — заполнено.", "code": "invalid_request"})
 		return

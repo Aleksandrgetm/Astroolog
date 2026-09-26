@@ -13,9 +13,10 @@ const route = useRoute()
 const catalog = useCatalog()
 const groups = computed(() => catalog.services.filter(s => !props.serviceId || s.id === props.serviceId))
 onMounted(() => catalog.load())
-watch(() => [catalog.options, route.query.option, props.serviceId], () => {
- const option = catalog.options.find(o => o.code === route.query.option && (!props.serviceId || o.service_id === props.serviceId))
- if (option) selection.value = option
+watch(() => [catalog.options, route.query.option, props.serviceId], (_values, previous) => {
+ const requested = previous && route.query.option === previous[1] ? selection.value?.code || route.query.option : route.query.option
+ const option = catalog.options.find(o => o.code === requested && (!props.serviceId || o.service_id === props.serviceId))
+ selection.value = option || null
 }, { immediate: true })
 
 function price(value: number | null) { return formatPrice(value, locale.value, t('catalog.free'), t('bookingChoice.pricePending')) }

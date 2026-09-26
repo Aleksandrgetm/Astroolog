@@ -1,0 +1,105 @@
+{
+  "shared": {
+    "label": "Areas of focus",
+    "insightsTitle": "What we can explore",
+    "questionsTitle": "Questions you can bring",
+    "processTitle": "How the reading works",
+    "formatsTitle": "Choose a format",
+    "formatsIntro": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions.",
+    "serviceLink": "Explore numerology readings",
+    "fullLink": "Explore the full reading",
+    "unavailable": "Booking options are currently unavailable. Send me a message so we can discuss a suitable format.",
+    "imagePotential": "Елена Захарова — exploring your question together",
+    "imagePurpose": "A notebook and a cup of coffee on a table",
+    "imageRelationships": "Hands forming a heart",
+    "imageChild": "A child enjoying a creative activity"
+  },
+  "potential": {
+    "title": "You and your potential",
+    "eyebrow": "PERSONALITY · STRENGTHS · RESOURCES",
+    "lead": "Explore what feels right for you, what you can draw on and how to make more room for your strengths.",
+    "context": "This is a space to get to know yourself with care. A numerology reading offers a starting point for discussing your character and familiar ways of acting. We relate the observations to your experience, rather than treating them as fixed definitions of who you are.",
+    "insights": {
+      "first": "Your character and how you respond in different situations.",
+      "second": "Strengths, talents and activities you would like to develop.",
+      "third": "Inner resources and conditions that help you take action.",
+      "fourth": "Familiar expectations and doubts that may make your abilities harder to recognise."
+    },
+    "questions": {
+      "first": "How can I recognise my strengths when I tend to focus on my shortcomings?",
+      "second": "What truly interests me, and what do I do out of a sense of duty?",
+      "third": "What can I draw on when choosing a new direction?"
+    },
+    "process": "We begin by clarifying your question. The reading explores personality and resources, connecting observations with examples from your life. If you choose an online session as well, we discuss your questions and possible first steps. You decide what fits your life.",
+    "seoTitle": "Personality and potential — a numerology reading",
+    "seoDescription": "Explore your character, strengths, talents and inner resources with Елена Захарова. Learn what a personality reading involves and choose a format that suits you.",
+    "imageAlt": "Елена Захарова — exploring your question together",
+    "formatNote": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions."
+  },
+  "purposeMoney": {
+    "title": "Purpose and money",
+    "eyebrow": "FULFILMENT · MONEY · DIRECTION",
+    "lead": "Look at the qualities you bring to your work and your relationship with money, without searching for a single correct path.",
+    "context": "We can explore the activities that interest you, what matters in your working life and the familiar patterns behind financial decisions. The reading is a tool for reflection, not an income forecast or financial advice.",
+    "insights": {
+      "first": "Strengths you can bring to your work and activities.",
+      "second": "Interests, values and working conditions that suit your pace.",
+      "third": "Your relationship with money and familiar ways of making financial decisions.",
+      "fourth": "Resources and possible directions for further development."
+    },
+    "questions": {
+      "first": "How do I decide which work feels right when I have many interests?",
+      "second": "Which of my qualities am I not making much use of at work?",
+      "third": "Why do I find it difficult to talk about the price of my work?"
+    },
+    "process": "We clarify whether your main question concerns fulfilment or your relationship with money. We then explore that topic and relate the observations to your circumstances. An online session offers time to discuss the findings and identify questions to explore further. Decisions about work and money remain yours.",
+    "seoTitle": "Purpose and money — work, fulfilment and resources",
+    "seoDescription": "Explore professional fulfilment, strengths at work and your relationship with money through numerology readings with Елена Захарова. No income promises.",
+    "imageAlt": "A notebook and a cup of coffee on a table",
+    "formatNote": "Choose the finances reading for questions about your relationship with money. To explore purpose alongside other areas of life, consider the full reading. An online session gives you time to discuss the findings and ask questions."
+  },
+  "relationships": {
+    "title": "Relationships",
+    "eyebrow": "NEEDS · BOUNDARIES · DIALOGUE",
+    "lead": "Hear yourself more clearly in relationships and take a closer look at how you connect with another person.",
+    "context": "The focus is on your needs, familiar reactions and expectations. We do not draw conclusions on your partner’s behalf or decide what your relationship should be. We can explore your part in communication and what matters to you to discuss openly.",
+    "insights": {
+      "first": "Your behaviour and reactions in close relationships.",
+      "second": "Personal needs, boundaries and ways of expressing them.",
+      "third": "Recurring patterns and situations where tension arises.",
+      "fourth": "Opportunities for clearer dialogue and greater awareness of differences."
+    },
+    "questions": {
+      "first": "Why do I encounter similar situations in different relationships?",
+      "second": "How can I recognise my needs and talk about them without blame?",
+      "third": "Where is my boundary between supporting someone and losing sight of myself?"
+    },
+    "process": "We start with a specific question or situation. The reading explores relationships, with observations considered alongside your experience. In an online session, we can discuss what resonates and which questions you might bring into a conversation. Numerology is used for self-reflection, not as therapy or an assessment of your partner.",
+    "seoTitle": "Relationship reading — needs, boundaries and communication",
+    "seoDescription": "Take a thoughtful look at your needs, boundaries and recurring relationship patterns. Explore a numerology relationship reading with Елена Захарова.",
+    "imageAlt": "Hands forming a heart",
+    "formatNote": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions."
+  },
+  "childMatrix": {
+    "title": "Your child’s matrix",
+    "eyebrow": "INDIVIDUALITY · INTERESTS · SUPPORT",
+    "lead": "Look at your child’s individual qualities with curiosity and care, without labels or a predetermined future.",
+    "context": "This is an additional tool for reflecting on a child’s character, interests and strengths. Observations should always be considered alongside their actual behaviour, age and needs. The reading does not replace professional medical or psychological support.",
+    "insights": {
+      "first": "Individual qualities and strengths worth noticing.",
+      "second": "Your child’s interests and ways to support their curiosity.",
+      "third": "Conditions that make it easier for your child to express themselves.",
+      "fourth": "Parental expectations and opportunities for more attentive interaction."
+    },
+    "questions": {
+      "first": "How can I support my child’s interests without making every choice for them?",
+      "second": "What can I notice in their reactions before jumping to conclusions?",
+      "third": "How can I account for our differences in everyday communication?"
+    },
+    "process": "A parent brings a question about communication or supporting their child. We explore that topic without diagnoses or predictions about the future. If you choose an online session, we discuss observations and questions for everyday interaction. Your child remains free to change, experiment and find their own path.",
+    "seoTitle": "Child’s matrix — individuality and parental support",
+    "seoDescription": "Explore your child’s interests, strengths and relationships with parents through a child’s matrix reading. An additional perspective without diagnoses or predictions.",
+    "imageAlt": "A child enjoying a creative activity",
+    "formatNote": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions."
+  }
+}

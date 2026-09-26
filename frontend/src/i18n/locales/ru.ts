@@ -1,6 +1,9 @@
+import directions from '../directions/ru.json' with { type: 'json' }
 import reviews from '../reviews/ru.json' with { type: 'json' }
 export default {
+  navigation: { services: "Услуги", home: "Главная", breadcrumbs: "Навигационная цепочка" },
   reviews,
+  directions,
   "siteLayout": {
     "skipToContent": "Перейти к содержимому",
     "home": "Главная",
@@ -236,7 +239,7 @@ export default {
     "toRequestACorrectionOrDeletionOf": "Для запроса уточнения или удаления данных используйте",
     "contactForm": "форму обратной связи",
     "pleaseDontIncludeSensitiveInformationThatIsnt": ". Не указывайте в сообщении чувствительные сведения, которые не нужны для ответа.",
-    "languagePreference": "Сайт сохраняет только выбранный язык в localStorage под ключом astroolog_locale. Это позволяет сохранить настройку после обновления страницы.",
+    "languagePreference": "Выбранный язык определяется адресом страницы. Настройка языка не сохраняется в localStorage.",
     "technicalInformation": "Технические данные",
     "theCurrentSiteHasNoAdvertisingTrackers": "В текущей версии сайта нет рекламных трекеров и аналитических cookie. При работе сервера могут создаваться технические журналы запросов.",
     "detailsToConfirmBeforePublication": "Сведения перед публикацией",
@@ -273,6 +276,8 @@ export default {
     "en": "Английский"
   },
   "feedback": {
+    "stale_price": "Цена выбранного формата обновилась. Проверьте новую стоимость и подтвердите отправку.",
+    "idempotency_conflict": "Этот запрос уже использован с другими данными. Обновите страницу перед новой отправкой.",
     "thankYou": "Спасибо!",
     "bookingSaved": "Ваша заявка успешно отправлена.",
     "questionSaved": "Ваш вопрос успешно отправлен.",
@@ -294,12 +299,12 @@ export default {
   "seo": {
     reviewsTitle: reviews.seoTitle.replace('|', "{'|'}"),
     reviewsDescription: reviews.seoDescription,
-    "homeTitle": "Понять себя. Найти свой путь",
+    "homeTitle": "Нумеролог и женский коуч",
     "homeDescription": "Индивидуальные консультации — Елена Захарова. Нумерология и коучинг: ваши сильные стороны, отношения и шаги к изменениям.",
     "aboutTitle": "Обо мне",
     "aboutDescription": "Елена Захарова: бережный подход к самопознанию и личным изменениям.",
     "servicesTitle": "Консультации",
-    "servicesDescription": "Выберите формат индивидуальной работы: знакомство, матрица возможностей, точка роста или сопровождение.",
+    "servicesDescription": "Бесплатное знакомство, отдельные и полные нумерологические разборы, коучинговые встречи и сопровождение.",
     "serviceTitle": "Индивидуальная консультация",
     "serviceDescription": "Формат встречи, ваш запрос и запись на консультацию.",
     "contactsTitle": "Контакты и запись",

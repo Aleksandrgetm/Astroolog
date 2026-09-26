@@ -1,0 +1,105 @@
+{
+  "shared": {
+    "label": "Darba virzieni",
+    "insightsTitle": "Ko varam izpētīt",
+    "questionsTitle": "Ar kādiem jautājumiem vari vērsties",
+    "processTitle": "Kā notiek analīze",
+    "formatsTitle": "Izvēlies darba formātu",
+    "formatsIntro": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus.",
+    "serviceLink": "Vairāk par numeroloģiskajām analīzēm",
+    "fullLink": "Apskatīt pilno analīzi",
+    "unavailable": "Pieraksta iespējas pašlaik nav pieejamas. Uzraksti man — kopā pārrunāsim piemērotu formātu.",
+    "imagePotential": "Елена Захарова — individuāla saruna par tavu jautājumu",
+    "imagePurpose": "Piezīmju grāmata un kafijas tasīte uz galda",
+    "imageRelationships": "Rokas sirds formā",
+    "imageChild": "Bērns radošas nodarbes laikā"
+  },
+  "potential": {
+    "title": "Tu un tavs potenciāls",
+    "eyebrow": "PERSONĪBA · STIPRĀS PUSES · RESURSI",
+    "lead": "Iepazīsti to, kas tev ir tuvs, uz ko vari paļauties un kā ikdienā vairāk izmantot savas stiprās puses.",
+    "context": "Šī ir iespēja veltīt laiku sevis iepazīšanai. Numeroloģiskā analīze ir sākumpunkts sarunai par raksturu un ierastajiem rīcības veidiem. Novērojumus salīdzinām ar tavu pieredzi, nevis uztveram kā gatavu personības definīciju.",
+    "insights": {
+      "first": "Rakstura iezīmes un tas, kā tu rīkojies dažādās situācijās.",
+      "second": "Stiprās puses, talanti un nodarbes, kurās tev ir interese attīstīties.",
+      "third": "Iekšējie resursi un apstākļi, kuros tev ir vieglāk rīkoties.",
+      "fourth": "Ierastās gaidas un šaubas, kas var traucēt pamanīt savas iespējas."
+    },
+    "questions": {
+      "first": "Kā pamanīt savas stiprās puses, ja parasti redzu galvenokārt trūkumus?",
+      "second": "Kas mani patiesi interesē, un ko daru pienākuma sajūtas dēļ?",
+      "third": "Uz ko varu paļauties, izvēloties jaunu virzienu?"
+    },
+    "process": "Vispirms precizējam tavu jautājumu. Analīzē pievēršamies personībai un resursiem, sasaistot novērojumus ar piemēriem no tavas dzīves. Ja izvēlies arī tiešsaistes sarunu, pārrunājam jautājumus un iespējamos pirmos soļus. Tu pati izlem, kas tev ir piemērots.",
+    "seoTitle": "Personība un potenciāls — numeroloģiskā analīze",
+    "seoDescription": "Iepazīsti savu raksturu, stiprās puses, talantus un iekšējos resursus kopā ar Елена Захарова. Uzzini, kā notiek personības analīze, un izvēlies piemērotu formātu.",
+    "imageAlt": "Елена Захарова — individuāla saruna par tavu jautājumu",
+    "formatNote": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus."
+  },
+  "purposeMoney": {
+    "title": "Aicinājums un nauda",
+    "eyebrow": "PAŠREALIZĀCIJA · NAUDA · VIRZIENS",
+    "lead": "Ieraugi savas īpašības darbā un attiecības ar naudu, nemeklējot vienu vienīgo pareizo ceļu.",
+    "context": "Varam pārrunāt, kādas nodarbes tevi uzrunā, kas tev ir svarīgs profesionālajā dzīvē un kādi ieradumi ietekmē finanšu lēmumus. Analīze ir instruments pārdomām, nevis ienākumu prognoze vai finanšu konsultācija.",
+    "insights": {
+      "first": "Stiprās puses, kuras vari izmantot savā darbībā.",
+      "second": "Intereses, vērtības un darba apstākļi, kas atbilst tavam ritmam.",
+      "third": "Attieksme pret naudu un ierastie finanšu lēmumu pieņemšanas veidi.",
+      "fourth": "Resursi un iespējamie turpmākās attīstības virzieni."
+    },
+    "questions": {
+      "first": "Kā saprast, kura nodarbe man ir tuvāka, ja interešu ir daudz?",
+      "second": "Kuras savas īpašības darbā vēl izmantoju pārāk maz?",
+      "third": "Kāpēc man ir grūti runāt par sava darba cenu?"
+    },
+    "process": "Noskaidrojam, kas šobrīd ir svarīgāks: pašrealizācija vai attiecības ar naudu. Tad aplūkojam izvēlēto tēmu un salīdzinām novērojumus ar tavu situāciju. Tiešsaistes sarunā varam pārrunāt rezultātus un jautājumus, kurus vēlies izpētīt tālāk. Lēmumus par darbu un naudu tu pieņem pati.",
+    "seoTitle": "Aicinājums un nauda — pašrealizācija un resursi",
+    "seoDescription": "Profesionālā pašrealizācija, stiprās puses darbā un attieksme pret naudu. Numeroloģisko analīžu virziens kopā ar Елена Захарова, bez ienākumu solījumiem.",
+    "imageAlt": "Piezīmju grāmata un kafijas tasīte uz galda",
+    "formatNote": "Jautājumiem par attieksmi pret naudu piemērota ir finanšu analīze. Ja vēlies aplūkot savu aicinājumu saistībā ar citām dzīves jomām, vari izvēlēties pilno analīzi. Tiešsaistes sarunā varēsi pārrunāt rezultātus un uzdot jautājumus."
+  },
+  "relationships": {
+    "title": "Attiecības",
+    "eyebrow": "VAJADZĪBAS · ROBEŽAS · SARUNA",
+    "lead": "Labāk sadzirdi sevi attiecībās un uzmanīgāk paskaties uz to, kā veidojas saikne ar otru cilvēku.",
+    "context": "Analīzes centrā ir tavas vajadzības, ierastās reakcijas un gaidas. Neizdarām secinājumus partnera vietā un nenosakām, kādām jābūt jūsu attiecībām. Varam izpētīt tavu lomu saziņā un to, par ko ir svarīgi runāt atklāti.",
+    "insights": {
+      "first": "Tava uzvedība un reakcijas tuvās attiecībās.",
+      "second": "Personīgās vajadzības, robežas un veidi, kā tās paust.",
+      "third": "Atkārtoti attiecību modeļi un situācijas, kurās rodas spriedze.",
+      "fourth": "Iespējas veidot skaidrāku sarunu un uzmanīgāk izturēties pret atšķirībām."
+    },
+    "questions": {
+      "first": "Kāpēc dažādās attiecībās nonāku līdzīgās situācijās?",
+      "second": "Kā pamanīt savas vajadzības un runāt par tām bez pārmetumiem?",
+      "third": "Kur man ir robeža starp atbalstu otram un atteikšanos no sevis?"
+    },
+    "process": "Sākam ar konkrētu jautājumu vai situāciju. Analīzē aplūkojam attiecību tēmu un novērojumus salīdzinām ar tavu pieredzi. Tiešsaistes sarunā varam pārrunāt, kas tevi uzrunā un par ko būtu vērts runāt ar partneri. Numeroloģiju izmantojam pašrefleksijai, nevis terapijai vai partnera novērtēšanai.",
+    "seoTitle": "Attiecību analīze — vajadzības, robežas un saziņa",
+    "seoDescription": "Uzmanīgs skats uz personīgajām robežām, vajadzībām un atkārtotiem attiecību modeļiem. Iepazīsti attiecību analīzi kopā ar Елена Захарова.",
+    "imageAlt": "Rokas sirds formā",
+    "formatNote": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus."
+  },
+  "childMatrix": {
+    "title": "Bērna matrica",
+    "eyebrow": "INDIVIDUALITĀTE · INTERESES · ATBALSTS",
+    "lead": "Paskaties uz bērna īpatnībām ar zinātkāri un vērību — bez birkām un iepriekš noteiktas nākotnes.",
+    "context": "Tas ir papildu instruments pārdomām par bērna raksturu, interesēm un stiprajām pusēm. Novērojumus vienmēr svarīgi saistīt ar bērna reālo uzvedību, vecumu un vajadzībām. Analīze neaizstāj profesionālu medicīnisku vai psiholoģisku palīdzību.",
+    "insights": {
+      "first": "Individuālās īpatnības un stiprās puses, kuras vērts pamanīt.",
+      "second": "Bērna intereses un veidi, kā atbalstīt viņa zinātkāri.",
+      "third": "Saziņas apstākļi, kuros bērnam ir vieglāk izpausties.",
+      "fourth": "Vecāku gaidas un iespējas veidot vērīgāku savstarpējo mijiedarbību."
+    },
+    "questions": {
+      "first": "Kā atbalstīt bērna intereses, neizvēloties visu viņa vietā?",
+      "second": "Ko varu pamanīt viņa reakcijās, nesteidzoties tās novērtēt?",
+      "third": "Kā ņemt vērā mūsu atšķirības ikdienas saziņā?"
+    },
+    "process": "Vecāks formulē jautājumu par savstarpējo saziņu vai bērna atbalstīšanu. Analīzē aplūkojam šo tēmu, neizvirzot diagnozes un neprognozējot nākotni. Ja izvēlēta arī tiešsaistes saruna, pārrunājam novērojumus un jautājumus ikdienas saziņai. Bērnam paliek tiesības mainīties, izmēģināt un izvēlēties savu ceļu.",
+    "seoTitle": "Bērna matrica — individualitāte un atbalsts",
+    "seoDescription": "Iepazīsti bērna matricu: intereses, stiprās puses un mijiedarbība ar vecākiem. Papildu skatījums uz bērna individualitāti bez diagnozēm un nākotnes prognozēm.",
+    "imageAlt": "Bērns radošas nodarbes laikā",
+    "formatNote": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus."
+  }
+}

@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vue-tsc -b && vite build && node scripts/prerender.mjs",
     "preview": "vite preview",
     "test:i18n": "node --experimental-strip-types --test tests/i18n.test.ts",
-    "test:whatsapp": "node --experimental-strip-types --test tests/whatsapp.test.ts"
+    "test:whatsapp": "node --experimental-strip-types --test tests/whatsapp.test.ts",
+    "build:client": "vue-tsc -b && vite build --mode development",
+    "test:pre-admin": "node --experimental-strip-types --test tests/pre-admin.test.ts",
+    "test:seo": "node scripts/test-seo.mjs",
+    "test:directions": "node scripts/test-directions.mjs"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
@@ -23,6 +27,7 @@
     "@types/node": "^24.13.3",
     "@vitejs/plugin-vue": "^6.0.8",
     "@vue/tsconfig": "^0.9.1",
+    "playwright": "^1.63.0",
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
     "vite-plugin-vuetify": "^2.1.3",

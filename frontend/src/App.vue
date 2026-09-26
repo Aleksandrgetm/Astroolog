@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { basePath } from './i18n/urls'
 import SiteLayout from './layouts/SiteLayout.vue'
 
 function disableLeavingPage(element: Element) {
@@ -15,7 +16,7 @@ function disableLeavingPage(element: Element) {
         <RouterView v-slot="{ Component, route }">
           <Transition name="page" appear @before-leave="disableLeavingPage">
             <!-- A single element also supports pages with multiple root nodes. -->
-            <div v-if="Component" :key="route.path" class="page-content">
+            <div v-if="Component" :key="basePath(route.path)" class="page-content">
               <component :is="Component" />
             </div>
           </Transition>

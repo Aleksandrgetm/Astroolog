@@ -9,7 +9,10 @@ const { t } = useI18n()
     <div class="home-hero__visual">
       <img
         class="home-hero__photo"
-        src="/images/Hero-new.png"
+        src="/images/optimized/expert-1672.webp"
+        srcset="/images/optimized/expert-640.webp 640w, /images/optimized/expert-960.webp 960w, /images/optimized/expert-1280.webp 1280w, /images/optimized/expert-1672.webp 1672w"
+        sizes="(max-width: 600px) 720px, 100vw"
+        decoding="async"
         :alt="t('home.heroExpertPortrait', { name: t('siteLayout.expertName') })"
         width="1672"
         height="941"

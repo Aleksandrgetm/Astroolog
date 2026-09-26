@@ -1,0 +1,58 @@
+[
+  {
+    "id": "potential",
+    "slug": "potential",
+    "contentKey": "potential",
+    "image": "/images/optimized/expert-1672.webp",
+    "width": 1672,
+    "height": 941,
+    "imagePosition": "76% center",
+    "relatedServiceSlug": "personal-matrix",
+    "relatedBookingOptionCodes": [
+      "personality",
+      "reading-call-40"
+    ]
+  },
+  {
+    "id": "purpose-money",
+    "slug": "purpose-money",
+    "contentKey": "purposeMoney",
+    "image": "/images/journal-placeholder.webp",
+    "width": 1400,
+    "height": 933,
+    "imagePosition": "center",
+    "relatedServiceSlug": "personal-matrix",
+    "relatedBookingOptionCodes": [
+      "finances",
+      "reading-call-40"
+    ]
+  },
+  {
+    "id": "relationships",
+    "slug": "relationships",
+    "contentKey": "relationships",
+    "image": "/images/relationships-placeholder.webp",
+    "width": 900,
+    "height": 600,
+    "imagePosition": "center",
+    "relatedServiceSlug": "personal-matrix",
+    "relatedBookingOptionCodes": [
+      "relationships",
+      "reading-call-40"
+    ]
+  },
+  {
+    "id": "child-matrix",
+    "slug": "child-matrix",
+    "contentKey": "childMatrix",
+    "image": "/images/child-placeholder.webp",
+    "width": 900,
+    "height": 600,
+    "imagePosition": "left center",
+    "relatedServiceSlug": "personal-matrix",
+    "relatedBookingOptionCodes": [
+      "child-matrix",
+      "reading-call-40"
+    ]
+  }
+]
