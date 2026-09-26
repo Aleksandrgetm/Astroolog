@@ -1,6 +1,7 @@
 import directions from '../directions/ru.json' with { type: 'json' }
 import reviews from '../reviews/ru.json' with { type: 'json' }
 export default {
+  bookingFlow: {"additional": "Дополнительно", "bonusDescription": "Обсудим результаты разбора, вопросы и первые практические ориентиры.", "bonusOnlyWithReading": "Бонус можно добавить при записи к выбранному основному разбору.", "base": "Основной разбор", "bonus": "Бонус", "noBonus": "Не выбран", "total": "Итого", "sendWhatsApp": "Отправить в WhatsApp", "sendTelegram": "Отправить в Telegram", "saving": "Сохраняем заявку…", "thanks": "Спасибо за заявку!", "saved": "Ваша заявка сохранена и будет обработана в течение 1–2 дней.", "retryHint": "Если мессенджер не открылся, попробуйте ещё раз.", "retryWhatsApp": "Открыть WhatsApp ещё раз", "retryTelegram": "Открыть Telegram ещё раз", "unavailable": "Не удалось открыть мессенджер. Ваша заявка сохранена.", "beforeSend": "Заявка сохранится на сайте. В мессенджере нажмите «Отправить», чтобы отправить подготовленное сообщение."},
   navigation: { services: "Услуги", home: "Главная", breadcrumbs: "Навигационная цепочка" },
   reviews,
   directions,
@@ -52,8 +53,6 @@ export default {
     "pleaseCheckYourPhoneNumber": "Проверьте номер телефона",
     "tryAgain": "Повторить",
     "sessionFormat": "Формат встречи",
-    "preferredDateOptional": "Желаемая дата (необязательно)",
-    "thisIsAPreferredDateOnlyWell": "Дата предварительная. Время встречи согласуем лично.",
     "whatWouldYouLikeToTalkAbout": "О чём хочется поговорить? (необязательно)",
     "yourQuestion": "Ваш вопрос",
     "yourConsentIsRequiredToSendThis": "Для отправки необходимо согласие",
@@ -64,7 +63,6 @@ export default {
     "yourDetailsAreUsedOnlyToRespond": "Ваши данные используются только для ответа на обращение.",
     "pleaseFillInThisField": "Заполните поле",
     "enterAValidEmailAddress": "Введите корректный email",
-    "chooseTodayOrAFutureDate": "Выберите дату не раньше сегодняшней"
   },
   "serviceCards": {
     "loadingSessionOptions": "Загружаем форматы встреч…",
@@ -230,7 +228,7 @@ export default {
     "takingCareOfYourData": "БЕРЕЖНО К ВАШИМ ДАННЫМ",
     "draftDocumentBeforeTheSiteGoesPublic": "Проект документа. Перед публичным запуском владелец должен подтвердить сведения об операторе, основания обработки, сроки хранения и порядок обращений.",
     "whatInformationTheSiteReceives": "Какие данные получает сайт",
-    "theFormsCollectYourNameAndEmail": "При заполнении форм вы передаёте имя, email, а по желанию — телефон. В заявке также сохраняются выбранная услуга, желаемая дата и ваше сообщение.",
+    "theFormsCollectYourNameAndEmail": "Формы собирают имя, email и, по желанию, телефон. Заявка на запись также содержит выбранную услугу, основной вариант, дополнительный бонус при его выборе, стоимость и комментарий.",
     "whyThisInformationIsNeeded": "Для чего нужны данные",
     "toAnswerYourQuestionDiscussTheFormat": "Чтобы ответить на вопрос, обсудить формат и согласовать консультацию. Отправка формы не подписывает вас на рассылку и не подтверждает оплату.",
     "howEnquiriesAreHandled": "Как обрабатывается обращение",
@@ -290,7 +288,7 @@ export default {
     "network": "Не удалось связаться с сервером. Попробуйте ещё раз.",
     "server_error": "Не удалось обработать запрос. Попробуйте позже.",
     "validation_error": "Проверьте имя, email, длину полей и согласие на обработку данных.",
-    "invalid_request": "Проверьте поля: услуга должна быть доступна, дата — не в прошлом, сообщение — заполнено.",
+    "invalid_request": "Выберите доступную услугу и заполните обязательные поля.",
     "not_found": "Услуга не найдена"
   },
   "accessibility": {

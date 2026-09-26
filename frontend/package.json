@@ -12,7 +12,8 @@
     "build:client": "vue-tsc -b && vite build --mode development",
     "test:pre-admin": "node --experimental-strip-types --test tests/pre-admin.test.ts",
     "test:seo": "node scripts/test-seo.mjs",
-    "test:directions": "node scripts/test-directions.mjs"
+    "test:directions": "node scripts/test-directions.mjs",
+    "test:booking": "node scripts/test-booking-flow.mjs"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",

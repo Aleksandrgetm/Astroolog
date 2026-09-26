@@ -3,6 +3,7 @@ import reviews from '../reviews/en.json' with { type: 'json' }
 import type { MessageSchema } from '../schema'
 
 export default {
+  bookingFlow: {"additional": "Optional extra", "bonusDescription": "We will discuss your reading, questions and practical first steps.", "bonusOnlyWithReading": "You can add this bonus to your chosen reading when booking.", "base": "Main reading", "bonus": "Bonus", "noBonus": "Not selected", "total": "Total", "sendWhatsApp": "Send via WhatsApp", "sendTelegram": "Send via Telegram", "saving": "Saving your request…", "thanks": "Thank you for your request!", "saved": "Your request has been saved and will be processed within 1–2 days.", "retryHint": "If the messenger did not open, please try again.", "retryWhatsApp": "Open WhatsApp again", "retryTelegram": "Open Telegram again", "unavailable": "The messenger could not be opened. Your request has been saved.", "beforeSend": "Your request will be saved on the website. Press Send in the messenger to send your prepared message."},
   navigation: { services: "Services", home: "Home", breadcrumbs: "Breadcrumbs" },
   reviews,
   directions,
@@ -54,8 +55,6 @@ export default {
     "pleaseCheckYourPhoneNumber": "Please check your phone number",
     "tryAgain": "Try again",
     "sessionFormat": "Session format",
-    "preferredDateOptional": "Preferred date (optional)",
-    "thisIsAPreferredDateOnlyWell": "This is a preferred date only. We’ll agree on the time together.",
     "whatWouldYouLikeToTalkAbout": "What would you like to talk about? (optional)",
     "yourQuestion": "Your question",
     "yourConsentIsRequiredToSendThis": "Your consent is required to send this form",
@@ -66,7 +65,6 @@ export default {
     "yourDetailsAreUsedOnlyToRespond": "Your details are used only to respond to your enquiry.",
     "pleaseFillInThisField": "Please fill in this field",
     "enterAValidEmailAddress": "Enter a valid email address",
-    "chooseTodayOrAFutureDate": "Choose today or a future date"
   },
   "serviceCards": {
     "loadingSessionOptions": "Loading session options…",
@@ -232,7 +230,7 @@ export default {
     "takingCareOfYourData": "TAKING CARE OF YOUR DATA",
     "draftDocumentBeforeTheSiteGoesPublic": "Draft document. Before the site goes public, the owner must confirm the data controller’s details, the basis for processing, retention periods and how requests are handled.",
     "whatInformationTheSiteReceives": "What information the site receives",
-    "theFormsCollectYourNameAndEmail": "The forms collect your name and email, and optionally your phone number. A booking request also includes the chosen session, your preferred date and your message.",
+    "theFormsCollectYourNameAndEmail": "The forms collect your name, email and optional phone number. A booking also includes your chosen service, main option, optional bonus, price and comment.",
     "whyThisInformationIsNeeded": "Why this information is needed",
     "toAnswerYourQuestionDiscussTheFormat": "To answer your question, discuss the format and arrange a session. Sending a form does not subscribe you to a mailing list or confirm any payment.",
     "howEnquiriesAreHandled": "How enquiries are handled",
@@ -292,7 +290,7 @@ export default {
     "network": "Unable to reach the server. Please try again.",
     "server_error": "We couldn’t process your request. Please try again later.",
     "validation_error": "Please check your name, email, field lengths and data processing consent.",
-    "invalid_request": "Please select an available session and a date that isn’t in the past, and complete the required fields.",
+    "invalid_request": "Please choose an available service and complete the required fields.",
     "not_found": "Session not found"
   },
   "accessibility": {

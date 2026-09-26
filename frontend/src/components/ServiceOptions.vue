@@ -9,13 +9,13 @@ const optionImages: Record<string, string> = {
  finances: '/images/journal-placeholder.webp',
  relationships: '/images/relationships-placeholder.webp',
  'child-matrix': '/images/child-placeholder.webp',
- 'reading-call-40': '/images/optimized/expert-1672.webp',
 }
 const props = withDefaults(defineProps<{ serviceId: number; headingLevel?: 'h2' | 'h3'; optionCodes?: readonly string[] }>(), { headingLevel: 'h3' })
 const { t, locale } = useI18n()
 const catalog = useCatalog()
 onMounted(() => catalog.load())
-const options = computed(() => catalog.options.filter(o => o.service_id === props.serviceId && (!props.optionCodes || props.optionCodes.includes(o.code))))
+const options = computed(() => catalog.options.filter(o => !o.is_addon && o.service_id === props.serviceId && (!props.optionCodes || props.optionCodes.includes(o.code))))
+const bonuses = computed(() => catalog.options.filter(o => o.is_addon && o.service_id === props.serviceId))
 </script>
 <template>
  <div class="service-options">
@@ -23,6 +23,10 @@ const options = computed(() => catalog.options.filter(o => o.service_id === prop
    <img v-if="optionImages[option.code]" :src="optionImages[option.code]" alt="" width="240" height="160" loading="lazy" decoding="async" class="option-image" />
    <div class="option-description"><component :is="headingLevel" class="option-title">{{ getLocalizedField(option, 'title') }}</component><p>{{ getLocalizedField(option, 'format') }}</p></div>
    <div class="service-option-action"><span class="option-price">{{ formatPrice(option.price, locale, t('catalog.free'), t('bookingChoice.pricePending')) }}</span><LocaleLink :to="{path:'/contacts',query:{booking:'1',option:option.code}}" class="text-link">{{ t('siteLayout.bookASession') }} <ArrowIcon /></LocaleLink></div>
+  </div>
+  <div v-for="bonus in bonuses" :key="bonus.code" class="service-option-row bonus-note">
+   <div><component :is="headingLevel" class="option-title">{{ getLocalizedField(bonus, 'title') }}</component><p>{{ t('bookingFlow.bonusDescription') }}</p><p>{{ t('bookingFlow.bonusOnlyWithReading') }}</p></div>
+   <span class="option-price">+{{ formatPrice(bonus.price, locale, t('catalog.free'), t('bookingChoice.pricePending')) }}</span>
   </div>
  </div>
 </template>

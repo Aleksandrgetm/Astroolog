@@ -55,6 +55,7 @@ type CatalogRevision struct {
 	ID string `gorm:"primaryKey"`
 }
 type BookingOption struct {
+	IsAddon   bool      `json:"is_addon" gorm:"not null;default:false"`
 	ServiceID uint      `json:"service_id" gorm:"not null;index"`
 	Service   Service   `json:"-" gorm:"constraint:OnDelete:RESTRICT"`
 	CreatedAt time.Time `json:"created_at"`
@@ -75,6 +76,12 @@ type BookingOption struct {
 }
 
 type Booking struct {
+	SubmissionKey *string `json:"-" gorm:"uniqueIndex"`
+	BonusCode     *string `json:"bonus_code"`
+	BonusTitle    *string `json:"bonus_title"`
+	BonusPrice    *int64  `json:"bonus_price" gorm:"check:bonus_price >= 0"`
+	TotalPrice    *int64  `json:"total_price" gorm:"check:total_price >= 0"`
+
 	ServiceTitle *string `json:"service_title"`
 	OptionTitle  *string `json:"option_title"`
 	OptionFormat *string `json:"option_format"`

@@ -3,6 +3,7 @@ import reviews from '../reviews/lv.json' with { type: 'json' }
 import type { MessageSchema } from '../schema'
 
 export default {
+  bookingFlow: {"additional": "Papildus", "bonusDescription": "Pārrunāsim analīzes rezultātus, jautājumus un pirmos praktiskos soļus.", "bonusOnlyWithReading": "Papildinājumu var pievienot izvēlētajai pamata analīzei, piesakoties.", "base": "Pamata analīze", "bonus": "Papildinājums", "noBonus": "Nav izvēlēts", "total": "Kopā", "sendWhatsApp": "Nosūtīt WhatsApp", "sendTelegram": "Nosūtīt Telegram", "saving": "Saglabājam pieteikumu…", "thanks": "Paldies par pieteikumu!", "saved": "Jūsu pieteikums ir saglabāts un tiks apstrādāts 1–2 dienu laikā.", "retryHint": "Ja ziņapmaiņas lietotne neatvērās, mēģiniet vēlreiz.", "retryWhatsApp": "Atvērt WhatsApp vēlreiz", "retryTelegram": "Atvērt Telegram vēlreiz", "unavailable": "Neizdevās atvērt ziņapmaiņas lietotni. Jūsu pieteikums ir saglabāts.", "beforeSend": "Pieteikums tiks saglabāts vietnē. Ziņapmaiņas lietotnē nospiediet “Sūtīt”, lai nosūtītu sagatavoto ziņu."},
   navigation: { services: "Pakalpojumi", home: "Sākums", breadcrumbs: "Navigācijas ceļš" },
   reviews,
   directions,
@@ -54,8 +55,6 @@ export default {
     "pleaseCheckYourPhoneNumber": "Lūdzu, pārbaudi tālruņa numuru",
     "tryAgain": "Mēģināt vēlreiz",
     "sessionFormat": "Konsultācijas veids",
-    "preferredDateOptional": "Vēlamais datums (nav obligāti)",
-    "thisIsAPreferredDateOnlyWell": "Datums ir provizorisks. Par sarunas laiku vienosimies personīgi.",
     "whatWouldYouLikeToTalkAbout": "Par ko vēlies parunāt? (nav obligāti)",
     "yourQuestion": "Tavs jautājums",
     "yourConsentIsRequiredToSendThis": "Lai nosūtītu veidlapu, nepieciešama tava piekrišana",
@@ -66,7 +65,6 @@ export default {
     "yourDetailsAreUsedOnlyToRespond": "Tavi dati tiek izmantoti tikai, lai atbildētu uz tavu ziņu.",
     "pleaseFillInThisField": "Lūdzu, aizpildi šo lauku",
     "enterAValidEmailAddress": "Ievadi derīgu e-pasta adresi",
-    "chooseTodayOrAFutureDate": "Izvēlies šodienu vai vēlāku datumu"
   },
   "serviceCards": {
     "loadingSessionOptions": "Ielādē konsultāciju veidus…",
@@ -232,7 +230,7 @@ export default {
     "takingCareOfYourData": "AR RŪPĒM PAR TAVIEM DATIEM",
     "draftDocumentBeforeTheSiteGoesPublic": "Dokumenta projekts. Pirms vietnes publiskošanas īpašniekam jāapstiprina pārziņa dati, apstrādes pamatojums, glabāšanas termiņi un pieprasījumu izskatīšanas kārtība.",
     "whatInformationTheSiteReceives": "Kādus datus vietne saņem",
-    "theFormsCollectYourNameAndEmail": "Aizpildot veidlapu, tu norādi vārdu, e-pastu un, ja vēlies, tālruni. Pieteikumā tiek saglabāta arī izvēlētā konsultācija, vēlamais datums un ziņa.",
+    "theFormsCollectYourNameAndEmail": "Veidlapās tiek apkopots vārds, e-pasts un pēc izvēles tālrunis. Pieteikums ietver arī izvēlēto pakalpojumu, pamata variantu, izvēlēto papildinājumu, cenu un komentāru.",
     "whyThisInformationIsNeeded": "Kāpēc šie dati ir vajadzīgi",
     "toAnswerYourQuestionDiscussTheFormat": "Lai atbildētu uz jautājumu, pārrunātu formātu un vienotos par konsultāciju. Veidlapas nosūtīšana nepieraksta tevi jaunumiem un neapstiprina maksājumu.",
     "howEnquiriesAreHandled": "Kā tiek apstrādāts pieprasījums",
@@ -292,7 +290,7 @@ export default {
     "network": "Neizdevās sazināties ar serveri. Lūdzu, mēģini vēlreiz.",
     "server_error": "Neizdevās apstrādāt pieprasījumu. Lūdzu, mēģini vēlāk.",
     "validation_error": "Pārbaudi vārdu, e-pastu, lauku garumu un piekrišanu datu apstrādei.",
-    "invalid_request": "Izvēlies pieejamu konsultāciju un datumu, kas nav pagātnē, un aizpildi obligātos laukus.",
+    "invalid_request": "Izvēlieties pieejamu pakalpojumu un aizpildiet obligātos laukus.",
     "not_found": "Konsultācija nav atrasta"
   },
   "accessibility": {

@@ -7,7 +7,7 @@ import (
 )
 
 // Versioned, transactional schema migration. Advisory lock serializes concurrent starts.
-func Migrate(db *gorm.DB) error {
+func migratePreAdmin(db *gorm.DB) error {
 	return db.Transaction(func(tx *gorm.DB) error {
 		if err := tx.Exec("SELECT pg_advisory_xact_lock(20260915)").Error; err != nil {
 			return err

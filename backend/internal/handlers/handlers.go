@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"astroolog/backend/internal/models"
 	"astroolog/backend/internal/repositories"
 	"astroolog/backend/internal/services"
 	"errors"
@@ -56,11 +57,20 @@ func (h Handler) Submit(c *gin.Context, booking bool) {
 	}
 
 	if errors.Is(err, services.ErrInvalid) {
-		c.JSON(400, gin.H{"error": "Проверьте поля: услуга должна быть доступна, дата — не в прошлом, сообщение — заполнено.", "code": "invalid_request"})
+		c.JSON(400, gin.H{"error": "Проверьте поля: услуга и выбранный бонус должны быть доступны.", "code": "invalid_request"})
 		return
 	}
 	if err != nil {
 		fail(c, err)
+		return
+	}
+	if booking {
+		var saved models.Booking
+		if err := h.Repo.DB.Where("submission_key = ?", c.GetHeader("Idempotency-Key")).First(&saved).Error; err != nil {
+			fail(c, err)
+			return
+		}
+		c.JSON(http.StatusCreated, gin.H{"code": "request_created", "booking": saved})
 		return
 	}
 	c.JSON(http.StatusCreated, gin.H{"message": "Спасибо! Заявка сохранена. Мы свяжемся с вами по указанному email.", "code": "request_created"})

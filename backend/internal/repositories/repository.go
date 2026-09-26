@@ -10,12 +10,12 @@ type Repository struct{ DB *gorm.DB }
 
 func (r Repository) Services() ([]models.Service, error) {
 	v := []models.Service{}
-	err := r.DB.Model(&models.Service{}).Select("services.*, (SELECT MIN(o.price) FROM booking_options o WHERE o.service_id=services.id AND o.is_active=true) AS price").Where("services.is_active = ?", true).Order("sort_order, id").Find(&v).Error
+	err := r.DB.Model(&models.Service{}).Select("services.*, (SELECT MIN(o.price) FROM booking_options o WHERE o.service_id=services.id AND o.is_active=true AND o.is_addon=false) AS price").Where("services.is_active = ?", true).Order("sort_order, id").Find(&v).Error
 	return v, err
 }
 func (r Repository) Service(slug string) (models.Service, error) {
 	var v models.Service
-	err := r.DB.Model(&models.Service{}).Select("services.*, (SELECT MIN(o.price) FROM booking_options o WHERE o.service_id=services.id AND o.is_active=true) AS price").Where("slug = ? AND is_active = ?", slug, true).First(&v).Error
+	err := r.DB.Model(&models.Service{}).Select("services.*, (SELECT MIN(o.price) FROM booking_options o WHERE o.service_id=services.id AND o.is_active=true AND o.is_addon=false) AS price").Where("slug = ? AND is_active = ?", slug, true).First(&v).Error
 	return v, err
 }
 func (r Repository) ActiveService(id uint) error {

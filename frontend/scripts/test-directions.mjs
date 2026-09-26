@@ -18,12 +18,12 @@ try {
    for(const direction of directions) {
     const response=await page.goto(`${origin}${prefix}/directions/${direction.slug}`,{waitUntil:'networkidle'})
     assert.equal(response.status(),200)
-    await page.locator('.direction-formats .service-option-row').first().waitFor()
+    await page.locator('.direction-formats .service-option-row:not(.bonus-note)').first().waitFor()
     assert.equal(await page.locator('h1').count(),1)
     assert.equal(await page.locator('html').getAttribute('lang'),lang)
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,`${width} ${lang} ${direction.slug}`)
     assert.equal((await page.locator('body').innerText()).includes('siteLayout.services'),false)
-    assert.deepEqual(await page.locator('.direction-formats .service-option-row').evaluateAll(rows=>rows.map(r=>r.id)),direction.relatedBookingOptionCodes)
+    assert.deepEqual(await page.locator('.direction-formats .service-option-row:not(.bonus-note)').evaluateAll(rows=>rows.map(r=>r.id)),direction.relatedBookingOptionCodes)
     for(const code of direction.relatedBookingOptionCodes){assert.ok(apiOptions.find(o=>o.code===code));assert.equal(await page.locator(`#${code} a`).getAttribute('href'),`${prefix}/contacts?booking=1&option=${code}`)}
     assert.equal(await page.locator('.final-cta .button').getAttribute('href'),`${prefix}/contacts?booking=1&option=${direction.relatedBookingOptionCodes[0]}`)
     assert.equal(await page.locator('.breadcrumbs a').nth(1).getAttribute('href'),`${prefix}/#directions`)
@@ -42,7 +42,7 @@ try {
    await page.goto(origin+prefix+'/',{waitUntil:'networkidle'})
    await page.locator(`.direction-card[href="${prefix}/directions/${direction.slug}"]`).click()
    await page.waitForURL(`**${prefix}/directions/${direction.slug}`)
-   await page.locator('.direction-formats .service-option-row').first().waitFor()
+   await page.locator('.direction-formats .service-option-row:not(.bonus-note)').first().waitFor()
    for(const code of direction.relatedBookingOptionCodes) {
     await page.locator(`#${code} a`).click();await page.waitForURL(`**${prefix}/contacts?booking=1&option=${code}`)
     await page.locator(`input[value="${code}"]`).waitFor();assert.equal(await page.locator(`input[value="${code}"]`).isChecked(),true)
@@ -64,7 +64,7 @@ try {
  // Missing/inactive variants and network errors leave useful editorial content and safe CTAs.
  await page.route('**/api/booking-options',route=>route.fulfill({json:[]}))
  await page.reload({waitUntil:'networkidle'})
- assert.equal(await page.locator('.direction-formats .service-option-row').count(),0)
+ assert.equal(await page.locator('.direction-formats .service-option-row:not(.bonus-note)').count(),0)
  assert.equal(await page.locator('.final-cta .button').getAttribute('href'),'/contacts?booking=1')
  await page.unroute('**/api/booking-options')
  await page.route('**/api/services',route=>route.fulfill({status:503,json:{code:'server_error'}}))
@@ -74,5 +74,5 @@ try {
  const manifest=JSON.parse(await readFile('dist/routes.json','utf8'))
  assert.equal(manifest.paths.filter(p=>p.includes('/directions/')).length,12)
  assert.deepEqual(errors,[])
- console.log(`${checked} direction layouts, 12 card flows, 24 booking links, API prices/fallbacks, breadcrumbs and Back passed.`)
+ console.log(`${checked} direction layouts, 12 card flows, 12 booking links, API prices/fallbacks, breadcrumbs and Back passed.`)
 } finally {await browser.close()}

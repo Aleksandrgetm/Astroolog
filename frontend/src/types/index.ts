@@ -21,10 +21,16 @@ export interface RequestInput {
   message: string
   consent: boolean
   service_id?: number
-  preferred_date?: string
+  bonus_code?: string
+  bonus_price?: number | null
+}
+
+export interface BookingSnapshot {
+ service_title: string; option_title: string; option_format: string; price: number | null; bonus_code: string | null; bonus_title: string | null; bonus_price: number | null; total_price: number | null
 }
 
 export interface BookingOption extends LocalizedFields<'title' | 'format'> {
+ is_addon: boolean
  code: string
  service_id: number
  price: number | null

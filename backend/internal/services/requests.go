@@ -64,6 +64,10 @@ func localized(ru, lv, en, legacy, language string) string {
 }
 
 type Input struct {
+	SubmissionKey string `json:"-"`
+	BonusCode     string `json:"bonus_code"`
+	BonusPrice    *int64 `json:"bonus_price"`
+
 	Language    string `json:"language" binding:"omitempty,oneof=ru lv en"`
 	ServiceType string `json:"service_type"`
 	Price       *int64 `json:"price"`
@@ -114,19 +118,45 @@ func (s Requests) Book(i Input) error {
 		return err
 	}
 	// Reject stale/tampered quotes; never silently store a price the visitor did not see.
-	if option.ServiceID != i.ServiceID {
+	if option.ServiceID != i.ServiceID || option.IsAddon {
 		return ErrInvalid
 	}
 	if (option.Price == nil) != (i.Price == nil) || (option.Price != nil && *option.Price != *i.Price) {
 		return ErrStalePrice
 	}
-	var date *time.Time
-	if i.PreferredDate != "" {
-		d, err := time.ParseInLocation("2006-01-02", i.PreferredDate, riga)
-		if err != nil || !ValidDate(i.PreferredDate, time.Now()) {
+	var bonusCode, bonusTitle *string
+	bonusFormat := ""
+	var bonusPrice *int64
+	total := option.Price
+	if i.BonusCode != "" {
+		bonus, err := s.Repo.BookingOption(i.BonusCode)
+		if errors.Is(err, gorm.ErrRecordNotFound) {
 			return ErrInvalid
 		}
-		date = &d
+		if err != nil {
+			return err
+		}
+		if !bonus.IsAddon || bonus.ServiceID != i.ServiceID {
+			return ErrInvalid
+		}
+		if bonus.Price == nil || i.BonusPrice == nil || *bonus.Price != *i.BonusPrice {
+			return ErrStalePrice
+		}
+		if option.Price == nil {
+			return ErrInvalid
+		}
+		sum := *option.Price + *bonus.Price
+		if sum < *option.Price {
+			return ErrInvalid
+		}
+		total = &sum
+		bonusCode = &bonus.Code
+		title := localized(bonus.TitleRU, bonus.TitleLV, bonus.TitleEN, bonus.Title, i.Language)
+		bonusTitle = &title
+		bonusPrice = bonus.Price
+		bonusFormat = localized(bonus.FormatRU, bonus.FormatLV, bonus.FormatEN, bonus.Format, i.Language)
+	} else if i.BonusPrice != nil {
+		return ErrInvalid
 	}
 	service, err := s.Repo.ServiceByID(i.ServiceID)
 	if err != nil {
@@ -135,7 +165,10 @@ func (s Requests) Book(i Input) error {
 	title := localized(service.TitleRU, service.TitleLV, service.TitleEN, service.Title, i.Language)
 	optionTitle := localized(option.TitleRU, option.TitleLV, option.TitleEN, option.Title, i.Language)
 	format := localized(option.FormatRU, option.FormatLV, option.FormatEN, option.Format, i.Language)
-	return s.Repo.Booking(&models.Booking{ServiceTitle: &title, OptionTitle: &optionTitle, OptionFormat: &format, Language: &i.Language, ServiceType: option.Code, Price: option.Price, Currency: "EUR", Name: i.Name, Email: i.Email, Phone: i.Phone, ServiceID: i.ServiceID, PreferredDate: date, Message: i.Message, Status: "new"})
+	if bonusFormat != "" {
+		format += " / " + bonusFormat
+	}
+	return s.Repo.Booking(&models.Booking{ServiceTitle: &title, OptionTitle: &optionTitle, OptionFormat: &format, Language: &i.Language, ServiceType: option.Code, Price: option.Price, Currency: "EUR", Name: i.Name, Email: i.Email, Phone: i.Phone, ServiceID: i.ServiceID, PreferredDate: nil, SubmissionKey: optionalKey(i.SubmissionKey), BonusCode: bonusCode, BonusTitle: bonusTitle, BonusPrice: bonusPrice, TotalPrice: total, Message: i.Message, Status: "new"})
 }
 func (s Requests) Contact(i Input) error {
 	if err := i.Normalize(); err != nil {
@@ -181,9 +214,17 @@ func (s Requests) Submit(i Input, booking bool, key string) error {
 			return nil
 		}
 		worker := Requests{Repo: repositories.Repository{DB: tx}}
+		i.SubmissionKey = key
 		if booking {
 			return worker.Book(i)
 		}
 		return worker.Contact(i)
 	})
+}
+
+func optionalKey(key string) *string {
+	if key == "" {
+		return nil
+	}
+	return &key
 }

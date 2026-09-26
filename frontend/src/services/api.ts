@@ -1,9 +1,9 @@
 import axios from 'axios'
-import type { Service, RequestInput, BookingOption } from '../types'
+import type { Service, RequestInput, BookingOption, BookingSnapshot } from '../types'
 export const api = axios.create({ baseURL: import.meta.env.VITE_API_URL || '/api', timeout: 15000, headers: { 'Content-Type': 'application/json' } })
 export const getServices = () => api.get<Service[]>('/services').then(r => r.data)
 export const getService = (slug: string) => api.get<Service>(`/services/${encodeURIComponent(slug)}`).then(r => r.data)
-export const submitRequest = (kind: 'bookings' | 'contact', data: RequestInput, idempotencyKey: string) => api.post<{ message: string; code: string }>(`/${kind}`, data, {headers:{'Idempotency-Key':idempotencyKey}}).then(r => r.data)
+export const submitRequest = (kind: 'bookings' | 'contact', data: RequestInput, idempotencyKey: string) => api.post<{ message: string; code: string; booking?: BookingSnapshot }>(`/${kind}`, data, {headers:{'Idempotency-Key':idempotencyKey}}).then(r => r.data)
 const knownCodes = ['server_error', 'validation_error', 'invalid_request', 'not_found', 'stale_price', 'idempotency_conflict'] as const
 export type ErrorKey = `feedback.${typeof knownCodes[number] | 'network'}`
 // Persist message keys, not translated strings, so visible errors follow locale changes.

@@ -9,8 +9,7 @@
     "imagePosition": "76% center",
     "relatedServiceSlug": "personal-matrix",
     "relatedBookingOptionCodes": [
-      "personality",
-      "reading-call-40"
+      "personality"
     ]
   },
   {
@@ -23,8 +22,7 @@
     "imagePosition": "center",
     "relatedServiceSlug": "personal-matrix",
     "relatedBookingOptionCodes": [
-      "finances",
-      "reading-call-40"
+      "finances"
     ]
   },
   {
@@ -37,8 +35,7 @@
     "imagePosition": "center",
     "relatedServiceSlug": "personal-matrix",
     "relatedBookingOptionCodes": [
-      "relationships",
-      "reading-call-40"
+      "relationships"
     ]
   },
   {
@@ -51,8 +48,7 @@
     "imagePosition": "left center",
     "relatedServiceSlug": "personal-matrix",
     "relatedBookingOptionCodes": [
-      "child-matrix",
-      "reading-call-40"
+      "child-matrix"
     ]
   }
 ]

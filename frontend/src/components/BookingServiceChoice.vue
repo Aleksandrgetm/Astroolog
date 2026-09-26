@@ -14,8 +14,8 @@ const catalog = useCatalog()
 const groups = computed(() => catalog.services.filter(s => !props.serviceId || s.id === props.serviceId))
 onMounted(() => catalog.load())
 watch(() => [catalog.options, route.query.option, props.serviceId], (_values, previous) => {
- const requested = previous && route.query.option === previous[1] ? selection.value?.code || route.query.option : route.query.option
- const option = catalog.options.find(o => o.code === requested && (!props.serviceId || o.service_id === props.serviceId))
+ const requested = !previous || route.query.option === previous[1] ? selection.value?.code || route.query.option : route.query.option
+ const option = catalog.options.find(o => !o.is_addon && o.code === requested && (!props.serviceId || o.service_id === props.serviceId))
  selection.value = option || null
 }, { immediate: true })
 
@@ -27,10 +27,10 @@ function price(value: number | null) { return formatPrice(value, locale.value, t
     <p v-if="catalog.loading" role="status">{{ t('serviceCards.loadingSessionOptions') }}</p>
     <div v-else-if="catalog.error" role="alert"><p>{{ t('feedback.network') }}</p><button type="button" @click="catalog.load">{{ t('requestForm.tryAgain') }}</button></div>
     <div v-for="group in groups" :key="group.id" class="booking-group"><p class="booking-group-title">{{ getLocalizedField(group, 'title') }}</p>
-    <label v-for="option in catalog.options.filter(o => o.service_id === group.id)" :key="option.code" class="booking-option" :class="{ selected: selection?.code === option.code }">
+    <label v-for="option in catalog.options.filter(o => !o.is_addon && o.service_id === group.id)" :key="option.code" class="booking-option" :class="{ selected: selection?.code === option.code }">
       <input type="radio" name="booking-service-type" :value="option.code" :checked="selection?.code === option.code" @change="selection = option" />
       <span><span class="booking-option-title">{{ getLocalizedField(option, 'title') }}</span><span class="booking-option-price">{{ t('bookingChoice.cost') }}: {{ price(option.price) }}</span></span>
-    </label></div>
+    </label><slot name="additional" :service-id="group.id" /></div>
     <p v-if="invalid" id="booking-choice-error" class="form-error" role="alert">{{ t('bookingChoice.choose') }}</p>
   </fieldset>
 </template>

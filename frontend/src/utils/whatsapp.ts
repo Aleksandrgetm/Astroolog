@@ -5,18 +5,24 @@ export interface WhatsAppRequest {
   email: string
   phone?: string | null
   message?: string | null
-  preferred_date?: string | null
+  option_title?: string
+  bonus_title?: string | null
+  bonus_price_label?: string
+  total_label?: string
 }
 
 /** Owner-facing labels are Russian; submitted values are preserved in their original language. */
 export function buildWhatsAppMessage(kind: 'contact' | 'bookings', data: WhatsAppRequest, serviceTitle = ''): string {
-  const lines = [kind === 'bookings' ? 'Новая запись с сайта' : 'Новый вопрос с сайта', '', `Имя: ${data.name}`, `Email: ${data.email}`]
+  const lines = [kind === 'bookings' ? 'Новая заявка с сайта Astroolog' : 'Новый вопрос с сайта', '', `Имя: ${data.name}`, `Email: ${data.email}`]
   if (data.phone?.trim()) lines.push(`Телефон: ${data.phone}`)
   if (kind === 'bookings') {
     if (data.service_title?.trim()) lines.push(`Услуга: ${data.service_title}`)
-    if (data.price_label?.trim()) lines.push(`Стоимость: ${data.price_label}`)
+    if (data.option_title?.trim()) lines.push(`Разбор: ${data.option_title}`)
+    if (data.price_label?.trim()) lines.push(`Стоимость разбора: ${data.price_label}`)
+    lines.push(`Бонус: ${data.bonus_title?.trim() || 'Не выбран'}`)
+    if (data.bonus_price_label?.trim()) lines.push(`Стоимость бонуса: ${data.bonus_price_label}`)
+    if (data.total_label?.trim()) lines.push(`Итого: ${data.total_label}`)
     if (serviceTitle.trim()) lines.push(`Формат встречи: ${serviceTitle}`)
-    if (data.preferred_date?.trim()) lines.push(`Желаемая дата: ${data.preferred_date}`)
   }
   if (data.message?.trim()) lines.push('', kind === 'bookings' ? 'О чём хочется поговорить:' : 'Вопрос:', data.message)
   return lines.join('\n')
