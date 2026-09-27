@@ -32,7 +32,7 @@ export function setPageMeta(title: string, description: string, appendExpert = t
   if(import.meta.env.VITE_GOOGLE_SITE_VERIFICATION) meta('google-site-verification',import.meta.env.VITE_GOOGLE_SITE_VERIFICATION)
   if(base==='/' || base==='/about') {
     const el=document.createElement('script');el.type='application/ld+json';el.dataset.pageSeo=''
-    el.textContent=JSON.stringify({'@context':'https://schema.org','@type':'Person',name:i18n.global.t('siteLayout.expertName'),url:origin()+languagePath('/about',locale),image,jobTitle:{ru:'Нумеролог и женский коуч',lv:'Numeroloģe un sieviešu koučs',en:'Numerologist and women’s coach'}[locale]}).replace(/</g, '\\u003c');document.head.append(el)
+    el.textContent=JSON.stringify({'@context':'https://schema.org','@type':'Person',name:i18n.global.t('siteLayout.expertName'),url:origin()+languagePath('/about',locale),image,jobTitle:i18n.global.t('siteLayout.numerologistCoach')}).replace(/</g, '\\u003c');document.head.append(el)
   }
 }
 export function setBreadcrumbs(items: {name:string;path:string}[]) {

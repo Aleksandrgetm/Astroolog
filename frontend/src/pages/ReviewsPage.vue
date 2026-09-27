@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import FinalCta from '../components/FinalCta.vue'
-import { reviews } from '../data/reviews'
-const { t } = useI18n()
+import { computed } from 'vue'
+import { content, translated, ctaDestination } from '../stores/content'
+import { reviews as fallbackReviews } from '../data/reviews'
+const { t, locale } = useI18n()
+const reviews=computed(()=>content.ready?content.reviews.map(r=>({id:`review-${r.id}`,text:translated(r,'full_text',locale.value),author:r.author_display_name})):fallbackReviews.map(r=>({id:r.id,text:t(r.textKey),author:''})))
 </script>
 
 <template>
@@ -15,8 +18,8 @@ const { t } = useI18n()
     <div class="full-reviews">
       <article v-for="review in reviews" :key="review.id" :id="review.id" class="full-review">
         <span class="quote-mark" aria-hidden="true">“</span>
-        <blockquote><p v-for="(paragraph, index) in t(review.textKey).split('\n\n')" :key="index">{{ paragraph }}</p></blockquote>
-        <div class="full-review-author"><span class="anonymous-avatar" aria-hidden="true"></span>{{ t('home.testimonials.author') }}</div>
+        <blockquote><p v-for="(paragraph, index) in review.text.split('\n\n')" :key="index">{{ paragraph }}</p></blockquote>
+        <div class="full-review-author"><span class="anonymous-avatar" aria-hidden="true"></span>{{ review.author || t('home.testimonials.author') }}</div>
       </article>
     </div>
   </section>
@@ -24,7 +27,7 @@ const { t } = useI18n()
     <template #eyebrow>{{ t('reviews.ctaEyebrow') }}</template>
     <template #heading>{{ t('reviews.ctaTitle') }}</template>
     <template #description>{{ t('reviews.ctaText') }}</template>
-    <template #actions><LocaleLink class="button button-light" to="/contacts?booking=1">{{ t('siteLayout.bookASession') }} <span><ArrowIcon /></span></LocaleLink></template>
+    <template #actions><LocaleLink class="button button-light" :to="ctaDestination('reviews.intro')">{{ t('siteLayout.bookASession') }} <span><ArrowIcon /></span></LocaleLink></template>
   </FinalCta>
 </template>
 

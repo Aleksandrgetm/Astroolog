@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { content, ctaDestination, imageSrcset } from '../stores/content'
 import { computed, onMounted, watchEffect } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
@@ -14,9 +15,9 @@ const { t, locale } = useI18n()
 const catalog = useCatalog()
 const direction = computed(() => findDirection(String(route.params.slug)))
 const key = computed(() => `directions.${direction.value?.contentKey}`)
-const service = computed(() => catalog.services.find(item => item.slug === direction.value?.relatedServiceSlug))
+const service = computed(() => catalog.services.find(item => item.id === content.directions.find(d=>d.slug===direction.value?.slug)?.service_id || item.slug === direction.value?.relatedServiceSlug))
 const availableOptions = computed(() => catalog.options.filter(option => option.service_id === service.value?.id && direction.value?.relatedBookingOptionCodes.includes(option.code)))
-const bookingTarget = computed(() => ({ path: '/contacts', query: { booking: '1', ...(availableOptions.value[0] ? { option: availableOptions.value[0].code } : {}) } }))
+const bookingTarget = computed(() => ctaDestination('global.cta')!=='/contacts?booking=1'?ctaDestination('global.cta'): ({ path: '/contacts', query: { booking: '1', ...(availableOptions.value[0] ? { option: availableOptions.value[0].code } : {}) } }))
 onMounted(() => catalog.load())
 watchEffect(() => {
   if (route.meta.seo !== 'direction') return
@@ -53,7 +54,7 @@ watchEffect(() => {
           <p class="lead">{{ t(`${key}.lead`) }}</p>
           <p class="direction-context">{{ t(`${key}.context`) }}</p>
         </div>
-        <img :src="direction.image" :alt="t(`${key}.imageAlt`)" :width="direction.width" :height="direction.height" :style="{ objectPosition: direction.imagePosition }" loading="eager" decoding="async" fetchpriority="high" />
+        <img :src="direction.image" :srcset="imageSrcset(direction.image)" sizes="(max-width:600px) 100vw, 50vw" :alt="t(`${key}.imageAlt`)" :width="direction.width" :height="direction.height" :style="{ objectPosition: direction.imagePosition }" loading="eager" decoding="async" fetchpriority="high" />
       </div>
       <section class="direction-formats" aria-labelledby="formats-title">
         <h2 id="formats-title">{{ t('directions.shared.formatsTitle') }}</h2>
@@ -65,7 +66,7 @@ watchEffect(() => {
         <ServiceOptions v-else-if="service && availableOptions.length" :service-id="service.id" :option-codes="direction.relatedBookingOptionCodes" />
         <p v-else>{{ t('directions.shared.unavailable') }}</p>
         <div class="direction-related-links">
-          <LocaleLink :to="`/services/${direction.relatedServiceSlug}`" class="text-link">{{ t('directions.shared.serviceLink') }} <ArrowIcon /></LocaleLink>
+          <LocaleLink :to="`/services/${service?.slug || direction.relatedServiceSlug}`" class="text-link">{{ t('directions.shared.serviceLink') }} <ArrowIcon /></LocaleLink>
           <LocaleLink v-if="direction.id === 'purpose-money'" to="/services/full-matrix" class="text-link">{{ t('directions.shared.fullLink') }} <ArrowIcon /></LocaleLink>
         </div>
       </section>
@@ -73,7 +74,7 @@ watchEffect(() => {
     <FinalCta>
       <template #actions>
         <LocaleLink :to="bookingTarget" class="button button-light">{{ t('finalCta.iWantToUnderstandMyself') }} <ArrowIcon /></LocaleLink>
-        <LocaleLink to="/contacts" class="quiet-link">{{ t('finalCta.askAQuestionFirst') }} <ArrowIcon /></LocaleLink>
+        <LocaleLink :to="ctaDestination('global.cta','secondary_destination','question')" class="quiet-link">{{ t('finalCta.askAQuestionFirst') }} <ArrowIcon /></LocaleLink>
       </template>
     </FinalCta>
   </template>

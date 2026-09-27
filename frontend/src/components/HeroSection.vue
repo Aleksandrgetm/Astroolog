@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { sectionImage, ctaDestination, imageSrcset } from '../stores/content'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -9,8 +10,8 @@ const { t } = useI18n()
     <div class="home-hero__visual">
       <img
         class="home-hero__photo"
-        src="/images/optimized/expert-1672.webp"
-        srcset="/images/optimized/expert-640.webp 640w, /images/optimized/expert-960.webp 960w, /images/optimized/expert-1280.webp 1280w, /images/optimized/expert-1672.webp 1672w"
+        :src="sectionImage('home.hero','/images/optimized/expert-1672.webp')"
+        :srcset="sectionImage('home.hero','/images/optimized/expert-1672.webp') === '/images/optimized/expert-1672.webp' ? '/images/optimized/expert-640.webp 640w, /images/optimized/expert-960.webp 960w, /images/optimized/expert-1280.webp 1280w, /images/optimized/expert-1672.webp 1672w' : imageSrcset(sectionImage('home.hero',''))"
         sizes="(max-width: 600px) 720px, 100vw"
         decoding="async"
         :alt="t('home.heroExpertPortrait', { name: t('siteLayout.expertName') })"
@@ -33,11 +34,11 @@ const { t } = useI18n()
           <em>{{ t('home.findYourOwnPath') }}</em>
         </h1>
         <p class="home-hero__description">{{ t('home.iHelpWomenListenToThemselvesSee') }}</p>
-        <LocaleLink class="button home-hero__cta" to="/contacts?booking=1">
+        <LocaleLink class="button home-hero__cta" :to="ctaDestination('home.hero')">
           {{ t('finalCta.iWantToUnderstandMyself') }}
           <span aria-hidden="true"><ArrowIcon /></span>
         </LocaleLink>
-        <LocaleLink class="home-hero__question" to="/contacts">
+        <LocaleLink class="home-hero__question" :to="ctaDestination('home.hero','secondary_destination','question')">
           <v-icon icon="mdi-message-outline" size="18" aria-hidden="true" />
           {{ t('home.askAQuestionFirst') }}
           <span aria-hidden="true"><ArrowIcon /></span>

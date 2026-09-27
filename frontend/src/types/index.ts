@@ -1,5 +1,5 @@
 import type { LocalizedFields } from '../i18n/localized'
-export interface Service extends LocalizedFields<'title' | 'short_description' | 'description' | 'duration'> {
+export interface Service extends LocalizedFields<'title' | 'short_description' | 'description' | 'duration' | 'alt'> {
   id: number
   title: string
   slug: string
@@ -30,6 +30,7 @@ export interface BookingSnapshot {
 }
 
 export interface BookingOption extends LocalizedFields<'title' | 'format'> {
+ image?: string
  is_addon: boolean
  code: string
  service_id: number

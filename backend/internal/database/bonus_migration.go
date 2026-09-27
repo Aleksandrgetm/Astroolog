@@ -8,7 +8,7 @@ import (
 )
 
 // The previous revision remains unchanged; this additive revision also runs on existing databases.
-func Migrate(db *gorm.DB) error {
+func migrateBonus(db *gorm.DB) error {
 	if err := migratePreAdmin(db); err != nil {
 		return err
 	}

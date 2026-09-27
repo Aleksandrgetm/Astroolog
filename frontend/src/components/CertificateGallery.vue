@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { certificates, certificateImage } from '../data/certificates'
+import { computed } from 'vue'
+import { content, translated, imageSrcset } from '../stores/content'
+import { certificates as fallbackCertificates, certificateImage } from '../data/certificates'
 const { t, locale } = useI18n()
+const certificates=computed(()=>content.ready?content.certificates.map(c=>({id:c.id,year:c.year,title:translated(c,'title',locale.value),subtitle:translated(c,'description',locale.value),alt:translated(c,'alt',locale.value),image:(c.assets.find((a:any)=>a.language===locale.value)||c.assets.find((a:any)=>a.language==='en')||c.assets.find((a:any)=>a.language==='ru'))?.media?.storage_path})):fallbackCertificates.map(c=>({id:c.id,year:c.year,title:t('certificates.'+c.title),subtitle:t('certificates.'+c.subtitle),alt:t('certificates.'+c.alt),image:certificateImage(c,locale.value)})))
 </script>
 
 <template>
@@ -12,9 +15,9 @@ const { t, locale } = useI18n()
     <div class="certificate-grid">
       <article v-for="item in certificates" :key="item.id" class="certificate-card">
         <div class="certificate-preview">
-          <img :src="certificateImage(item, locale)" :srcset="`${certificateImage(item, locale)?.replace('-full.webp','-800.webp')} 800w, ${certificateImage(item, locale)?.replace('-full.webp','-1200.webp')} 1200w, ${certificateImage(item, locale)} 1600w`" sizes="(max-width: 600px) calc(100vw - 64px), (max-width: 1440px) 45vw, 600px" :alt="t(`certificates.${item.alt}`, { name: t('siteLayout.expertName') })" width="1600" height="1131" loading="lazy" decoding="async" />
+          <img v-if="item.image" :src="item.image" :srcset="imageSrcset(item.image)" sizes="(max-width:600px) 100vw, 50vw" :alt="item.alt.replace('{name}',t('siteLayout.expertName'))" width="1600" height="1131" loading="lazy" decoding="async" />
         </div>
-        <div class="certificate-caption"><span class="eyebrow">{{ item.year }}</span><h3>{{ t(`certificates.${item.title}`) }}</h3><p>{{ t(`certificates.${item.subtitle}`) }}</p></div>
+        <div class="certificate-caption"><span class="eyebrow">{{ item.year }}</span><h3>{{ item.title }}</h3><p>{{ item.subtitle }}</p></div>
       </article>
     </div>
   </section>

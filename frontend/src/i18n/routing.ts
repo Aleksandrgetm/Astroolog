@@ -3,7 +3,9 @@ import { defaultLocale, isLocale, setLocale } from './index'
 import { basePath, languagePath, localeFromPath } from './urls'
 export function localeFromQuery(value:unknown){return isLocale(value)?value:defaultLocale}
 export function localizedRoute(router:Router,target:RouteLocationRaw):RouteLocationRaw {
- const resolved=router.resolve(target),query={...resolved.query}
+ const resolved=router.resolve(target)
+ if(resolved.path==='/admin'||resolved.path.startsWith('/admin/'))return target
+ const query={...resolved.query}
  const explicitPrefix=/^\/(lv|en)(\/|$)/.test(resolved.path)
  const locale='lang' in query?localeFromQuery(query.lang):explicitPrefix?localeFromPath(resolved.path):localeFromPath(router.currentRoute.value.path)
  delete query.lang
@@ -14,6 +16,7 @@ export function installLocaleRouting(router:Router){
  router.push=target=>push(localizedRoute(router,target))
  router.replace=target=>replace(localizedRoute(router,target))
  router.beforeEach(to=>{
+  if(to.path==='/admin'||to.path.startsWith('/admin/'))return
   const locale='lang' in to.query?localeFromQuery(to.query.lang):localeFromPath(to.path)
   const query={...to.query};delete query.lang
   const path=languagePath(basePath(to.path),locale)

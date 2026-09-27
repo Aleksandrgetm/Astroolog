@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { imageSrcset } from '../stores/content'
 import { computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useCatalog } from '../stores/catalog'
@@ -20,7 +21,7 @@ const bonuses = computed(() => catalog.options.filter(o => o.is_addon && o.servi
 <template>
  <div class="service-options">
   <div v-for="option in options" :id="option.code" :key="option.code" class="service-option-row">
-   <img v-if="optionImages[option.code]" :src="optionImages[option.code]" alt="" width="240" height="160" loading="lazy" decoding="async" class="option-image" />
+   <img v-if="option.image || optionImages[option.code]" :src="option.image || optionImages[option.code]" :srcset="imageSrcset(option.image || optionImages[option.code] || '')" sizes="(max-width:600px) 100vw, 160px" alt="" width="240" height="160" loading="lazy" decoding="async" class="option-image" />
    <div class="option-description"><component :is="headingLevel" class="option-title">{{ getLocalizedField(option, 'title') }}</component><p>{{ getLocalizedField(option, 'format') }}</p></div>
    <div class="service-option-action"><span class="option-price">{{ formatPrice(option.price, locale, t('catalog.free'), t('bookingChoice.pricePending')) }}</span><LocaleLink :to="{path:'/contacts',query:{booking:'1',option:option.code}}" class="text-link">{{ t('siteLayout.bookASession') }} <ArrowIcon /></LocaleLink></div>
   </div>

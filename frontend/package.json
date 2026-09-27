@@ -13,6 +13,8 @@
     "test:pre-admin": "node --experimental-strip-types --test tests/pre-admin.test.ts",
     "test:seo": "node scripts/test-seo.mjs",
     "test:directions": "node scripts/test-directions.mjs",
+    "test:admin:publish": "node scripts/test-admin-publish.mjs",
+    "test:admin": "node scripts/test-admin.mjs",
     "test:booking": "node scripts/test-booking-flow.mjs"
   },
   "dependencies": {

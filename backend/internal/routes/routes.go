@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"astroolog/backend/internal/admin"
 	"astroolog/backend/internal/handlers"
 	"astroolog/backend/internal/middleware"
 	"astroolog/backend/internal/repositories"
@@ -10,6 +11,7 @@ import (
 )
 
 func Register(r *gin.Engine, db *gorm.DB) {
+	admin.Register(r, db)
 	repo := repositories.Repository{DB: db}
 	h := handlers.Handler{Repo: repo, Requests: services.Requests{Repo: repo}}
 	api := r.Group("/api")

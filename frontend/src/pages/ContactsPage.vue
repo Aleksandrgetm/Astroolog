@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { content } from '../stores/content'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
@@ -17,15 +18,15 @@ function changeMode(isBooking:boolean){
     <v-icon icon="mdi-phone-outline" aria-hidden="true" />
     <div class="owner-contact-copy">
       <p class="owner-contact-label">{{ t('contacts.phoneLabel') }}</p>
-      <a class="owner-contact-value" href="tel:+37129580232">+371 29 580 232</a>
-      <a class="owner-whatsapp" href="https://wa.me/37129580232" target="_blank" rel="noopener noreferrer">{{ t('contacts.messageWhatsApp') }}</a>
+      <a class="owner-contact-value" :href="'tel:'+(content.settings.phone || '+371 29 580 232').replace(/[^+0-9]/g,'')">{{ content.settings.phone || '+371 29 580 232' }}</a>
+      <a class="owner-whatsapp" :href="'https://wa.me/'+(content.settings.whatsapp_phone || '37129580232')" target="_blank" rel="noopener noreferrer">{{ t('contacts.messageWhatsApp') }}</a>
     </div>
   </div>
   <div class="owner-contact">
     <v-icon icon="mdi-email-outline" aria-hidden="true" />
     <div class="owner-contact-copy">
       <p class="owner-contact-label">{{ t('contacts.emailLabel') }}</p>
-      <a class="owner-contact-value" href="mailto:jelenabobrovska@gmail.com">jelenabobrovska@gmail.com</a>
+      <a class="owner-contact-value" :href="'mailto:'+(content.settings.email || 'jelenabobrovska@gmail.com')">{{ content.settings.email || 'jelenabobrovska@gmail.com' }}</a>
     </div>
   </div>
 </div>

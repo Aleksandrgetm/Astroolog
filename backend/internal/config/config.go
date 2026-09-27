@@ -2,6 +2,7 @@ package config
 
 import (
 	"fmt"
+	"net/url"
 	"os"
 
 	"github.com/joho/godotenv"
@@ -23,6 +24,10 @@ func Load() (Config, error) {
 		_ = godotenv.Load()
 	}
 	if production {
+		origin, err := url.Parse(os.Getenv("APP_ORIGIN"))
+		if err != nil || origin.Scheme != "https" || origin.Host == "" || origin.Path != "" || origin.User != nil || origin.RawQuery != "" || origin.Fragment != "" {
+			return Config{}, fmt.Errorf("production APP_ORIGIN must be an HTTPS origin")
+		}
 		for _, key := range []string{"DB_HOST", "DB_PORT", "DB_USER", "DB_PASSWORD", "DB_NAME", "DB_SSLMODE"} {
 			if os.Getenv(key) == "" {
 				return Config{}, fmt.Errorf("required environment variable %s is missing", key)

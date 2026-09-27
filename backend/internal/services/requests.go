@@ -168,7 +168,8 @@ func (s Requests) Book(i Input) error {
 	if bonusFormat != "" {
 		format += " / " + bonusFormat
 	}
-	return s.Repo.Booking(&models.Booking{ServiceTitle: &title, OptionTitle: &optionTitle, OptionFormat: &format, Language: &i.Language, ServiceType: option.Code, Price: option.Price, Currency: "EUR", Name: i.Name, Email: i.Email, Phone: i.Phone, ServiceID: i.ServiceID, PreferredDate: nil, SubmissionKey: optionalKey(i.SubmissionKey), BonusCode: bonusCode, BonusTitle: bonusTitle, BonusPrice: bonusPrice, TotalPrice: total, Message: i.Message, Status: "new"})
+	now := time.Now()
+	return s.Repo.Booking(&models.Booking{ConsentAt: &now, ServiceTitle: &title, OptionTitle: &optionTitle, OptionFormat: &format, Language: &i.Language, ServiceType: option.Code, Price: option.Price, Currency: "EUR", Name: i.Name, Email: i.Email, Phone: i.Phone, ServiceID: i.ServiceID, PreferredDate: nil, SubmissionKey: optionalKey(i.SubmissionKey), BonusCode: bonusCode, BonusTitle: bonusTitle, BonusPrice: bonusPrice, TotalPrice: total, Message: i.Message, Status: "new"})
 }
 func (s Requests) Contact(i Input) error {
 	if err := i.Normalize(); err != nil {
@@ -177,7 +178,8 @@ func (s Requests) Contact(i Input) error {
 	if i.Message == "" {
 		return ErrInvalid
 	}
-	return s.Repo.Contact(&models.ContactRequest{Status: "new", Language: i.Language, Name: i.Name, Email: i.Email, Phone: i.Phone, Message: i.Message})
+	now := time.Now()
+	return s.Repo.Contact(&models.ContactRequest{ConsentAt: &now, Status: "new", Language: i.Language, Name: i.Name, Email: i.Email, Phone: i.Phone, Message: i.Message})
 }
 
 func (s Requests) Submit(i Input, booking bool, key string) error {

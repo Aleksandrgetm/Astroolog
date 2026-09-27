@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { content } from '../stores/content'
 import { useI18n } from 'vue-i18n'
 import { computed, onMounted, reactive, ref, watch, nextTick } from 'vue'
 import { useCatalog } from '../stores/catalog'
@@ -79,7 +80,7 @@ async function submit(messenger: Messenger = 'whatsapp') {
     price_label:price(saved.price),bonus_title:saved.bonus_title,bonus_price_label:saved.bonus_price==null?undefined:price(saved.bonus_price),total_label:price(saved.total_price)}:submitted
    const message=buildWhatsAppMessage(props.booking?'bookings':'contact',details,saved?.option_format||'')
    if(props.booking && !saved)throw new Error('Missing saved snapshot')
-   whatsappUrl.value=buildWhatsAppUrl(message); telegramUrl.value=buildTelegramUrl(message)
+   whatsappUrl.value=buildWhatsAppUrl(message,content.settings.whatsapp_phone || undefined); telegramUrl.value=buildTelegramUrl(message,content.settings.telegram_url || undefined)
   } catch { whatsappUrl.value='';telegramUrl.value='' }
   if(props.booking)openMessenger(popup)
   await nextTick();successHeading.value?.focus()

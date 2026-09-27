@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { basePath } from './i18n/urls'
+import { useRoute } from 'vue-router'
+import AdminLayout from './admin/AdminLayout.vue'
+const route = useRoute()
 import SiteLayout from './layouts/SiteLayout.vue'
 
 function disableLeavingPage(element: Element) {
@@ -11,7 +14,8 @@ function disableLeavingPage(element: Element) {
 
 <template>
   <v-app>
-    <SiteLayout>
+    <AdminLayout v-if="route.meta.admin"><RouterView /></AdminLayout>
+    <SiteLayout v-else>
       <div class="page-stage">
         <RouterView v-slot="{ Component, route }">
           <Transition name="page" appear @before-leave="disableLeavingPage">

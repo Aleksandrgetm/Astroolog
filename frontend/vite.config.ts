@@ -9,6 +9,7 @@ export default defineConfig(({ mode }) => {
     if (!valid) throw new Error('Production build requires VITE_SITE_URL as an absolute HTTPS origin.')
   }
   return {
+  build: {outDir:process.env.SITE_BUILD_DIR || 'dist'},
   plugins: [
     vue(),
   ],
@@ -21,6 +22,7 @@ export default defineConfig(({ mode }) => {
     ],
 
     proxy: {
+      '/media': { target:'http://localhost:8080',changeOrigin:true },
       '/api': {
         target: 'http://localhost:8080',
         changeOrigin: true,

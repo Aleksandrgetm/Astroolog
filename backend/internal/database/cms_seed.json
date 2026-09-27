@@ -1,0 +1,2433 @@
+{
+  "pages": [
+    {
+      "key": "home",
+      "slug": "/",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Нумеролог и женский коуч",
+          "meta_title": "Нумеролог и женский коуч",
+          "meta_description": "Индивидуальные консультации — Елена Захарова. Нумерология и коучинг: ваши сильные стороны, отношения и шаги к изменениям."
+        },
+        {
+          "language": "lv",
+          "title": "Numeroloģe un sieviešu koučs",
+          "meta_title": "Numeroloģe un sieviešu koučs",
+          "meta_description": "Individuālas konsultācijas — Елена Захарова. Numeroloģija un koučings: tavas stiprās puses, attiecības un soļi pārmaiņu virzienā."
+        },
+        {
+          "language": "en",
+          "title": "Numerologist and women’s coach",
+          "meta_title": "Numerologist and women’s coach",
+          "meta_description": "Individual sessions with Елена Захарова. Numerology and coaching to explore your strengths, relationships and next steps."
+        }
+      ]
+    },
+    {
+      "key": "about",
+      "slug": "/about",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Обо мне",
+          "meta_title": "Обо мне",
+          "meta_description": "Елена Захарова: бережный подход к самопознанию и личным изменениям."
+        },
+        {
+          "language": "lv",
+          "title": "Par mani",
+          "meta_title": "Par mani",
+          "meta_description": "Елена Захарова: saudzīga pieeja sevis izzināšanai un personīgām pārmaiņām."
+        },
+        {
+          "language": "en",
+          "title": "About me",
+          "meta_title": "About me",
+          "meta_description": "Елена Захарова: a supportive approach to self-discovery and personal change."
+        }
+      ]
+    },
+    {
+      "key": "services",
+      "slug": "/services",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Консультации",
+          "meta_title": "Консультации",
+          "meta_description": "Бесплатное знакомство, отдельные и полные нумерологические разборы, коучинговые встречи и сопровождение."
+        },
+        {
+          "language": "lv",
+          "title": "Konsultācijas",
+          "meta_title": "Konsultācijas",
+          "meta_description": "Bezmaksas iepazīšanās, atsevišķas un pilnas numeroloģiskās analīzes, koučinga sarunas un individuāls atbalsts."
+        },
+        {
+          "language": "en",
+          "title": "Sessions",
+          "meta_title": "Sessions",
+          "meta_description": "A free introduction, individual and complete numerology readings, coaching sessions and ongoing support."
+        }
+      ]
+    },
+    {
+      "key": "reviews",
+      "slug": "/reviews",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Отзывы {'|'} Елена Захарова — нумеролог и женский коуч",
+          "meta_title": "Отзывы {'|'} Елена Захарова — нумеролог и женский коуч",
+          "meta_description": "Отзывы клиентов о нумерологических разборах и консультациях Елены Захаровой."
+        },
+        {
+          "language": "lv",
+          "title": "Atsauksmes {'|'} Елена Захарова — numeroloģe un koučs sievietēm",
+          "meta_title": "Atsauksmes {'|'} Елена Захарова — numeroloģe un koučs sievietēm",
+          "meta_description": "Klientu atsauksmes par numeroloģiskajām analīzēm un konsultācijām pie Елена Захарова."
+        },
+        {
+          "language": "en",
+          "title": "Reviews {'|'} Елена Захарова — numerologist and coach for women",
+          "meta_title": "Reviews {'|'} Елена Захарова — numerologist and coach for women",
+          "meta_description": "Client reviews of numerology readings and consultations with Елена Захарова."
+        }
+      ]
+    },
+    {
+      "key": "contacts",
+      "slug": "/contacts",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Контакты и запись",
+          "meta_title": "Контакты и запись",
+          "meta_description": "Оставьте заявку на онлайн-консультацию или задайте вопрос."
+        },
+        {
+          "language": "lv",
+          "title": "Kontakti un pieteikšanās",
+          "meta_title": "Kontakti un pieteikšanās",
+          "meta_description": "Piesakies tiešsaistes konsultācijai vai uzdod jautājumu."
+        },
+        {
+          "language": "en",
+          "title": "Contact and booking",
+          "meta_title": "Contact and booking",
+          "meta_description": "Request an online session or ask a question."
+        }
+      ]
+    },
+    {
+      "key": "privacy",
+      "slug": "/privacy",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Конфиденциальность",
+          "meta_title": "Конфиденциальность",
+          "meta_description": "Информация об обработке данных из форм обратной связи."
+        },
+        {
+          "language": "lv",
+          "title": "Privātums",
+          "meta_title": "Privātums",
+          "meta_description": "Informācija par saziņas veidlapās iesniegto datu apstrādi."
+        },
+        {
+          "language": "en",
+          "title": "Privacy",
+          "meta_title": "Privacy",
+          "meta_description": "Information about data submitted through our contact forms."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_key": "home.hero",
+      "page": "home",
+      "section_type": "hero",
+      "label": "Первый экран",
+      "critical": true,
+      "settings": {
+        "image": "/images/optimized/expert-1672.webp",
+        "primary_destination": "booking",
+        "secondary_destination": "question"
+      },
+      "fields": [
+        {
+          "key": "home.heroExpertPortrait",
+          "label": "{name} — нумеролог и женский коуч"
+        },
+        {
+          "key": "siteLayout.expertName",
+          "label": "Елена Захарова"
+        },
+        {
+          "key": "home.numerologySupportiveCoaching",
+          "label": "НУМЕРОЛОГИЯ И БЕРЕЖНЫЙ КОУЧИНГ"
+        },
+        {
+          "key": "home.understandYourself",
+          "label": "Понять себя."
+        },
+        {
+          "key": "home.discoverYourStrength",
+          "label": "Почувствовать силу."
+        },
+        {
+          "key": "home.findYourOwnPath",
+          "label": "Найти свой путь."
+        },
+        {
+          "key": "home.iHelpWomenListenToThemselvesSee",
+          "label": "Помогаю женщинам услышать себя, увидеть свои возможности и начать"
+        },
+        {
+          "key": "finalCta.iWantToUnderstandMyself",
+          "label": "Хочу разобраться в себе"
+        },
+        {
+          "key": "home.askAQuestionFirst",
+          "label": "Сначала задать вопрос"
+        },
+        {
+          "key": "home.lessFixingYourselfMoreBeingYourself",
+          "label": "Не менять себя. А становиться собой."
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.heroExpertPortrait": "{name} — нумеролог и женский коуч",
+            "siteLayout.expertName": "Елена Захарова",
+            "home.numerologySupportiveCoaching": "НУМЕРОЛОГИЯ И БЕРЕЖНЫЙ КОУЧИНГ",
+            "home.understandYourself": "Понять себя.",
+            "home.discoverYourStrength": "Почувствовать силу.",
+            "home.findYourOwnPath": "Найти свой путь.",
+            "home.iHelpWomenListenToThemselvesSee": "Помогаю женщинам услышать себя, увидеть свои возможности и начать жить по собственному сценарию.",
+            "finalCta.iWantToUnderstandMyself": "Хочу разобраться в себе",
+            "home.askAQuestionFirst": "Сначала задать вопрос",
+            "home.lessFixingYourselfMoreBeingYourself": "Не менять себя. А становиться собой."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.heroExpertPortrait": "{name} — numeroloģe un koučs sievietēm",
+            "siteLayout.expertName": "Елена Захарова",
+            "home.numerologySupportiveCoaching": "NUMEROLOĢIJA UN SAUDZĪGS KOUČINGS",
+            "home.understandYourself": "Izproti sevi.",
+            "home.discoverYourStrength": "Atklāj savu spēku.",
+            "home.findYourOwnPath": "Atrodi savu ceļu.",
+            "home.iHelpWomenListenToThemselvesSee": "Palīdzu sievietēm sadzirdēt sevi, ieraudzīt savas iespējas un sākt veidot dzīvi pēc savas izvēles.",
+            "finalCta.iWantToUnderstandMyself": "Vēlos labāk izprast sevi",
+            "home.askAQuestionFirst": "Vispirms uzdot jautājumu",
+            "home.lessFixingYourselfMoreBeingYourself": "Nevis mainīt sevi, bet kļūt par sevi."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.heroExpertPortrait": "{name} — numerologist and coach for women",
+            "siteLayout.expertName": "Елена Захарова",
+            "home.numerologySupportiveCoaching": "NUMEROLOGY & SUPPORTIVE COACHING",
+            "home.understandYourself": "Understand yourself.",
+            "home.discoverYourStrength": "Discover your strength.",
+            "home.findYourOwnPath": "Find your own path.",
+            "home.iHelpWomenListenToThemselvesSee": "I help women listen to themselves, see their possibilities and start living life on their own terms.",
+            "finalCta.iWantToUnderstandMyself": "I want to understand myself",
+            "home.askAQuestionFirst": "Ask a question first",
+            "home.lessFixingYourselfMoreBeingYourself": "Less fixing yourself. More being yourself."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.pain",
+      "page": "home",
+      "section_type": "pain",
+      "label": "Знакомство с собой",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "home.letsGetToKnowYou",
+          "label": "ДАВАЙТЕ ПОЗНАКОМИМСЯ БЛИЖЕ"
+        },
+        {
+          "key": "home.perhapsYoureHere",
+          "label": "Возможно, ты здесь,"
+        },
+        {
+          "key": "home.because",
+          "label": "потому что…"
+        },
+        {
+          "key": "home.theresNothingWrongWithYouLetsFind",
+          "label": "С тобой всё в порядке. Давай разберёмся вместе."
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.letsGetToKnowYou": "ДАВАЙТЕ ПОЗНАКОМИМСЯ БЛИЖЕ",
+            "home.perhapsYoureHere": "Возможно, ты здесь,",
+            "home.because": "потому что…",
+            "home.theresNothingWrongWithYouLetsFind": "С тобой всё в порядке. Давай разберёмся вместе."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.letsGetToKnowYou": "IEPAZĪSIMIES TUVĀK",
+            "home.perhapsYoureHere": "Varbūt tu esi šeit,",
+            "home.because": "jo…",
+            "home.theresNothingWrongWithYouLetsFind": "Ar tevi viss ir kārtībā. Meklēsim skaidrību kopā."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.letsGetToKnowYou": "LET’S GET TO KNOW YOU",
+            "home.perhapsYoureHere": "Perhaps you’re here",
+            "home.because": "because…",
+            "home.theresNothingWrongWithYouLetsFind": "There’s nothing wrong with you. Let’s find clarity together."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.numerology",
+      "page": "home",
+      "section_type": "text_image",
+      "label": "Нумерология",
+      "critical": false,
+      "settings": {
+        "image": "/images/journal-placeholder.webp",
+        "primary_destination": "services"
+      },
+      "fields": [
+        {
+          "key": "home.aJournalForPersonalReflectionAPen",
+          "label": "Блокнот для личных размышлений, ручка и чашка кофе"
+        },
+        {
+          "key": "home.thereIsAWholeWorldWithinYou",
+          "label": "В каждом из нас — целый мир"
+        },
+        {
+          "key": "home.moreThanNumbers",
+          "label": "БОЛЬШЕ, ЧЕМ ПРОСТО ЦИФРЫ"
+        },
+        {
+          "key": "home.numerology",
+          "label": "Нумерология —"
+        },
+        {
+          "key": "home.aWayToLookWithin",
+          "label": "повод увидеть себя"
+        },
+        {
+          "key": "home.aLittleDeeper",
+          "label": "немного глубже."
+        },
+        {
+          "key": "home.yourDateOfBirthCanBeA",
+          "label": "Дата рождения может стать отправной точкой для разговора о тебе: "
+        },
+        {
+          "key": "home.wereNotLookingForAFixedDestiny",
+          "label": "Мы не ищем готовую судьбу в цифрах. Мы задаём вопросы, замечаем в"
+        },
+        {
+          "key": "home.exploreMySessions",
+          "label": "Посмотреть мои разборы"
+        },
+        {
+          "key": "home.aToolForSelfreflectionNotScientificAssessment",
+          "label": "Иногда нам не нужно становиться кем-то другим. Нам нужно лучше по"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.aJournalForPersonalReflectionAPen": "Блокнот для личных размышлений, ручка и чашка кофе",
+            "home.thereIsAWholeWorldWithinYou": "В каждом из нас — целый мир",
+            "home.moreThanNumbers": "БОЛЬШЕ, ЧЕМ ПРОСТО ЦИФРЫ",
+            "home.numerology": "Нумерология —",
+            "home.aWayToLookWithin": "повод увидеть себя",
+            "home.aLittleDeeper": "немного глубже.",
+            "home.yourDateOfBirthCanBeA": "Дата рождения может стать отправной точкой для разговора о тебе: твоих качествах, желаниях и привычных сценариях.",
+            "home.wereNotLookingForAFixedDestiny": "Мы не ищем готовую судьбу в цифрах. Мы задаём вопросы, замечаем важное и переводим это понимание в реальные решения.",
+            "home.exploreMySessions": "Посмотреть мои разборы",
+            "home.aToolForSelfreflectionNotScientificAssessment": "Иногда нам не нужно становиться кем-то другим. Нам нужно лучше понять себя — и научиться опираться на то, что уже есть внутри нас."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.aJournalForPersonalReflectionAPen": "Piezīmju grāmata pārdomām, pildspalva un kafijas tase",
+            "home.thereIsAWholeWorldWithinYou": "Katrā no mums ir vesela pasaule",
+            "home.moreThanNumbers": "VAIRĀK NEKĀ TIKAI SKAITĻI",
+            "home.numerology": "Numeroloģija —",
+            "home.aWayToLookWithin": "iespēja ieraudzīt sevi",
+            "home.aLittleDeeper": "mazliet dziļāk.",
+            "home.yourDateOfBirthCanBeA": "Dzimšanas datums var būt sākumpunkts sarunai par tevi — tavām īpašībām, vēlmēm un ierastajiem rīcības modeļiem.",
+            "home.wereNotLookingForAFixedDestiny": "Mēs nemeklējam skaitļos iepriekš noteiktu likteni. Uzdodam jautājumus, pamanām būtisko un pārvēršam izpratni reālos lēmumos.",
+            "home.exploreMySessions": "Apskatīt konsultācijas",
+            "home.aToolForSelfreflectionNotScientificAssessment": "Dažreiz mums nav jākļūst par kādu citu. Mums vienkārši vajag labāk izprast sevi — un iemācīties rast atbalstu tajā, kas mūsos jau ir."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.aJournalForPersonalReflectionAPen": "A journal for personal reflection, a pen and a cup of coffee",
+            "home.thereIsAWholeWorldWithinYou": "There is a whole world within you",
+            "home.moreThanNumbers": "MORE THAN NUMBERS",
+            "home.numerology": "Numerology —",
+            "home.aWayToLookWithin": "a way to look within,",
+            "home.aLittleDeeper": "a little deeper.",
+            "home.yourDateOfBirthCanBeA": "Your date of birth can be a starting point for a conversation about your qualities, wishes and familiar patterns.",
+            "home.wereNotLookingForAFixedDestiny": "We’re not looking for a fixed destiny in numbers. We ask questions, notice what matters and turn that understanding into real-life choices.",
+            "home.exploreMySessions": "Explore my sessions",
+            "home.aToolForSelfreflectionNotScientificAssessment": "Sometimes we don’t need to become someone else. We need to understand ourselves better — and learn to draw strength from what is already within us."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.directions",
+      "page": "home",
+      "section_type": "directions",
+      "label": "Направления",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "home.yourQuestionsAreYourOwn",
+          "label": "У КАЖДОЙ — СВОЙ ЗАПРОС"
+        },
+        {
+          "key": "home.whatWeCan",
+          "label": "С чем я"
+        },
+        {
+          "key": "home.exploreTogether",
+          "label": "работаю"
+        },
+        {
+          "key": "home.allAreasOfFocus",
+          "label": "Все направления"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.yourQuestionsAreYourOwn": "У КАЖДОЙ — СВОЙ ЗАПРОС",
+            "home.whatWeCan": "С чем я",
+            "home.exploreTogether": "работаю",
+            "home.allAreasOfFocus": "Все направления"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.yourQuestionsAreYourOwn": "KATRAI — SAVS JAUTĀJUMS",
+            "home.whatWeCan": "Ar ko es",
+            "home.exploreTogether": "strādāju",
+            "home.allAreasOfFocus": "Visi darba virzieni"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.yourQuestionsAreYourOwn": "YOUR QUESTIONS ARE YOUR OWN",
+            "home.whatWeCan": "What we can",
+            "home.exploreTogether": "explore together",
+            "home.allAreasOfFocus": "All areas of focus"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.process",
+      "page": "home",
+      "section_type": "process",
+      "label": "Как мы работаем",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "home.fromClarityToAction",
+          "label": "ОТ ЯСНОСТИ К ДЕЙСТВИЯМ"
+        },
+        {
+          "key": "home.howWe",
+          "label": "Как мы"
+        },
+        {
+          "key": "home.workTogether",
+          "label": "работаем"
+        },
+        {
+          "key": "home.calmlyOneStepAtATime",
+          "label": "Спокойно. Последовательно."
+        },
+        {
+          "key": "home.withAttentionToYou",
+          "label": "С вниманием к тебе."
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.fromClarityToAction": "ОТ ЯСНОСТИ К ДЕЙСТВИЯМ",
+            "home.howWe": "Как мы",
+            "home.workTogether": "работаем",
+            "home.calmlyOneStepAtATime": "Спокойно. Последовательно.",
+            "home.withAttentionToYou": "С вниманием к тебе."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.fromClarityToAction": "NO SKAIDRĪBAS LĪDZ RĪCĪBAI",
+            "home.howWe": "Kā mēs",
+            "home.workTogether": "strādājam",
+            "home.calmlyOneStepAtATime": "Mierīgi. Soli pa solim.",
+            "home.withAttentionToYou": "Ar uzmanību pret tevi."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.fromClarityToAction": "FROM CLARITY TO ACTION",
+            "home.howWe": "How we",
+            "home.workTogether": "work together",
+            "home.calmlyOneStepAtATime": "Calmly. One step at a time.",
+            "home.withAttentionToYou": "With attention to you."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.services",
+      "page": "home",
+      "section_type": "services",
+      "label": "Услуги",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "home.spaceForYourNextChapter",
+          "label": "ПРОСТРАНСТВО ДЛЯ ТВОИХ ИЗМЕНЕНИЙ"
+        },
+        {
+          "key": "home.whereTo",
+          "label": "С чего"
+        },
+        {
+          "key": "home.begin",
+          "label": "начать?"
+        },
+        {
+          "key": "home.chooseAFormatThatFeelsRight",
+          "label": "Выбери формат, который откликается."
+        },
+        {
+          "key": "home.notSureWellDecideTogether",
+          "label": "А если сомневаешься — решим вместе."
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.spaceForYourNextChapter": "ПРОСТРАНСТВО ДЛЯ ТВОИХ ИЗМЕНЕНИЙ",
+            "home.whereTo": "С чего",
+            "home.begin": "начать?",
+            "home.chooseAFormatThatFeelsRight": "Выбери формат, который откликается.",
+            "home.notSureWellDecideTogether": "А если сомневаешься — решим вместе."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.spaceForYourNextChapter": "TELPA TAVĀM PĀRMAIŅĀM",
+            "home.whereTo": "Ar ko",
+            "home.begin": "sākt?",
+            "home.chooseAFormatThatFeelsRight": "Izvēlies sev piemērotu formātu.",
+            "home.notSureWellDecideTogether": "Ja šaubies — izlemsim kopā."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.spaceForYourNextChapter": "SPACE FOR YOUR NEXT CHAPTER",
+            "home.whereTo": "Where to",
+            "home.begin": "begin?",
+            "home.chooseAFormatThatFeelsRight": "Choose a format that feels right.",
+            "home.notSureWellDecideTogether": "Not sure? We’ll decide together."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.about-preview",
+      "page": "home",
+      "section_type": "about-preview",
+      "label": "Обо мне — кратко",
+      "critical": false,
+      "settings": {
+        "image": "/images/optimized/expert-1672.webp",
+        "primary_destination": "about"
+      },
+      "fields": [
+        {
+          "key": "home.letsMeet",
+          "label": "ДАВАЙТЕ ЗНАКОМИТЬСЯ"
+        },
+        {
+          "key": "home.im",
+          "label": "Я — Елена."
+        },
+        {
+          "key": "home.andIBelieveIn",
+          "label": "И я верю в"
+        },
+        {
+          "key": "home.yourStrength",
+          "label": "твою силу."
+        },
+        {
+          "key": "home.iBringNumerologyAndCoachingQuestionsTogether",
+          "label": "В своей работе я соединяю нумерологию и коучинговые вопросы, чтоб"
+        },
+        {
+          "key": "home.iCareAboutCreatingASpaceWhere",
+          "label": "Для меня важно пространство, в котором тебя слышат. Где не нужно "
+        },
+        {
+          "key": "home.aLittleMoreAboutMe",
+          "label": "Чуть больше обо мне"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.letsMeet": "ДАВАЙТЕ ЗНАКОМИТЬСЯ",
+            "home.im": "Я — Елена.",
+            "home.andIBelieveIn": "И я верю в",
+            "home.yourStrength": "твою силу.",
+            "home.iBringNumerologyAndCoachingQuestionsTogether": "В своей работе я соединяю нумерологию и коучинговые вопросы, чтобы помочь тебе лучше понять себя и найти опору в собственных решениях.",
+            "home.iCareAboutCreatingASpaceWhere": "Для меня важно пространство, в котором тебя слышат. Где не нужно соответствовать, спешить или становиться «лучшей версией». Можно просто быть собой.",
+            "home.aLittleMoreAboutMe": "Чуть больше обо мне"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.letsMeet": "IEPAZĪSIMIES",
+            "home.im": "Es esmu Елена.",
+            "home.andIBelieveIn": "Un es ticu",
+            "home.yourStrength": "tavam spēkam.",
+            "home.iBringNumerologyAndCoachingQuestionsTogether": "Savā darbā apvienoju numeroloģiju un koučinga jautājumus, lai palīdzētu tev labāk izprast sevi un rast pārliecību par saviem lēmumiem.",
+            "home.iCareAboutCreatingASpaceWhere": "Man ir svarīgi radīt telpu, kurā tevi sadzird. Kur nav jāatbilst gaidām, jāsteidzas vai jākļūst par «labāku versiju». Vari vienkārši būt tu pati.",
+            "home.aLittleMoreAboutMe": "Mazliet vairāk par mani"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.letsMeet": "LET’S MEET",
+            "home.im": "I’m Елена.",
+            "home.andIBelieveIn": "And I believe in",
+            "home.yourStrength": "your strength.",
+            "home.iBringNumerologyAndCoachingQuestionsTogether": "I bring numerology and coaching questions together to help you understand yourself and feel more grounded in your own decisions.",
+            "home.iCareAboutCreatingASpaceWhere": "I care about creating a space where you feel heard. Where you don’t have to fit in, rush or become a “better version”. You can simply be yourself.",
+            "home.aLittleMoreAboutMe": "A little more about me"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.testimonials",
+      "page": "home",
+      "section_type": "testimonials",
+      "label": "Отзывы",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "home.afterOurSessions",
+          "label": "ПОСЛЕ НАШИХ ВСТРЕЧ"
+        },
+        {
+          "key": "home.wordsThat",
+          "label": "Слова, которые"
+        },
+        {
+          "key": "home.stayWithMe",
+          "label": "согревают"
+        },
+        {
+          "key": "home.testimonialsScrollToReadMore",
+          "label": "Отзывы — прокрутите, чтобы прочитать следующие"
+        },
+        {
+          "key": "home.testimonials.author",
+          "label": "Клиентка"
+        },
+        {
+          "key": "reviews.all",
+          "label": "Все отзывы"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.afterOurSessions": "ПОСЛЕ НАШИХ ВСТРЕЧ",
+            "home.wordsThat": "Слова, которые",
+            "home.stayWithMe": "согревают",
+            "home.testimonialsScrollToReadMore": "Отзывы — прокрутите, чтобы прочитать следующие",
+            "home.testimonials.author": "Клиентка",
+            "reviews.all": "Все отзывы"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.afterOurSessions": "PĒC MŪSU SARUNĀM",
+            "home.wordsThat": "Vārdi, kas",
+            "home.stayWithMe": "sasilda",
+            "home.testimonialsScrollToReadMore": "Atsauksmes — ritini, lai lasītu nākamās",
+            "home.testimonials.author": "Kliente",
+            "reviews.all": "Visas atsauksmes"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.afterOurSessions": "AFTER OUR SESSIONS",
+            "home.wordsThat": "Words that",
+            "home.stayWithMe": "stay with me",
+            "home.testimonialsScrollToReadMore": "Testimonials — scroll to read more",
+            "home.testimonials.author": "Client",
+            "reviews.all": "All reviews"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "home.supporting",
+      "page": "home",
+      "section_type": "intro",
+      "label": "Подписи и карточки знакомства",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "home.illustrativePortraitOfTheExpertInA",
+          "label": "Иллюстративный портрет эксперта в светлом кабинете"
+        },
+        {
+          "key": "home.aGuideOnYourJourneyInward",
+          "label": "Ваш проводник к себе"
+        },
+        {
+          "key": "home.atYour",
+          "label": "В СВОЁМ"
+        },
+        {
+          "key": "home.ownPace",
+          "label": "РИТМЕ"
+        },
+        {
+          "key": "home.withCareForYou",
+          "label": "БЕРЕЖНО К ВАМ"
+        },
+        {
+          "key": "home.noPrewrittenScripts",
+          "label": "БЕЗ ГОТОВЫХ СЦЕНАРИЕВ"
+        },
+        {
+          "key": "home.groundedInYourself",
+          "label": "С ОПОРОЙ НА СЕБЯ"
+        },
+        {
+          "key": "home.atYourOwnPace",
+          "label": "В ВАШЕМ ТЕМПЕ"
+        },
+        {
+          "key": "home.aigeneratedDemoPortraitOf",
+          "label": "Демонстрационный портрет Елены Захаровой, созданный ИИ"
+        },
+        {
+          "key": "home.previousTestimonial",
+          "label": "Предыдущий отзыв"
+        },
+        {
+          "key": "home.nextTestimonial",
+          "label": "Следующий отзыв"
+        },
+        {
+          "key": "home.loadingTestimonials",
+          "label": "Загружаем отзывы…"
+        },
+        {
+          "key": "home.clientStoriesWillAppearHereSoon",
+          "label": "Здесь скоро появятся истории клиентов."
+        },
+        {
+          "key": "home.unsureWhereToGoNext",
+          "label": "Не знаешь, куда двигаться дальше?"
+        },
+        {
+          "key": "home.whenTheFamiliarNoLongerInspiresYou",
+          "label": "Когда привычное больше не вдохновляет."
+        },
+        {
+          "key": "home.wantToDiscoverYourTrueStrengths",
+          "label": "Хочешь увидеть свою настоящую силу?"
+        },
+        {
+          "key": "home.andStopMeasuringYourselfAgainstOthers",
+          "label": "И перестать сравнивать себя с другими."
+        },
+        {
+          "key": "home.lookingForBalanceInRelationshipsAndMoney",
+          "label": "Ищешь гармонию в отношениях и деньгах?"
+        },
+        {
+          "key": "home.withoutRepeatingTheSameOldPatterns",
+          "label": "Без повторения одних и тех же сценариев."
+        },
+        {
+          "key": "home.feelTheresMoreWithinYou",
+          "label": "Чувствуешь, что можешь больше?"
+        },
+        {
+          "key": "home.butDontYetKnowWhereToStart",
+          "label": "Но пока не понимаешь, с чего начать."
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "home.illustrativePortraitOfTheExpertInA": "Иллюстративный портрет эксперта в светлом кабинете",
+            "home.aGuideOnYourJourneyInward": "Ваш проводник к себе",
+            "home.atYour": "В СВОЁМ",
+            "home.ownPace": "РИТМЕ",
+            "home.withCareForYou": "БЕРЕЖНО К ВАМ",
+            "home.noPrewrittenScripts": "БЕЗ ГОТОВЫХ СЦЕНАРИЕВ",
+            "home.groundedInYourself": "С ОПОРОЙ НА СЕБЯ",
+            "home.atYourOwnPace": "В ВАШЕМ ТЕМПЕ",
+            "home.aigeneratedDemoPortraitOf": "Демонстрационный портрет Елены Захаровой, созданный ИИ",
+            "home.previousTestimonial": "Предыдущий отзыв",
+            "home.nextTestimonial": "Следующий отзыв",
+            "home.loadingTestimonials": "Загружаем отзывы…",
+            "home.clientStoriesWillAppearHereSoon": "Здесь скоро появятся истории клиентов.",
+            "home.unsureWhereToGoNext": "Не знаешь, куда двигаться дальше?",
+            "home.whenTheFamiliarNoLongerInspiresYou": "Когда привычное больше не вдохновляет.",
+            "home.wantToDiscoverYourTrueStrengths": "Хочешь увидеть свою настоящую силу?",
+            "home.andStopMeasuringYourselfAgainstOthers": "И перестать сравнивать себя с другими.",
+            "home.lookingForBalanceInRelationshipsAndMoney": "Ищешь гармонию в отношениях и деньгах?",
+            "home.withoutRepeatingTheSameOldPatterns": "Без повторения одних и тех же сценариев.",
+            "home.feelTheresMoreWithinYou": "Чувствуешь, что можешь больше?",
+            "home.butDontYetKnowWhereToStart": "Но пока не понимаешь, с чего начать."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "home.illustrativePortraitOfTheExpertInA": "Ilustratīvs speciālistes portrets gaišā kabinetā",
+            "home.aGuideOnYourJourneyInward": "Līdzās tavā ceļā pie sevis",
+            "home.atYour": "SAVĀ",
+            "home.ownPace": "TEMPĀ",
+            "home.withCareForYou": "AR RŪPĒM PAR TEVI",
+            "home.noPrewrittenScripts": "BEZ GATAVIEM SCENĀRIJIEM",
+            "home.groundedInYourself": "AR PAĻĀVĪBU UZ SEVI",
+            "home.atYourOwnPace": "TAVĀ TEMPĀ",
+            "home.aigeneratedDemoPortraitOf": "Ar mākslīgo intelektu veidots Елена Захарова demonstrācijas portrets",
+            "home.previousTestimonial": "Iepriekšējā atsauksme",
+            "home.nextTestimonial": "Nākamā atsauksme",
+            "home.loadingTestimonials": "Ielādē atsauksmes…",
+            "home.clientStoriesWillAppearHereSoon": "Drīzumā šeit būs klientu stāsti.",
+            "home.unsureWhereToGoNext": "Nezini, kurp doties tālāk?",
+            "home.whenTheFamiliarNoLongerInspiresYou": "Kad ierastais vairs neiedvesmo.",
+            "home.wantToDiscoverYourTrueStrengths": "Vēlies ieraudzīt savu patieso spēku?",
+            "home.andStopMeasuringYourselfAgainstOthers": "Un pārstāt sevi salīdzināt ar citiem.",
+            "home.lookingForBalanceInRelationshipsAndMoney": "Meklē līdzsvaru attiecībās un naudas jautājumos?",
+            "home.withoutRepeatingTheSameOldPatterns": "Neatkārtojot vienus un tos pašus scenārijus.",
+            "home.feelTheresMoreWithinYou": "Jūti, ka spēj vairāk?",
+            "home.butDontYetKnowWhereToStart": "Bet vēl nezini, ar ko sākt."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "home.illustrativePortraitOfTheExpertInA": "Illustrative portrait of the expert in a light-filled office",
+            "home.aGuideOnYourJourneyInward": "A guide on your journey inward",
+            "home.atYour": "AT YOUR",
+            "home.ownPace": "OWN PACE",
+            "home.withCareForYou": "WITH CARE FOR YOU",
+            "home.noPrewrittenScripts": "NO PREWRITTEN SCRIPTS",
+            "home.groundedInYourself": "GROUNDED IN YOURSELF",
+            "home.atYourOwnPace": "AT YOUR OWN PACE",
+            "home.aigeneratedDemoPortraitOf": "AI-generated demo portrait of Елена Захарова",
+            "home.previousTestimonial": "Previous testimonial",
+            "home.nextTestimonial": "Next testimonial",
+            "home.loadingTestimonials": "Loading testimonials…",
+            "home.clientStoriesWillAppearHereSoon": "Client stories will appear here soon.",
+            "home.unsureWhereToGoNext": "Unsure where to go next?",
+            "home.whenTheFamiliarNoLongerInspiresYou": "When the familiar no longer inspires you.",
+            "home.wantToDiscoverYourTrueStrengths": "Want to discover your true strengths?",
+            "home.andStopMeasuringYourselfAgainstOthers": "And stop measuring yourself against others.",
+            "home.lookingForBalanceInRelationshipsAndMoney": "Looking for balance in relationships and money?",
+            "home.withoutRepeatingTheSameOldPatterns": "Without repeating the same old patterns.",
+            "home.feelTheresMoreWithinYou": "Feel there’s more within you?",
+            "home.butDontYetKnowWhereToStart": "But don’t yet know where to start."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "about.intro",
+      "page": "about",
+      "section_type": "intro",
+      "label": "Обо мне",
+      "critical": true,
+      "settings": {
+        "image": "/images/optimized/expert-1672.webp",
+        "primary_destination": "booking"
+      },
+      "fields": [
+        {
+          "key": "about.aboutMe",
+          "label": "ОБО МНЕ"
+        },
+        {
+          "key": "about.hereToHelpYou",
+          "label": "Рядом, чтобы ты"
+        },
+        {
+          "key": "about.hearYourself",
+          "label": "услышала себя."
+        },
+        {
+          "key": "about.imANumerologistAndCoach",
+          "label": "Я Елена Захарова — нумеролог и женский коуч."
+        },
+        {
+          "key": "about.myApproachBeginsWithASimpleQuestion",
+          "label": "Мой подход начинается с простого вопроса: «А чего хочешь именно т"
+        },
+        {
+          "key": "about.inOurSessionsWeExploreYourStrengths",
+          "label": "На встречах мы исследуем твои сильные стороны, обсуждаем повторяю"
+        },
+        {
+          "key": "about.theDecisionsAreAlwaysYoursIDont",
+          "label": "Решения всегда остаются за тобой. Я не обещаю заранее определённо"
+        },
+        {
+          "key": "about.letsMeetForASession",
+          "label": "Познакомиться на встрече"
+        },
+        {
+          "key": "about.illustrativePortraitOfTheExpertTemporaryImage",
+          "label": "Иллюстративный портрет эксперта — временное изображение"
+        },
+        {
+          "key": "about.01Attention",
+          "label": "01 / ВНИМАНИЕ"
+        },
+        {
+          "key": "about.yourStoryComesFirst",
+          "label": "Сначала — твоя история"
+        },
+        {
+          "key": "about.weBeginWithYourQuestionAndThe",
+          "label": "Начинаем с запроса и контекста, в котором ты живёшь."
+        },
+        {
+          "key": "about.02Respect",
+          "label": "02 / УВАЖЕНИЕ"
+        },
+        {
+          "key": "about.withoutLabelsOrJudgment",
+          "label": "Без ярлыков и оценок"
+        },
+        {
+          "key": "about.youHaveTheRightToYourOwn",
+          "label": "У тебя есть право на свой темп и собственный выбор."
+        },
+        {
+          "key": "about.03Practice",
+          "label": "03 / ПРАКТИКА"
+        },
+        {
+          "key": "about.turnInsightIntoAStepForward",
+          "label": "Понимание становится шагом"
+        },
+        {
+          "key": "about.weEndWithASpecificActionThat",
+          "label": "Завершаем встречу конкретным действием, которое выбираешь ты."
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "about.aboutMe": "ОБО МНЕ",
+            "about.hereToHelpYou": "Рядом, чтобы ты",
+            "about.hearYourself": "услышала себя.",
+            "about.imANumerologistAndCoach": "Я Елена Захарова — нумеролог и женский коуч.",
+            "about.myApproachBeginsWithASimpleQuestion": "Мой подход начинается с простого вопроса: «А чего хочешь именно ты?» Мы часто хорошо знаем ожидания окружающих, но редко оставляем время на собственные желания.",
+            "about.inOurSessionsWeExploreYourStrengths": "На встречах мы исследуем твои сильные стороны, обсуждаем повторяющиеся ситуации и ищем решения, которые подходят твоей жизни. Нумерология помогает начать этот разговор, а коучинговые вопросы — сделать его практичным.",
+            "about.theDecisionsAreAlwaysYoursIDont": "Решения всегда остаются за тобой. Я не обещаю заранее определённого результата и не предлагаю универсальных рецептов.",
+            "about.letsMeetForASession": "Познакомиться на встрече",
+            "about.illustrativePortraitOfTheExpertTemporaryImage": "Иллюстративный портрет эксперта — временное изображение",
+            "about.01Attention": "01 / ВНИМАНИЕ",
+            "about.yourStoryComesFirst": "Сначала — твоя история",
+            "about.weBeginWithYourQuestionAndThe": "Начинаем с запроса и контекста, в котором ты живёшь.",
+            "about.02Respect": "02 / УВАЖЕНИЕ",
+            "about.withoutLabelsOrJudgment": "Без ярлыков и оценок",
+            "about.youHaveTheRightToYourOwn": "У тебя есть право на свой темп и собственный выбор.",
+            "about.03Practice": "03 / ПРАКТИКА",
+            "about.turnInsightIntoAStepForward": "Понимание становится шагом",
+            "about.weEndWithASpecificActionThat": "Завершаем встречу конкретным действием, которое выбираешь ты."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "about.aboutMe": "PAR MANI",
+            "about.hereToHelpYou": "Līdzās, lai tu",
+            "about.hearYourself": "sadzirdētu sevi.",
+            "about.imANumerologistAndCoach": "Esmu Елена Захарова — numeroloģe un koučs sievietēm.",
+            "about.myApproachBeginsWithASimpleQuestion": "Mans darbs sākas ar vienkāršu jautājumu: «Ko vēlies tieši tu?» Mēs bieži labi zinām, ko no mums sagaida citi, bet reti atvēlam laiku savām vēlmēm.",
+            "about.inOurSessionsWeExploreYourStrengths": "Sarunās pētām tavas stiprās puses, aplūkojam situācijas, kas atkārtojas, un meklējam tavai dzīvei piemērotus risinājumus. Numeroloģija palīdz sākt sarunu, bet koučinga jautājumi — piešķirt tai praktisku virzienu.",
+            "about.theDecisionsAreAlwaysYoursIDont": "Lēmumi vienmēr paliek tavā ziņā. Es nesolu iepriekš noteiktu rezultātu un nepiedāvāju vienu risinājumu visiem.",
+            "about.letsMeetForASession": "Iepazīsimies sarunā",
+            "about.illustrativePortraitOfTheExpertTemporaryImage": "Ilustratīvs speciālistes portrets — pagaidu attēls",
+            "about.01Attention": "01 / UZMANĪBA",
+            "about.yourStoryComesFirst": "Vispirms — tavs stāsts",
+            "about.weBeginWithYourQuestionAndThe": "Sākam ar tavu jautājumu un dzīves situāciju.",
+            "about.02Respect": "02 / CIEŅA",
+            "about.withoutLabelsOrJudgment": "Bez birkām un vērtēšanas",
+            "about.youHaveTheRightToYourOwn": "Tev ir tiesības uz savu tempu un savu izvēli.",
+            "about.03Practice": "03 / PRAKSE",
+            "about.turnInsightIntoAStepForward": "Izpratne pārtop nākamajā solī",
+            "about.weEndWithASpecificActionThat": "Sarunu noslēdzam ar konkrētu soli, ko izvēlies pati."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "about.aboutMe": "ABOUT ME",
+            "about.hereToHelpYou": "Here to help you",
+            "about.hearYourself": "hear yourself.",
+            "about.imANumerologistAndCoach": "I’m Елена Захарова — a numerologist and coach for women.",
+            "about.myApproachBeginsWithASimpleQuestion": "My approach begins with a simple question: “What do you really want?” We often know what others expect of us, yet rarely make time for our own wishes.",
+            "about.inOurSessionsWeExploreYourStrengths": "In our sessions, we explore your strengths, look at recurring situations and find choices that fit your life. Numerology opens the conversation; coaching questions help turn reflection into something practical.",
+            "about.theDecisionsAreAlwaysYoursIDont": "The decisions are always yours. I don’t promise a predetermined outcome or offer one-size-fits-all answers.",
+            "about.letsMeetForASession": "Let’s meet for a session",
+            "about.illustrativePortraitOfTheExpertTemporaryImage": "Illustrative portrait of the expert — temporary image",
+            "about.01Attention": "01 / ATTENTION",
+            "about.yourStoryComesFirst": "Your story comes first",
+            "about.weBeginWithYourQuestionAndThe": "We begin with your question and the life around it.",
+            "about.02Respect": "02 / RESPECT",
+            "about.withoutLabelsOrJudgment": "Without labels or judgment",
+            "about.youHaveTheRightToYourOwn": "You have the right to your own pace and your own choices.",
+            "about.03Practice": "03 / PRACTICE",
+            "about.turnInsightIntoAStepForward": "Turn insight into a step forward",
+            "about.weEndWithASpecificActionThat": "We end with a specific action that you choose for yourself."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "services.intro",
+      "page": "services",
+      "section_type": "intro",
+      "label": "Услуги",
+      "critical": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "services.individualSessions",
+          "label": "ИНДИВИДУАЛЬНАЯ РАБОТА"
+        },
+        {
+          "key": "services.yourQuestion",
+          "label": "Твой запрос."
+        },
+        {
+          "key": "services.yourFirstStep",
+          "label": "Твой первый шаг."
+        },
+        {
+          "key": "services.fromASingleConversationToOngoingSupport",
+          "label": "От одной встречи до личного сопровождения."
+        },
+        {
+          "key": "services.chooseASpaceWhereYoudLikeTo",
+          "label": "Выбери пространство, в котором хочется начать."
+        },
+        {
+          "key": "services.notSure",
+          "label": "Пока не знаешь,"
+        },
+        {
+          "key": "services.whatToChoose",
+          "label": "что выбрать?"
+        },
+        {
+          "key": "services.tellMeALittleAboutYourSituation",
+          "label": "Расскажи немного о своей ситуации — вместе определим подходящий ф"
+        },
+        {
+          "key": "services.askAQuestion",
+          "label": "Задать вопрос"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "services.individualSessions": "ИНДИВИДУАЛЬНАЯ РАБОТА",
+            "services.yourQuestion": "Твой запрос.",
+            "services.yourFirstStep": "Твой первый шаг.",
+            "services.fromASingleConversationToOngoingSupport": "От одной встречи до личного сопровождения.",
+            "services.chooseASpaceWhereYoudLikeTo": "Выбери пространство, в котором хочется начать.",
+            "services.notSure": "Пока не знаешь,",
+            "services.whatToChoose": "что выбрать?",
+            "services.tellMeALittleAboutYourSituation": "Расскажи немного о своей ситуации — вместе определим подходящий формат.",
+            "services.askAQuestion": "Задать вопрос"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "services.individualSessions": "INDIVIDUĀLS DARBS",
+            "services.yourQuestion": "Tavs jautājums.",
+            "services.yourFirstStep": "Tavs pirmais solis.",
+            "services.fromASingleConversationToOngoingSupport": "No vienas sarunas līdz individuālam atbalstam.",
+            "services.chooseASpaceWhereYoudLikeTo": "Izvēlies vidi, kurā vēlies sākt.",
+            "services.notSure": "Vēl nezini,",
+            "services.whatToChoose": "ko izvēlēties?",
+            "services.tellMeALittleAboutYourSituation": "Pastāsti mazliet par savu situāciju — kopā atradīsim piemērotu formātu.",
+            "services.askAQuestion": "Uzdot jautājumu"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "services.individualSessions": "INDIVIDUAL SESSIONS",
+            "services.yourQuestion": "Your question.",
+            "services.yourFirstStep": "Your first step.",
+            "services.fromASingleConversationToOngoingSupport": "From a single conversation to ongoing support.",
+            "services.chooseASpaceWhereYoudLikeTo": "Choose a space where you’d like to begin.",
+            "services.notSure": "Not sure",
+            "services.whatToChoose": "what to choose?",
+            "services.tellMeALittleAboutYourSituation": "Tell me a little about your situation and we’ll find the right format together.",
+            "services.askAQuestion": "Ask a question"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "reviews.intro",
+      "page": "reviews",
+      "section_type": "intro",
+      "label": "Отзывы",
+      "critical": true,
+      "settings": {
+        "primary_destination": "booking"
+      },
+      "fields": [
+        {
+          "key": "reviews.eyebrow",
+          "label": "ОТЗЫВЫ"
+        },
+        {
+          "key": "reviews.title",
+          "label": "Слова, которые остаются"
+        },
+        {
+          "key": "reviews.intro",
+          "label": "Здесь собраны слова женщин, которые уже прошли свои разборы и кон"
+        },
+        {
+          "key": "reviews.ctaEyebrow",
+          "label": "ТВОЙ СЛЕДУЮЩИЙ ШАГ"
+        },
+        {
+          "key": "reviews.ctaTitle",
+          "label": "Возможно, следующая история будет твоей."
+        },
+        {
+          "key": "reviews.ctaText",
+          "label": "Если чувствуешь, что сейчас время лучше понять себя — начнём с ра"
+        },
+        {
+          "key": "reviews.seoTitle",
+          "label": "Отзывы | Елена Захарова — нумеролог и женский коуч"
+        },
+        {
+          "key": "reviews.seoDescription",
+          "label": "Отзывы клиентов о нумерологических разборах и консультациях Елены"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "reviews.eyebrow": "ОТЗЫВЫ",
+            "reviews.title": "Слова, которые остаются",
+            "reviews.intro": "Здесь собраны слова женщин, которые уже прошли свои разборы и консультации.",
+            "reviews.ctaEyebrow": "ТВОЙ СЛЕДУЮЩИЙ ШАГ",
+            "reviews.ctaTitle": "Возможно, следующая история будет твоей.",
+            "reviews.ctaText": "Если чувствуешь, что сейчас время лучше понять себя — начнём с разговора.",
+            "reviews.seoTitle": "Отзывы | Елена Захарова — нумеролог и женский коуч",
+            "reviews.seoDescription": "Отзывы клиентов о нумерологических разборах и консультациях Елены Захаровой."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "reviews.eyebrow": "ATSAUKSMES",
+            "reviews.title": "Vārdi, kas paliek",
+            "reviews.intro": "Šeit apkopoti to sieviešu vārdi, kuras jau saņēmušas savu analīzi un konsultācijas.",
+            "reviews.ctaEyebrow": "TAVS NĀKAMAIS SOLIS",
+            "reviews.ctaTitle": "Varbūt nākamais stāsts būs tavējais.",
+            "reviews.ctaText": "Ja jūti, ka ir laiks labāk izprast sevi — sāksim ar sarunu.",
+            "reviews.seoTitle": "Atsauksmes | Елена Захарова — numeroloģe un koučs sievietēm",
+            "reviews.seoDescription": "Klientu atsauksmes par numeroloģiskajām analīzēm un konsultācijām pie Елена Захарова."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "reviews.eyebrow": "REVIEWS",
+            "reviews.title": "Words that stay with us",
+            "reviews.intro": "Here are the words of women who have already had their readings and consultations.",
+            "reviews.ctaEyebrow": "YOUR NEXT STEP",
+            "reviews.ctaTitle": "Perhaps the next story will be yours.",
+            "reviews.ctaText": "If you feel it is time to understand yourself better, let’s start with a conversation.",
+            "reviews.seoTitle": "Reviews | Елена Захарова — numerologist and coach for women",
+            "reviews.seoDescription": "Client reviews of numerology readings and consultations with Елена Захарова."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "contacts.intro",
+      "page": "contacts",
+      "section_type": "intro",
+      "label": "Контакты",
+      "critical": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "contacts.phoneLabel",
+          "label": "Телефон"
+        },
+        {
+          "key": "contacts.emailLabel",
+          "label": "Email"
+        },
+        {
+          "key": "contacts.messageWhatsApp",
+          "label": "Написать в WhatsApp"
+        },
+        {
+          "key": "contacts.letsKeepInTouch",
+          "label": "БУДЕМ НА СВЯЗИ"
+        },
+        {
+          "key": "contacts.everyJourney",
+          "label": "Любой путь"
+        },
+        {
+          "key": "contacts.startsWith",
+          "label": "начинается"
+        },
+        {
+          "key": "contacts.aConversation",
+          "label": "с разговора."
+        },
+        {
+          "key": "contacts.tellMeWhatMattersToYouRight",
+          "label": "Расскажи, что сейчас важно для тебя."
+        },
+        {
+          "key": "contacts.illHelpYouFindYourNextStep",
+          "label": "Я помогу выбрать следующий шаг."
+        },
+        {
+          "key": "contacts.weMeetOnline",
+          "label": "Встречаемся онлайн"
+        },
+        {
+          "key": "contacts.fromAnywhereInTheWorldInA",
+          "label": "Из любой точки мира, в удобном для тебя пространстве."
+        },
+        {
+          "key": "contacts.enquiryType",
+          "label": "Тип обращения"
+        },
+        {
+          "key": "contacts.askAQuestion",
+          "label": "Задать вопрос"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "contacts.phoneLabel": "Телефон",
+            "contacts.emailLabel": "Email",
+            "contacts.messageWhatsApp": "Написать в WhatsApp",
+            "contacts.letsKeepInTouch": "БУДЕМ НА СВЯЗИ",
+            "contacts.everyJourney": "Любой путь",
+            "contacts.startsWith": "начинается",
+            "contacts.aConversation": "с разговора.",
+            "contacts.tellMeWhatMattersToYouRight": "Расскажи, что сейчас важно для тебя.",
+            "contacts.illHelpYouFindYourNextStep": "Я помогу выбрать следующий шаг.",
+            "contacts.weMeetOnline": "Встречаемся онлайн",
+            "contacts.fromAnywhereInTheWorldInA": "Из любой точки мира, в удобном для тебя пространстве.",
+            "contacts.enquiryType": "Тип обращения",
+            "contacts.askAQuestion": "Задать вопрос"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "contacts.phoneLabel": "Tālrunis",
+            "contacts.emailLabel": "E-pasts",
+            "contacts.messageWhatsApp": "Rakstīt WhatsApp",
+            "contacts.letsKeepInTouch": "SAZINĀSIMIES",
+            "contacts.everyJourney": "Katrs ceļš",
+            "contacts.startsWith": "sākas",
+            "contacts.aConversation": "ar sarunu.",
+            "contacts.tellMeWhatMattersToYouRight": "Pastāsti, kas tev šobrīd ir svarīgi.",
+            "contacts.illHelpYouFindYourNextStep": "Palīdzēšu atrast nākamo soli.",
+            "contacts.weMeetOnline": "Tiekamies tiešsaistē",
+            "contacts.fromAnywhereInTheWorldInA": "No jebkuras vietas pasaulē, tev ērtā un mierīgā vidē.",
+            "contacts.enquiryType": "Saziņas veids",
+            "contacts.askAQuestion": "Uzdot jautājumu"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "contacts.phoneLabel": "Phone",
+            "contacts.emailLabel": "Email",
+            "contacts.messageWhatsApp": "Message on WhatsApp",
+            "contacts.letsKeepInTouch": "LET’S KEEP IN TOUCH",
+            "contacts.everyJourney": "Every journey",
+            "contacts.startsWith": "starts with",
+            "contacts.aConversation": "a conversation.",
+            "contacts.tellMeWhatMattersToYouRight": "Tell me what matters to you right now.",
+            "contacts.illHelpYouFindYourNextStep": "I’ll help you find your next step.",
+            "contacts.weMeetOnline": "We meet online",
+            "contacts.fromAnywhereInTheWorldInA": "From anywhere in the world, in a space where you feel comfortable.",
+            "contacts.enquiryType": "Enquiry type",
+            "contacts.askAQuestion": "Ask a question"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "privacy.intro",
+      "page": "privacy",
+      "section_type": "intro",
+      "label": "Конфиденциальность",
+      "critical": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "privacy.takingCareOfYourData",
+          "label": "БЕРЕЖНО К ВАШИМ ДАННЫМ"
+        },
+        {
+          "key": "privacy.draftDocumentBeforeTheSiteGoesPublic",
+          "label": "Проект документа. Перед публичным запуском владелец должен подтве"
+        },
+        {
+          "key": "privacy.whatInformationTheSiteReceives",
+          "label": "Какие данные получает сайт"
+        },
+        {
+          "key": "privacy.theFormsCollectYourNameAndEmail",
+          "label": "Формы собирают имя, email и, по желанию, телефон. Заявка на запис"
+        },
+        {
+          "key": "privacy.whyThisInformationIsNeeded",
+          "label": "Для чего нужны данные"
+        },
+        {
+          "key": "privacy.toAnswerYourQuestionDiscussTheFormat",
+          "label": "Чтобы ответить на вопрос, обсудить формат и согласовать консульта"
+        },
+        {
+          "key": "privacy.howEnquiriesAreHandled",
+          "label": "Как обрабатывается обращение"
+        },
+        {
+          "key": "privacy.yourEnquiryIsStoredInTheSites",
+          "label": "Заявка хранится в базе данных сайта. Доступ к обращениям предназн"
+        },
+        {
+          "key": "privacy.requestsAboutYourData",
+          "label": "Обращения по поводу данных"
+        },
+        {
+          "key": "privacy.toRequestACorrectionOrDeletionOf",
+          "label": "Для запроса уточнения или удаления данных используйте"
+        },
+        {
+          "key": "privacy.contactForm",
+          "label": "форму обратной связи"
+        },
+        {
+          "key": "privacy.pleaseDontIncludeSensitiveInformationThatIsnt",
+          "label": ". Не указывайте в сообщении чувствительные сведения, которые не н"
+        },
+        {
+          "key": "privacy.languagePreference",
+          "label": "Выбранный язык определяется адресом страницы. Настройка языка не "
+        },
+        {
+          "key": "privacy.technicalInformation",
+          "label": "Технические данные"
+        },
+        {
+          "key": "privacy.theCurrentSiteHasNoAdvertisingTrackers",
+          "label": "В текущей версии сайта нет рекламных трекеров и аналитических coo"
+        },
+        {
+          "key": "privacy.detailsToConfirmBeforePublication",
+          "label": "Сведения перед публикацией"
+        },
+        {
+          "key": "privacy.theControllersFullNameAndContactDetails",
+          "label": "Необходимо указать полное имя и контакт оператора, применимую юри"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "privacy.takingCareOfYourData": "БЕРЕЖНО К ВАШИМ ДАННЫМ",
+            "privacy.draftDocumentBeforeTheSiteGoesPublic": "Проект документа. Перед публичным запуском владелец должен подтвердить сведения об операторе, основания обработки, сроки хранения и порядок обращений.",
+            "privacy.whatInformationTheSiteReceives": "Какие данные получает сайт",
+            "privacy.theFormsCollectYourNameAndEmail": "Формы собирают имя, email и, по желанию, телефон. Заявка на запись также содержит выбранную услугу, основной вариант, дополнительный бонус при его выборе, стоимость и комментарий.",
+            "privacy.whyThisInformationIsNeeded": "Для чего нужны данные",
+            "privacy.toAnswerYourQuestionDiscussTheFormat": "Чтобы ответить на вопрос, обсудить формат и согласовать консультацию. Отправка формы не подписывает вас на рассылку и не подтверждает оплату.",
+            "privacy.howEnquiriesAreHandled": "Как обрабатывается обращение",
+            "privacy.yourEnquiryIsStoredInTheSites": "Заявка хранится в базе данных сайта. Доступ к обращениям предназначен для владельца и уполномоченных им лиц. Платёжные реквизиты через эти формы не запрашиваются.",
+            "privacy.requestsAboutYourData": "Обращения по поводу данных",
+            "privacy.toRequestACorrectionOrDeletionOf": "Для запроса уточнения или удаления данных используйте",
+            "privacy.contactForm": "форму обратной связи",
+            "privacy.pleaseDontIncludeSensitiveInformationThatIsnt": ". Не указывайте в сообщении чувствительные сведения, которые не нужны для ответа.",
+            "privacy.languagePreference": "Выбранный язык определяется адресом страницы. Настройка языка не сохраняется в localStorage.",
+            "privacy.technicalInformation": "Технические данные",
+            "privacy.theCurrentSiteHasNoAdvertisingTrackers": "В текущей версии сайта нет рекламных трекеров и аналитических cookie. При работе сервера могут создаваться технические журналы запросов.",
+            "privacy.detailsToConfirmBeforePublication": "Сведения перед публикацией",
+            "privacy.theControllersFullNameAndContactDetails": "Необходимо указать полное имя и контакт оператора, применимую юрисдикцию, срок хранения, хостинг и получателей данных. Этот черновик описывает текущую работу форм и требует согласования до публичного использования."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "privacy.takingCareOfYourData": "AR RŪPĒM PAR TAVIEM DATIEM",
+            "privacy.draftDocumentBeforeTheSiteGoesPublic": "Dokumenta projekts. Pirms vietnes publiskošanas īpašniekam jāapstiprina pārziņa dati, apstrādes pamatojums, glabāšanas termiņi un pieprasījumu izskatīšanas kārtība.",
+            "privacy.whatInformationTheSiteReceives": "Kādus datus vietne saņem",
+            "privacy.theFormsCollectYourNameAndEmail": "Veidlapās tiek apkopots vārds, e-pasts un pēc izvēles tālrunis. Pieteikums ietver arī izvēlēto pakalpojumu, pamata variantu, izvēlēto papildinājumu, cenu un komentāru.",
+            "privacy.whyThisInformationIsNeeded": "Kāpēc šie dati ir vajadzīgi",
+            "privacy.toAnswerYourQuestionDiscussTheFormat": "Lai atbildētu uz jautājumu, pārrunātu formātu un vienotos par konsultāciju. Veidlapas nosūtīšana nepieraksta tevi jaunumiem un neapstiprina maksājumu.",
+            "privacy.howEnquiriesAreHandled": "Kā tiek apstrādāts pieprasījums",
+            "privacy.yourEnquiryIsStoredInTheSites": "Pieteikums tiek glabāts vietnes datubāzē. Piekļuve paredzēta īpašniekam un viņa pilnvarotām personām. Šajās veidlapās netiek prasīti maksājumu rekvizīti.",
+            "privacy.requestsAboutYourData": "Pieprasījumi par taviem datiem",
+            "privacy.toRequestACorrectionOrDeletionOf": "Lai lūgtu precizēt vai dzēst savus datus, izmanto",
+            "privacy.contactForm": "saziņas veidlapu",
+            "privacy.pleaseDontIncludeSensitiveInformationThatIsnt": ". Lūdzu, neiekļauj ziņā sensitīvu informāciju, kas nav nepieciešama atbildei.",
+            "privacy.languagePreference": "Izvēlēto valodu nosaka lapas adrese. Valodas iestatījums netiek saglabāts localStorage.",
+            "privacy.technicalInformation": "Tehniskie dati",
+            "privacy.theCurrentSiteHasNoAdvertisingTrackers": "Pašreizējā vietnes versijā nav reklāmas izsekotāju un analītikas sīkdatņu. Serveris var veidot tehniskus pieprasījumu žurnālus.",
+            "privacy.detailsToConfirmBeforePublication": "Informācija pirms publicēšanas",
+            "privacy.theControllersFullNameAndContactDetails": "Jānorāda pārziņa pilns vārds un kontaktinformācija, piemērojamā jurisdikcija, glabāšanas termiņš, mitināšanas pakalpojuma sniedzējs un datu saņēmēji. Šis projekts apraksta veidlapu pašreizējo darbību un pirms publiskas izmantošanas ir jāsaskaņo."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "privacy.takingCareOfYourData": "TAKING CARE OF YOUR DATA",
+            "privacy.draftDocumentBeforeTheSiteGoesPublic": "Draft document. Before the site goes public, the owner must confirm the data controller’s details, the basis for processing, retention periods and how requests are handled.",
+            "privacy.whatInformationTheSiteReceives": "What information the site receives",
+            "privacy.theFormsCollectYourNameAndEmail": "The forms collect your name, email and optional phone number. A booking also includes your chosen service, main option, optional bonus, price and comment.",
+            "privacy.whyThisInformationIsNeeded": "Why this information is needed",
+            "privacy.toAnswerYourQuestionDiscussTheFormat": "To answer your question, discuss the format and arrange a session. Sending a form does not subscribe you to a mailing list or confirm any payment.",
+            "privacy.howEnquiriesAreHandled": "How enquiries are handled",
+            "privacy.yourEnquiryIsStoredInTheSites": "Your enquiry is stored in the site’s database. Access is intended for the owner and people authorised by them. These forms do not request payment details.",
+            "privacy.requestsAboutYourData": "Requests about your data",
+            "privacy.toRequestACorrectionOrDeletionOf": "To request a correction or deletion of your data, please use the",
+            "privacy.contactForm": "contact form",
+            "privacy.pleaseDontIncludeSensitiveInformationThatIsnt": ". Please don’t include sensitive information that isn’t needed to answer your enquiry.",
+            "privacy.languagePreference": "The page address determines the selected language. The language preference is not stored in localStorage.",
+            "privacy.technicalInformation": "Technical information",
+            "privacy.theCurrentSiteHasNoAdvertisingTrackers": "The current site has no advertising trackers or analytics cookies. The server may keep technical request logs.",
+            "privacy.detailsToConfirmBeforePublication": "Details to confirm before publication",
+            "privacy.theControllersFullNameAndContactDetails": "The controller’s full name and contact details, applicable jurisdiction, retention period, hosting provider and data recipients need to be specified. This draft describes how the forms currently work and requires approval before public use."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "global.cta",
+      "page": "home",
+      "section_type": "cta",
+      "label": "Общий финальный CTA",
+      "critical": true,
+      "settings": {
+        "primary_destination": "booking",
+        "secondary_destination": "question"
+      },
+      "fields": [
+        {
+          "key": "finalCta.yourNextChapterStartsWithYou",
+          "label": "ВАШ НОВЫЙ ПУТЬ НАЧИНАЕТСЯ С ВАС"
+        },
+        {
+          "key": "finalCta.whatIfNowIs",
+          "label": "А что, если сейчас —"
+        },
+        {
+          "key": "finalCta.theRightTimeTo",
+          "label": "самое время"
+        },
+        {
+          "key": "finalCta.chooseYourself",
+          "label": "выбрать себя?"
+        },
+        {
+          "key": "finalCta.youDontNeedAllTheAnswers",
+          "label": "Не обязательно знать все ответы."
+        },
+        {
+          "key": "finalCta.oneHonestConversationIsEnoughToBegin",
+          "label": "Можно начать с одного честного разговора."
+        },
+        {
+          "key": "finalCta.askAQuestionFirst",
+          "label": "Сначала задать вопрос"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "finalCta.yourNextChapterStartsWithYou": "ВАШ НОВЫЙ ПУТЬ НАЧИНАЕТСЯ С ВАС",
+            "finalCta.whatIfNowIs": "А что, если сейчас —",
+            "finalCta.theRightTimeTo": "самое время",
+            "finalCta.chooseYourself": "выбрать себя?",
+            "finalCta.youDontNeedAllTheAnswers": "Не обязательно знать все ответы.",
+            "finalCta.oneHonestConversationIsEnoughToBegin": "Можно начать с одного честного разговора.",
+            "finalCta.askAQuestionFirst": "Сначала задать вопрос"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "finalCta.yourNextChapterStartsWithYou": "TAVS JAUNAIS CEĻŠ SĀKAS AR TEVI",
+            "finalCta.whatIfNowIs": "Varbūt tieši tagad ir",
+            "finalCta.theRightTimeTo": "īstais brīdis",
+            "finalCta.chooseYourself": "izvēlēties sevi?",
+            "finalCta.youDontNeedAllTheAnswers": "Tev nav jāzina visas atbildes.",
+            "finalCta.oneHonestConversationIsEnoughToBegin": "Sākumam pietiek ar vienu atklātu sarunu.",
+            "finalCta.askAQuestionFirst": "Vispirms uzdot jautājumu"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "finalCta.yourNextChapterStartsWithYou": "YOUR NEXT CHAPTER STARTS WITH YOU",
+            "finalCta.whatIfNowIs": "What if now is",
+            "finalCta.theRightTimeTo": "the right time to",
+            "finalCta.chooseYourself": "choose yourself?",
+            "finalCta.youDontNeedAllTheAnswers": "You don’t need all the answers.",
+            "finalCta.oneHonestConversationIsEnoughToBegin": "One honest conversation is enough to begin.",
+            "finalCta.askAQuestionFirst": "Ask a question first"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "global.layout",
+      "page": "home",
+      "section_type": "intro",
+      "label": "Подписи шапки и подвала",
+      "critical": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "siteLayout.skipToContent",
+          "label": "Перейти к содержимому"
+        },
+        {
+          "key": "siteLayout.home",
+          "label": "Главная"
+        },
+        {
+          "key": "siteLayout.homeLabel",
+          "label": "Елена Захарова — главная"
+        },
+        {
+          "key": "siteLayout.monogramFirst",
+          "label": "Е"
+        },
+        {
+          "key": "siteLayout.monogramSecond",
+          "label": "З"
+        },
+        {
+          "key": "siteLayout.numerologistCoach",
+          "label": "НУМЕРОЛОГ · ЖЕНСКИЙ КОУЧ"
+        },
+        {
+          "key": "siteLayout.mainNavigation",
+          "label": "Главное меню"
+        },
+        {
+          "key": "siteLayout.bookASession",
+          "label": "Записаться"
+        },
+        {
+          "key": "siteLayout.openMenu",
+          "label": "Открыть меню"
+        },
+        {
+          "key": "siteLayout.expertNameUppercase",
+          "label": "ЕЛЕНА ЗАХАРОВА"
+        },
+        {
+          "key": "siteLayout.closeMenu",
+          "label": "Закрыть меню"
+        },
+        {
+          "key": "siteLayout.mobileNavigation",
+          "label": "Мобильное меню"
+        },
+        {
+          "key": "siteLayout.bookASession13",
+          "label": "Записаться на встречу"
+        },
+        {
+          "key": "siteLayout.closerToYourself",
+          "label": "Ближе к себе."
+        },
+        {
+          "key": "siteLayout.closerToALifeYouChoose",
+          "label": "Ближе к жизни, которую выбираешь."
+        },
+        {
+          "key": "siteLayout.footerNavigation",
+          "label": "Меню в подвале"
+        },
+        {
+          "key": "siteLayout.aboutMe",
+          "label": "Обо мне"
+        },
+        {
+          "key": "siteLayout.sessions",
+          "label": "Услуги"
+        },
+        {
+          "key": "siteLayout.getInTouch",
+          "label": "Написать мне"
+        },
+        {
+          "key": "siteLayout.onlineInYourOwnSpace",
+          "label": "Онлайн · в вашем пространстве"
+        },
+        {
+          "key": "siteLayout.privacy",
+          "label": "Конфиденциальность"
+        },
+        {
+          "key": "siteLayout.demoWebsiteThePortraitIsAigeneratedAnd",
+          "label": "Демонстрационная версия: портрет создан ИИ, тексты и отзывы — при"
+        },
+        {
+          "key": "siteLayout.areasOfFocus",
+          "label": "Направления"
+        },
+        {
+          "key": "siteLayout.testimonials",
+          "label": "Отзывы"
+        },
+        {
+          "key": "siteLayout.contact",
+          "label": "Контакты"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "siteLayout.skipToContent": "Перейти к содержимому",
+            "siteLayout.home": "Главная",
+            "siteLayout.homeLabel": "Елена Захарова — главная",
+            "siteLayout.monogramFirst": "Е",
+            "siteLayout.monogramSecond": "З",
+            "siteLayout.numerologistCoach": "НУМЕРОЛОГ · ЖЕНСКИЙ КОУЧ",
+            "siteLayout.mainNavigation": "Главное меню",
+            "siteLayout.bookASession": "Записаться",
+            "siteLayout.openMenu": "Открыть меню",
+            "siteLayout.expertNameUppercase": "ЕЛЕНА ЗАХАРОВА",
+            "siteLayout.closeMenu": "Закрыть меню",
+            "siteLayout.mobileNavigation": "Мобильное меню",
+            "siteLayout.bookASession13": "Записаться на встречу",
+            "siteLayout.closerToYourself": "Ближе к себе.",
+            "siteLayout.closerToALifeYouChoose": "Ближе к жизни, которую выбираешь.",
+            "siteLayout.footerNavigation": "Меню в подвале",
+            "siteLayout.aboutMe": "Обо мне",
+            "siteLayout.sessions": "Услуги",
+            "siteLayout.getInTouch": "Написать мне",
+            "siteLayout.onlineInYourOwnSpace": "Онлайн · в вашем пространстве",
+            "siteLayout.privacy": "Конфиденциальность",
+            "siteLayout.demoWebsiteThePortraitIsAigeneratedAnd": "Демонстрационная версия: портрет создан ИИ, тексты и отзывы — примеры. Контакты и сведения об эксперте уточняются.",
+            "siteLayout.areasOfFocus": "Направления",
+            "siteLayout.testimonials": "Отзывы",
+            "siteLayout.contact": "Контакты"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "siteLayout.skipToContent": "Pāriet uz saturu",
+            "siteLayout.home": "Sākumlapa",
+            "siteLayout.homeLabel": "Елена Захарова — sākumlapa",
+            "siteLayout.monogramFirst": "Е",
+            "siteLayout.monogramSecond": "З",
+            "siteLayout.numerologistCoach": "NUMEROLOĢE · KOUČS SIEVIETĒM",
+            "siteLayout.mainNavigation": "Galvenā navigācija",
+            "siteLayout.bookASession": "Pieteikties",
+            "siteLayout.openMenu": "Atvērt izvēlni",
+            "siteLayout.expertNameUppercase": "ЕЛЕНА ЗАХАРОВА",
+            "siteLayout.closeMenu": "Aizvērt izvēlni",
+            "siteLayout.mobileNavigation": "Mobilā navigācija",
+            "siteLayout.bookASession13": "Pieteikties sarunai",
+            "siteLayout.closerToYourself": "Tuvāk sev.",
+            "siteLayout.closerToALifeYouChoose": "Tuvāk dzīvei, ko izvēlies pati.",
+            "siteLayout.footerNavigation": "Kājenes navigācija",
+            "siteLayout.aboutMe": "Par mani",
+            "siteLayout.sessions": "Konsultācijas",
+            "siteLayout.getInTouch": "Sazināties",
+            "siteLayout.onlineInYourOwnSpace": "Tiešsaistē · tavā vidē",
+            "siteLayout.privacy": "Privātums",
+            "siteLayout.demoWebsiteThePortraitIsAigeneratedAnd": "Vietnes demonstrācijas versija: portrets veidots ar mākslīgo intelektu, teksti un atsauksmes ir piemēri. Kontaktinformācija un ziņas par speciālisti vēl tiek precizētas.",
+            "siteLayout.areasOfFocus": "Darba virzieni",
+            "siteLayout.testimonials": "Atsauksmes",
+            "siteLayout.contact": "Kontakti"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "siteLayout.skipToContent": "Skip to content",
+            "siteLayout.home": "Home",
+            "siteLayout.homeLabel": "Елена Захарова — home",
+            "siteLayout.monogramFirst": "Е",
+            "siteLayout.monogramSecond": "З",
+            "siteLayout.numerologistCoach": "NUMEROLOGIST · COACH FOR WOMEN",
+            "siteLayout.mainNavigation": "Main navigation",
+            "siteLayout.bookASession": "Book a session",
+            "siteLayout.openMenu": "Open menu",
+            "siteLayout.expertNameUppercase": "ЕЛЕНА ЗАХАРОВА",
+            "siteLayout.closeMenu": "Close menu",
+            "siteLayout.mobileNavigation": "Mobile navigation",
+            "siteLayout.bookASession13": "Book a session",
+            "siteLayout.closerToYourself": "Closer to yourself.",
+            "siteLayout.closerToALifeYouChoose": "Closer to a life you choose.",
+            "siteLayout.footerNavigation": "Footer navigation",
+            "siteLayout.aboutMe": "About me",
+            "siteLayout.sessions": "Sessions",
+            "siteLayout.getInTouch": "Get in touch",
+            "siteLayout.onlineInYourOwnSpace": "Online · in your own space",
+            "siteLayout.privacy": "Privacy",
+            "siteLayout.demoWebsiteThePortraitIsAigeneratedAnd": "Demo website: the portrait is AI-generated, and the copy and testimonials are examples. Contact details and the expert’s information are awaiting confirmation.",
+            "siteLayout.areasOfFocus": "Areas of focus",
+            "siteLayout.testimonials": "Testimonials",
+            "siteLayout.contact": "Contact"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "about.certificates",
+      "page": "about",
+      "section_type": "certificates",
+      "label": "Заголовок сертификатов",
+      "critical": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "certificates.eyebrow",
+          "label": "ОБРАЗОВАНИЕ И ПОДГОТОВКА"
+        },
+        {
+          "key": "certificates.title",
+          "label": "Обучение, которое стоит за моей практикой"
+        },
+        {
+          "key": "certificates.intro",
+          "label": "Я продолжаю профессионально развиваться в направлениях коучинга и"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "certificates.eyebrow": "ОБРАЗОВАНИЕ И ПОДГОТОВКА",
+            "certificates.title": "Обучение, которое стоит за моей практикой",
+            "certificates.intro": "Я продолжаю профессионально развиваться в направлениях коучинга и нумерологии, чтобы сочетать бережный подход с практическими инструментами."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "certificates.eyebrow": "IZGLĪTĪBA UN PROFESIONĀLĀ SAGATAVOTĪBA",
+            "certificates.title": "Izglītība, uz kuras balstās mana prakse",
+            "certificates.intro": "Es turpinu profesionāli pilnveidoties koučingā un numeroloģijā, lai apvienotu saudzīgu pieeju ar praktiskiem instrumentiem."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "certificates.eyebrow": "EDUCATION & TRAINING",
+            "certificates.title": "The training behind my practice",
+            "certificates.intro": "I continue to develop professionally in coaching and numerology, combining a gentle approach with practical tools."
+          }
+        }
+      ]
+    }
+  ],
+  "directions": [
+    {
+      "slug": "potential",
+      "content_key": "potential",
+      "image": "/images/optimized/expert-1672.webp",
+      "service_slug": "personal-matrix",
+      "options": [
+        {
+          "code": "personality"
+        }
+      ],
+      "is_active": true,
+      "sort_order": 0,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Ты и твой потенциал",
+          "eyebrow": "ЛИЧНОСТЬ · СИЛЬНЫЕ СТОРОНЫ · РЕСУРСЫ",
+          "short_description": "Характер, таланты и опоры, которые уже есть внутри.",
+          "lead": "Понять, что тебе близко, на что можно опереться и как дать больше места своим сильным сторонам.",
+          "context": "Это пространство для внимательного знакомства с собой. Нумерологический разбор помогает начать разговор о характере и привычных способах действовать; выводы мы соотносим с твоим опытом, а не принимаем за готовые определения личности.",
+          "format_note": "Можно выбрать отдельный разбор по этой теме или разбор с онлайн-встречей, чтобы обсудить результаты и задать вопросы.",
+          "insights": "Особенности характера и то, как ты проявляешь себя в разных ситуациях.\nСильные стороны, таланты и занятия, в которых тебе интересно развиваться.\nВнутренние ресурсы и условия, в которых тебе легче действовать.\nПривычные ожидания и сомнения, которые могут мешать замечать свои возможности.",
+          "questions": "В чём мои сильные стороны, если я привыкла видеть прежде всего недостатки?\nЧто мне действительно интересно, а что я делаю из чувства долга?\nНа что я могу опереться, когда выбираю новое направление?",
+          "process": "Сначала мы уточняем твой запрос. В разборе рассматриваем тему личности и ресурсов, связывая наблюдения с примерами из твоей жизни. Если ты выбираешь формат с онлайн-встречей, обсуждаем вопросы и возможные первые шаги. Решение о том, что подходит именно тебе, остаётся за тобой.",
+          "seo_title": "Личность и потенциал — нумерологический разбор",
+          "seo_description": "Исследуйте свой характер, сильные стороны, таланты и внутренние ресурсы с Еленой Захаровой. Узнайте, как проходит разбор личности и какой формат выбрать.",
+          "alt": "Елена Захарова — индивидуальная работа с запросом"
+        },
+        {
+          "language": "lv",
+          "title": "Tu un tavs potenciāls",
+          "eyebrow": "PERSONĪBA · STIPRĀS PUSES · RESURSI",
+          "short_description": "Raksturs, talanti un iekšējie resursi, kas tev jau ir.",
+          "lead": "Iepazīsti to, kas tev ir tuvs, uz ko vari paļauties un kā ikdienā vairāk izmantot savas stiprās puses.",
+          "context": "Šī ir iespēja veltīt laiku sevis iepazīšanai. Numeroloģiskā analīze ir sākumpunkts sarunai par raksturu un ierastajiem rīcības veidiem. Novērojumus salīdzinām ar tavu pieredzi, nevis uztveram kā gatavu personības definīciju.",
+          "format_note": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus.",
+          "insights": "Rakstura iezīmes un tas, kā tu rīkojies dažādās situācijās.\nStiprās puses, talanti un nodarbes, kurās tev ir interese attīstīties.\nIekšējie resursi un apstākļi, kuros tev ir vieglāk rīkoties.\nIerastās gaidas un šaubas, kas var traucēt pamanīt savas iespējas.",
+          "questions": "Kā pamanīt savas stiprās puses, ja parasti redzu galvenokārt trūkumus?\nKas mani patiesi interesē, un ko daru pienākuma sajūtas dēļ?\nUz ko varu paļauties, izvēloties jaunu virzienu?",
+          "process": "Vispirms precizējam tavu jautājumu. Analīzē pievēršamies personībai un resursiem, sasaistot novērojumus ar piemēriem no tavas dzīves. Ja izvēlies arī tiešsaistes sarunu, pārrunājam jautājumus un iespējamos pirmos soļus. Tu pati izlem, kas tev ir piemērots.",
+          "seo_title": "Personība un potenciāls — numeroloģiskā analīze",
+          "seo_description": "Iepazīsti savu raksturu, stiprās puses, talantus un iekšējos resursus kopā ar Елена Захарова. Uzzini, kā notiek personības analīze, un izvēlies piemērotu formātu.",
+          "alt": "Елена Захарова — individuāla saruna par tavu jautājumu"
+        },
+        {
+          "language": "en",
+          "title": "You and your potential",
+          "eyebrow": "PERSONALITY · STRENGTHS · RESOURCES",
+          "short_description": "Your character, talents and the strengths already within you.",
+          "lead": "Explore what feels right for you, what you can draw on and how to make more room for your strengths.",
+          "context": "This is a space to get to know yourself with care. A numerology reading offers a starting point for discussing your character and familiar ways of acting. We relate the observations to your experience, rather than treating them as fixed definitions of who you are.",
+          "format_note": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions.",
+          "insights": "Your character and how you respond in different situations.\nStrengths, talents and activities you would like to develop.\nInner resources and conditions that help you take action.\nFamiliar expectations and doubts that may make your abilities harder to recognise.",
+          "questions": "How can I recognise my strengths when I tend to focus on my shortcomings?\nWhat truly interests me, and what do I do out of a sense of duty?\nWhat can I draw on when choosing a new direction?",
+          "process": "We begin by clarifying your question. The reading explores personality and resources, connecting observations with examples from your life. If you choose an online session as well, we discuss your questions and possible first steps. You decide what fits your life.",
+          "seo_title": "Personality and potential — a numerology reading",
+          "seo_description": "Explore your character, strengths, talents and inner resources with Елена Захарова. Learn what a personality reading involves and choose a format that suits you.",
+          "alt": "Елена Захарова — exploring your question together"
+        }
+      ]
+    },
+    {
+      "slug": "purpose-money",
+      "content_key": "purposeMoney",
+      "image": "/images/journal-placeholder.webp",
+      "service_slug": "personal-matrix",
+      "options": [
+        {
+          "code": "finances"
+        }
+      ],
+      "is_active": true,
+      "sort_order": 1,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Предназначение и деньги",
+          "eyebrow": "РЕАЛИЗАЦИЯ · ДЕНЬГИ · НАПРАВЛЕНИЕ",
+          "short_description": "Твоё дело, реализация и отношения с ресурсами.",
+          "lead": "Посмотреть на свои качества в работе и на отношения с деньгами — без поиска единственного правильного пути.",
+          "context": "Здесь можно обсудить, какие занятия откликаются тебе, что важно в профессиональной реализации и какие привычные сценарии влияют на финансовые решения. Разбор — инструмент для размышления, а не прогноз дохода или финансовая рекомендация.",
+          "format_note": "Для запроса об отношении к деньгам подойдёт вариант «Финансы». Если хочется рассмотреть предназначение вместе с другими сферами жизни, можно выбрать полный разбор. Онлайн-встреча позволяет обсудить результаты и задать вопросы.",
+          "insights": "Сильные стороны, которые ты можешь проявлять в своей деятельности.\nИнтересы, ценности и условия работы, подходящие твоему ритму.\nОтношение к деньгам и повторяющиеся способы принимать финансовые решения.\nРесурсы и возможные направления дальнейшего развития.",
+          "questions": "Как понять, какое дело мне ближе, если интересов много?\nКакие свои качества я пока мало использую в работе?\nПочему мне сложно говорить о стоимости своего труда?",
+          "process": "Мы уточняем, что сейчас важнее: вопрос реализации или отношения с деньгами. Затем рассматриваем выбранную тему и сопоставляем наблюдения с твоими обстоятельствами. На онлайн-встрече можно обсудить результаты и наметить вопросы для дальнейшего исследования. Решения о работе и деньгах ты принимаешь самостоятельно.",
+          "seo_title": "Предназначение и деньги — реализация и ресурсы",
+          "seo_description": "Профессиональная реализация, сильные стороны в работе и отношение к деньгам. Направление нумерологических разборов Елены Захаровой без обещаний дохода.",
+          "alt": "Блокнот и чашка кофе на столе"
+        },
+        {
+          "language": "lv",
+          "title": "Aicinājums un nauda",
+          "eyebrow": "PAŠREALIZĀCIJA · NAUDA · VIRZIENS",
+          "short_description": "Tavs darbs, pašrealizācija un attieksme pret resursiem.",
+          "lead": "Ieraugi savas īpašības darbā un attiecības ar naudu, nemeklējot vienu vienīgo pareizo ceļu.",
+          "context": "Varam pārrunāt, kādas nodarbes tevi uzrunā, kas tev ir svarīgs profesionālajā dzīvē un kādi ieradumi ietekmē finanšu lēmumus. Analīze ir instruments pārdomām, nevis ienākumu prognoze vai finanšu konsultācija.",
+          "format_note": "Jautājumiem par attieksmi pret naudu piemērota ir finanšu analīze. Ja vēlies aplūkot savu aicinājumu saistībā ar citām dzīves jomām, vari izvēlēties pilno analīzi. Tiešsaistes sarunā varēsi pārrunāt rezultātus un uzdot jautājumus.",
+          "insights": "Stiprās puses, kuras vari izmantot savā darbībā.\nIntereses, vērtības un darba apstākļi, kas atbilst tavam ritmam.\nAttieksme pret naudu un ierastie finanšu lēmumu pieņemšanas veidi.\nResursi un iespējamie turpmākās attīstības virzieni.",
+          "questions": "Kā saprast, kura nodarbe man ir tuvāka, ja interešu ir daudz?\nKuras savas īpašības darbā vēl izmantoju pārāk maz?\nKāpēc man ir grūti runāt par sava darba cenu?",
+          "process": "Noskaidrojam, kas šobrīd ir svarīgāks: pašrealizācija vai attiecības ar naudu. Tad aplūkojam izvēlēto tēmu un salīdzinām novērojumus ar tavu situāciju. Tiešsaistes sarunā varam pārrunāt rezultātus un jautājumus, kurus vēlies izpētīt tālāk. Lēmumus par darbu un naudu tu pieņem pati.",
+          "seo_title": "Aicinājums un nauda — pašrealizācija un resursi",
+          "seo_description": "Profesionālā pašrealizācija, stiprās puses darbā un attieksme pret naudu. Numeroloģisko analīžu virziens kopā ar Елена Захарова, bez ienākumu solījumiem.",
+          "alt": "Piezīmju grāmata un kafijas tasīte uz galda"
+        },
+        {
+          "language": "en",
+          "title": "Purpose and money",
+          "eyebrow": "FULFILMENT · MONEY · DIRECTION",
+          "short_description": "Meaningful work, fulfilment and your relationship with resources.",
+          "lead": "Look at the qualities you bring to your work and your relationship with money, without searching for a single correct path.",
+          "context": "We can explore the activities that interest you, what matters in your working life and the familiar patterns behind financial decisions. The reading is a tool for reflection, not an income forecast or financial advice.",
+          "format_note": "Choose the finances reading for questions about your relationship with money. To explore purpose alongside other areas of life, consider the full reading. An online session gives you time to discuss the findings and ask questions.",
+          "insights": "Strengths you can bring to your work and activities.\nInterests, values and working conditions that suit your pace.\nYour relationship with money and familiar ways of making financial decisions.\nResources and possible directions for further development.",
+          "questions": "How do I decide which work feels right when I have many interests?\nWhich of my qualities am I not making much use of at work?\nWhy do I find it difficult to talk about the price of my work?",
+          "process": "We clarify whether your main question concerns fulfilment or your relationship with money. We then explore that topic and relate the observations to your circumstances. An online session offers time to discuss the findings and identify questions to explore further. Decisions about work and money remain yours.",
+          "seo_title": "Purpose and money — work, fulfilment and resources",
+          "seo_description": "Explore professional fulfilment, strengths at work and your relationship with money through numerology readings with Елена Захарова. No income promises.",
+          "alt": "A notebook and a cup of coffee on a table"
+        }
+      ]
+    },
+    {
+      "slug": "relationships",
+      "content_key": "relationships",
+      "image": "/images/relationships-placeholder.webp",
+      "service_slug": "personal-matrix",
+      "options": [
+        {
+          "code": "relationships"
+        }
+      ],
+      "is_active": true,
+      "sort_order": 2,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Отношения",
+          "eyebrow": "ПОТРЕБНОСТИ · ГРАНИЦЫ · ДИАЛОГ",
+          "short_description": "Близость, личные границы и понимание друг друга.",
+          "lead": "Лучше услышать себя в отношениях и внимательнее посмотреть на то, как выстраивается контакт с другим человеком.",
+          "context": "В центре разбора — твои потребности, привычные реакции и ожидания. Мы не делаем выводов за партнёра и не определяем, каким должен быть ваш союз. Можно исследовать свой вклад в общение и то, о чём важно говорить открыто.",
+          "format_note": "Можно выбрать отдельный разбор по этой теме или разбор с онлайн-встречей, чтобы обсудить результаты и задать вопросы.",
+          "insights": "Особенности своего поведения и реакции в близких отношениях.\nЛичные потребности, границы и способы выражать их.\nПовторяющиеся сценарии и ситуации, в которых возникает напряжение.\nВозможности для более ясного диалога и внимательного отношения к различиям.",
+          "questions": "Почему в разных отношениях я сталкиваюсь с похожими ситуациями?\nКак заметить свои потребности и говорить о них без обвинений?\nГде для меня проходит граница между поддержкой и отказом от себя?",
+          "process": "Начинаем с конкретного вопроса или ситуации. В разборе рассматриваем тему отношений, а наблюдения проверяем через твой опыт. На онлайн-встрече можно обсудить, что откликается и какие вопросы стоит вынести в диалог. Нумерология используется как инструмент саморефлексии, а не как терапия или оценка партнёра.",
+          "seo_title": "Разбор отношений — потребности, границы и общение",
+          "seo_description": "Внимательный взгляд на личные границы, потребности и повторяющиеся сценарии в отношениях. Узнайте о разборе отношений с Еленой Захаровой.",
+          "alt": "Руки, сложенные в форме сердца"
+        },
+        {
+          "language": "lv",
+          "title": "Attiecības",
+          "eyebrow": "VAJADZĪBAS · ROBEŽAS · SARUNA",
+          "short_description": "Tuvība, personīgās robežas un savstarpēja sapratne.",
+          "lead": "Labāk sadzirdi sevi attiecībās un uzmanīgāk paskaties uz to, kā veidojas saikne ar otru cilvēku.",
+          "context": "Analīzes centrā ir tavas vajadzības, ierastās reakcijas un gaidas. Neizdarām secinājumus partnera vietā un nenosakām, kādām jābūt jūsu attiecībām. Varam izpētīt tavu lomu saziņā un to, par ko ir svarīgi runāt atklāti.",
+          "format_note": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus.",
+          "insights": "Tava uzvedība un reakcijas tuvās attiecībās.\nPersonīgās vajadzības, robežas un veidi, kā tās paust.\nAtkārtoti attiecību modeļi un situācijas, kurās rodas spriedze.\nIespējas veidot skaidrāku sarunu un uzmanīgāk izturēties pret atšķirībām.",
+          "questions": "Kāpēc dažādās attiecībās nonāku līdzīgās situācijās?\nKā pamanīt savas vajadzības un runāt par tām bez pārmetumiem?\nKur man ir robeža starp atbalstu otram un atteikšanos no sevis?",
+          "process": "Sākam ar konkrētu jautājumu vai situāciju. Analīzē aplūkojam attiecību tēmu un novērojumus salīdzinām ar tavu pieredzi. Tiešsaistes sarunā varam pārrunāt, kas tevi uzrunā un par ko būtu vērts runāt ar partneri. Numeroloģiju izmantojam pašrefleksijai, nevis terapijai vai partnera novērtēšanai.",
+          "seo_title": "Attiecību analīze — vajadzības, robežas un saziņa",
+          "seo_description": "Uzmanīgs skats uz personīgajām robežām, vajadzībām un atkārtotiem attiecību modeļiem. Iepazīsti attiecību analīzi kopā ar Елена Захарова.",
+          "alt": "Rokas sirds formā"
+        },
+        {
+          "language": "en",
+          "title": "Relationships",
+          "eyebrow": "NEEDS · BOUNDARIES · DIALOGUE",
+          "short_description": "Closeness, personal boundaries and understanding each other.",
+          "lead": "Hear yourself more clearly in relationships and take a closer look at how you connect with another person.",
+          "context": "The focus is on your needs, familiar reactions and expectations. We do not draw conclusions on your partner’s behalf or decide what your relationship should be. We can explore your part in communication and what matters to you to discuss openly.",
+          "format_note": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions.",
+          "insights": "Your behaviour and reactions in close relationships.\nPersonal needs, boundaries and ways of expressing them.\nRecurring patterns and situations where tension arises.\nOpportunities for clearer dialogue and greater awareness of differences.",
+          "questions": "Why do I encounter similar situations in different relationships?\nHow can I recognise my needs and talk about them without blame?\nWhere is my boundary between supporting someone and losing sight of myself?",
+          "process": "We start with a specific question or situation. The reading explores relationships, with observations considered alongside your experience. In an online session, we can discuss what resonates and which questions you might bring into a conversation. Numerology is used for self-reflection, not as therapy or an assessment of your partner.",
+          "seo_title": "Relationship reading — needs, boundaries and communication",
+          "seo_description": "Take a thoughtful look at your needs, boundaries and recurring relationship patterns. Explore a numerology relationship reading with Елена Захарова.",
+          "alt": "Hands forming a heart"
+        }
+      ]
+    },
+    {
+      "slug": "child-matrix",
+      "content_key": "childMatrix",
+      "image": "/images/child-placeholder.webp",
+      "service_slug": "personal-matrix",
+      "options": [
+        {
+          "code": "child-matrix"
+        }
+      ],
+      "is_active": true,
+      "sort_order": 3,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Детская матрица",
+          "eyebrow": "ИНДИВИДУАЛЬНОСТЬ · ИНТЕРЕСЫ · ПОДДЕРЖКА",
+          "short_description": "Увидеть особенности ребёнка и поддержать его.",
+          "lead": "Посмотреть на особенности ребёнка с любопытством и вниманием — без ярлыков и заранее заданного будущего.",
+          "context": "Это дополнительный инструмент для размышления о характере, интересах и сильных сторонах ребёнка. Любые наблюдения важно соотносить с его реальным поведением, возрастом и потребностями. Разбор не заменяет профессиональную медицинскую или психологическую помощь.",
+          "format_note": "Можно выбрать отдельный разбор по этой теме или разбор с онлайн-встречей, чтобы обсудить результаты и задать вопросы.",
+          "insights": "Индивидуальные особенности и сильные стороны, которые стоит замечать.\nИнтересы ребёнка и способы поддерживать его любознательность.\nУсловия общения, в которых ребёнку легче проявлять себя.\nОжидания родителей и возможности более внимательного взаимодействия.",
+          "questions": "Как поддерживать интересы ребёнка, не выбирая всё за него?\nЧто я могу замечать в его реакциях вместо поспешных оценок?\nКак учитывать наши различия в повседневном общении?",
+          "process": "Родитель формулирует вопрос о взаимодействии или поддержке ребёнка. В разборе рассматриваем выбранную тему, избегая диагнозов и прогнозов будущего. Если выбран формат с онлайн-встречей, обсуждаем наблюдения и вопросы для повседневного общения. Ребёнок сохраняет право меняться, пробовать и выбирать свой путь.",
+          "seo_title": "Детская матрица — особенности и поддержка ребёнка",
+          "seo_description": "Знакомство с детской матрицей: интересы, сильные стороны и взаимодействие с родителями. Дополнительный взгляд на ребёнка без диагнозов и прогнозов.",
+          "alt": "Ребёнок за творческим занятием"
+        },
+        {
+          "language": "lv",
+          "title": "Bērna matrica",
+          "eyebrow": "INDIVIDUALITĀTE · INTERESES · ATBALSTS",
+          "short_description": "Ieraudzīt bērna individualitāti un viņu atbalstīt.",
+          "lead": "Paskaties uz bērna īpatnībām ar zinātkāri un vērību — bez birkām un iepriekš noteiktas nākotnes.",
+          "context": "Tas ir papildu instruments pārdomām par bērna raksturu, interesēm un stiprajām pusēm. Novērojumus vienmēr svarīgi saistīt ar bērna reālo uzvedību, vecumu un vajadzībām. Analīze neaizstāj profesionālu medicīnisku vai psiholoģisku palīdzību.",
+          "format_note": "Vari izvēlēties atsevišķu analīzi par šo tēmu vai analīzi ar tiešsaistes sarunu, lai pārrunātu rezultātus un uzdotu jautājumus.",
+          "insights": "Individuālās īpatnības un stiprās puses, kuras vērts pamanīt.\nBērna intereses un veidi, kā atbalstīt viņa zinātkāri.\nSaziņas apstākļi, kuros bērnam ir vieglāk izpausties.\nVecāku gaidas un iespējas veidot vērīgāku savstarpējo mijiedarbību.",
+          "questions": "Kā atbalstīt bērna intereses, neizvēloties visu viņa vietā?\nKo varu pamanīt viņa reakcijās, nesteidzoties tās novērtēt?\nKā ņemt vērā mūsu atšķirības ikdienas saziņā?",
+          "process": "Vecāks formulē jautājumu par savstarpējo saziņu vai bērna atbalstīšanu. Analīzē aplūkojam šo tēmu, neizvirzot diagnozes un neprognozējot nākotni. Ja izvēlēta arī tiešsaistes saruna, pārrunājam novērojumus un jautājumus ikdienas saziņai. Bērnam paliek tiesības mainīties, izmēģināt un izvēlēties savu ceļu.",
+          "seo_title": "Bērna matrica — individualitāte un atbalsts",
+          "seo_description": "Iepazīsti bērna matricu: intereses, stiprās puses un mijiedarbība ar vecākiem. Papildu skatījums uz bērna individualitāti bez diagnozēm un nākotnes prognozēm.",
+          "alt": "Bērns radošas nodarbes laikā"
+        },
+        {
+          "language": "en",
+          "title": "Your child’s matrix",
+          "eyebrow": "INDIVIDUALITY · INTERESTS · SUPPORT",
+          "short_description": "Understand your child’s individuality and how to support them.",
+          "lead": "Look at your child’s individual qualities with curiosity and care, without labels or a predetermined future.",
+          "context": "This is an additional tool for reflecting on a child’s character, interests and strengths. Observations should always be considered alongside their actual behaviour, age and needs. The reading does not replace professional medical or psychological support.",
+          "format_note": "Choose an individual reading on this topic, or a reading with an online session to discuss the findings and ask questions.",
+          "insights": "Individual qualities and strengths worth noticing.\nYour child’s interests and ways to support their curiosity.\nConditions that make it easier for your child to express themselves.\nParental expectations and opportunities for more attentive interaction.",
+          "questions": "How can I support my child’s interests without making every choice for them?\nWhat can I notice in their reactions before jumping to conclusions?\nHow can I account for our differences in everyday communication?",
+          "process": "A parent brings a question about communication or supporting their child. We explore that topic without diagnoses or predictions about the future. If you choose an online session, we discuss observations and questions for everyday interaction. Your child remains free to change, experiment and find their own path.",
+          "seo_title": "Child’s matrix — individuality and parental support",
+          "seo_description": "Explore your child’s interests, strengths and relationships with parents through a child’s matrix reading. An additional perspective without diagnoses or predictions.",
+          "alt": "A child enjoying a creative activity"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "is_active": true,
+      "is_featured": true,
+      "sort_order": 0,
+      "home_sort_order": 0,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Магия чисел существует!\n\nЗаказала разбор у Елены и просто обязана поделиться!\n\nЭто был не просто разбор даты рождения, а настоящий сеанс самопознания. Мне всё безумно понравилось: и подача, и глубина информации. Елена объяснила сложные вещи простым языком, разложила по полочкам мои «тараканы» и дала супер-практичные советы на ближайший год.\n\nВ моей голове лёгкость и чёткий план действий. Это лучший подарок себе любимой!\n\nРекомендую всем, кто ищет ответы внутри себя.",
+          "short_text": "Это был не просто разбор даты рождения, а настоящий сеанс самопознания. Мне очень понравились и подача, и глубина информации. После разбора появилась лёгкость и чёткий план действий."
+        },
+        {
+          "language": "lv",
+          "full_text": "Skaitļu maģija pastāv!\n\nPasūtīju analīzi pie Елена un vienkārši nevaru nepadalīties!\n\nTā nebija tikai dzimšanas datuma analīze, bet gan īsta sevis izzināšanas sesija. Man ārkārtīgi patika viss: gan pasniegšanas veids, gan informācijas dziļums. Елена izskaidroja sarežģītas lietas vienkāršā valodā, palīdzēja sakārtot manas iekšējās pretrunas un deva ļoti praktiskus padomus nākamajam gadam.\n\nGalvā ir viegluma sajūta un skaidrs rīcības plāns. Tā ir labākā dāvana sev!\n\nIesaku ikvienam, kurš atbildes meklē sevī.",
+          "short_text": "Tā nebija tikai dzimšanas datuma analīze, bet gan īsta sevis izzināšanas sesija. Man ļoti patika gan pasniegšanas veids, gan informācijas dziļums. Pēc analīzes radās viegluma sajūta un skaidrs rīcības plāns."
+        },
+        {
+          "language": "en",
+          "full_text": "The magic of numbers exists!\n\nI ordered a reading from Елена and simply have to share!\n\nThis was not just a reading of my date of birth, but a real session of self-discovery. I absolutely loved everything: both the presentation and the depth of the information. Елена explained complex things in simple terms, helped me make sense of my personal hang-ups and gave me incredibly practical advice for the coming year.\n\nMy mind feels lighter, and I have a clear plan of action. This is the best gift I could give myself!\n\nI recommend it to everyone looking for answers within themselves.",
+          "short_text": "This was not just a reading of my date of birth, but a real session of self-discovery. I really liked both the way the information was presented and its depth. Afterwards, I felt lighter and had a clear plan of action."
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": true,
+      "sort_order": 1,
+      "home_sort_order": 1,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Елена, Вы удивительный человек!\n\nКонсультация с Вами стала для меня не просто разбором цифр, а настоящим путешествием к себе. Многие вещи, которые я чувствовала интуитивно, Вы смогли объяснить и подтвердить.\n\nЯ получила ответы на вопросы, которые давно меня волновали: в чём мои таланты, почему некоторые задачи даются легко, а другие вызывают сопротивление, куда лучше направлять свою энергию.\n\nПосле консультации появилось больше уверенности в себе и своих возможностях. Будто кто-то включил свет там, где раньше были сомнения.\n\nБлагодарю Вас за профессионализм, искренность и умение вдохновлять людей на перемены!",
+          "short_text": "Консультация стала для меня настоящим путешествием к себе. Я получила ответы на вопросы, которые давно меня волновали, и после встречи появилось больше уверенности в себе и своих возможностях."
+        },
+        {
+          "language": "lv",
+          "full_text": "Елена, Jūs esat apbrīnojams cilvēks!\n\nKonsultācija ar Jums man kļuva ne tikai par skaitļu analīzi, bet par īstu ceļojumu pie sevis. Daudzas lietas, kuras jutu intuitīvi, Jūs spējāt izskaidrot un apstiprināt.\n\nEs saņēmu atbildes uz jautājumiem, kas mani jau sen nodarbināja: kādi ir mani talanti, kāpēc daži uzdevumi padodas viegli, bet citi izraisa pretestību, kur labāk virzīt savu enerģiju.\n\nPēc konsultācijas radās lielāka pārliecība par sevi un savām iespējām. It kā kāds būtu ieslēdzis gaismu tur, kur agrāk bija šaubas.\n\nPaldies par Jūsu profesionalitāti, patiesumu un spēju iedvesmot cilvēkus pārmaiņām!",
+          "short_text": "Konsultācija man kļuva par īstu ceļojumu pie sevis. Es saņēmu atbildes uz jautājumiem, kas mani jau sen nodarbināja, un pēc tikšanās jutos pārliecinātāka par sevi un savām iespējām."
+        },
+        {
+          "language": "en",
+          "full_text": "Елена, you are an amazing person!\n\nMy consultation with you became more than a reading of numbers — it was a real journey of self-discovery. You were able to explain and confirm many things I had felt intuitively.\n\nI received answers to questions that had been on my mind for a long time: what my talents are, why some tasks come easily while others bring up resistance, and where best to direct my energy.\n\nAfter the consultation, I felt more confident in myself and my possibilities. As if someone had switched on a light where there used to be doubt.\n\nThank you for your professionalism, sincerity and ability to inspire people to make changes!",
+          "short_text": "The consultation became a real journey of self-discovery for me. I received answers to questions that had been on my mind for a long time, and afterwards I felt more confident in myself and my possibilities."
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": true,
+      "sort_order": 2,
+      "home_sort_order": 2,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Елена, огромное спасибо за консультацию!\n\nОчень точно, глубоко и при этом понятно. Многие моменты попали прямо в точку и помогли взглянуть на свою жизнь совершенно иначе.\n\nПосле общения с Вами появилось больше уверенности, ясности и понимания своих сильных сторон. Чувствуется, что Вы работаете с душой и действительно хотите помочь человеку.\n\nОднозначно рекомендую каждому, кто хочет лучше узнать себя и найти ответы на важные вопросы.",
+          "short_text": "Очень точно, глубоко и при этом понятно. После общения появилось больше уверенности, ясности и понимания своих сильных сторон. Однозначно рекомендую тем, кто хочет лучше узнать себя."
+        },
+        {
+          "language": "lv",
+          "full_text": "Елена, milzīgs paldies par konsultāciju!\n\nĻoti precīzi, padziļināti un vienlaikus saprotami. Daudzi novērojumi trāpīja tieši mērķī un palīdzēja paskatīties uz savu dzīvi pavisam citādi.\n\nPēc sarunas ar Jums radās lielāka pārliecība, skaidrība un izpratne par savām stiprajām pusēm. Ir jūtams, ka strādājat no sirds un patiešām vēlaties palīdzēt cilvēkam.\n\nNoteikti iesaku ikvienam, kurš vēlas labāk iepazīt sevi un rast atbildes uz svarīgiem jautājumiem.",
+          "short_text": "Ļoti precīzi, padziļināti un vienlaikus saprotami. Pēc sarunas radās lielāka pārliecība, skaidrība un izpratne par savām stiprajām pusēm. Noteikti iesaku ikvienai, kura vēlas labāk iepazīt sevi."
+        },
+        {
+          "language": "en",
+          "full_text": "Елена, thank you so much for the consultation!\n\nVery precise, insightful and easy to understand. Many observations were spot on and helped me look at my life in a completely different way.\n\nAfter talking with you, I felt more confident, had greater clarity and understood my strengths better. I can feel that you put your heart into your work and truly want to help people.\n\nI definitely recommend it to anyone who wants to get to know themselves better and find answers to important questions.",
+          "short_text": "Very precise, insightful and easy to understand. After our conversation, I felt more confident, had greater clarity and understood my strengths better. I definitely recommend it to anyone who wants to get to know themselves better."
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": false,
+      "sort_order": 3,
+      "home_sort_order": null,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Елена, благодарю за консультацию!\n\nЧестно говоря, я относилась к нумерологии с осторожностью, но после общения с Вами многое стало на свои места. Особенно ценным для меня оказался разбор финансовой сферы.\n\nВы помогли увидеть мои сильные качества, которые раньше я недооценивала, и объяснили, где я сама ограничиваю свой рост.\n\nПосле консультации я пересмотрела некоторые решения, начала действовать увереннее и перестала сомневаться в своих возможностях.\n\nОчень рекомендую Елену тем, кто хочет лучше понять себя и раскрыть свой потенциал. Спасибо за профессионализм и глубокий подход!",
+          "short_text": ""
+        },
+        {
+          "language": "lv",
+          "full_text": "Елена, paldies par konsultāciju!\n\nGodīgi sakot, pret numeroloģiju izturējos piesardzīgi, taču pēc sarunas ar Jums daudz kas nostājās savās vietās. Īpaši vērtīga man izrādījās finanšu jomas analīze.\n\nJūs palīdzējāt ieraudzīt manas stiprās īpašības, kuras agrāk nenovērtēju, un izskaidrojāt, kur es pati ierobežoju savu izaugsmi.\n\nPēc konsultācijas pārskatīju dažus lēmumus, sāku rīkoties pārliecinošāk un pārstāju šaubīties par savām iespējām.\n\nĻoti iesaku Елена tiem, kuri vēlas labāk izprast sevi un atklāt savu potenciālu. Paldies par profesionalitāti un padziļināto pieeju!",
+          "short_text": ""
+        },
+        {
+          "language": "en",
+          "full_text": "Елена, thank you for the consultation!\n\nTo be honest, I was cautious about numerology, but after talking with you, many things fell into place. The reading of my financial life was particularly valuable to me.\n\nYou helped me see strengths I had previously underestimated and explained where I was limiting my own growth.\n\nAfter the consultation, I reconsidered some decisions, began acting more confidently and stopped doubting my abilities.\n\nI highly recommend Елена to anyone who wants to understand themselves better and fulfil their potential. Thank you for your professionalism and in-depth approach!",
+          "short_text": ""
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": false,
+      "sort_order": 4,
+      "home_sort_order": null,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Спасибо тебе, Елена, большое за такой глубокий разбор!\n\nЧестно, многое прям откликнулось внутри и заставило задуматься. Особенно про страхи, отношения и внутреннее состояние — как будто увидела себя со стороны.\n\nПосле разбора стало намного спокойнее и появилось понимание, над чем действительно важно работать, чтобы построить гармоничные отношения и не терять себя.\n\nОчень душевно, мягко и при этом глубоко.",
+          "short_text": ""
+        },
+        {
+          "language": "lv",
+          "full_text": "Liels paldies Tev, Елена, par tik padziļinātu analīzi!\n\nGodīgi sakot, daudz kas ļoti atsaucās manī un lika aizdomāties. Īpaši par bailēm, attiecībām un iekšējo stāvokli — it kā būtu ieraudzījusi sevi no malas.\n\nPēc analīzes kļuva daudz mierīgāk un radās izpratne par to, pie kā patiešām svarīgi strādāt, lai veidotu harmoniskas attiecības un nepazaudētu sevi.\n\nĻoti sirsnīgi, maigi un vienlaikus dziļi.",
+          "short_text": ""
+        },
+        {
+          "language": "en",
+          "full_text": "Thank you so much, Елена, for such an insightful reading!\n\nHonestly, so much resonated with me and made me think. Especially the parts about fears, relationships and my inner state — it was as if I could see myself from the outside.\n\nAfter the reading, I felt much calmer and understood what really matters to work on in order to build harmonious relationships without losing myself.\n\nSo heartfelt, gentle and yet profound.",
+          "short_text": ""
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": false,
+      "sort_order": 5,
+      "home_sort_order": null,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Честно... я даже не ожидала, что это будет настолько глубоко.\n\nШла просто из интереса, а в итоге про меня рассказали больше, чем я сама о себе понимаю. Некоторые вещи прям откликнулись до мурашек.\n\nСтало как-то спокойнее внутри. Появилось ощущение, что всё не случайно. И теперь знаю, куда надо идти.\n\nЕлена, спасибо тебе большое. Ты правда супер! Наш проводник в мир смыслов и понимания.\n\nОчень рада, что сделала этот разбор.",
+          "short_text": ""
+        },
+        {
+          "language": "lv",
+          "full_text": "Godīgi… es pat negaidīju, ka tas būs tik dziļi.\n\nDevos vienkārši intereses pēc, bet beigās par mani pastāstīja vairāk, nekā es pati par sevi saprotu. Dažas lietas uzrunāja līdz pat zosādai.\n\nIekšēji kļuva kaut kā mierīgāk. Radās sajūta, ka nekas nav nejauši. Un tagad zinu, kurp doties.\n\nЕлена, liels Tev paldies. Tu tiešām esi lieliska! Mūsu ceļvede jēgas un izpratnes pasaulē.\n\nĻoti priecājos, ka izvēlējos šo analīzi.",
+          "short_text": ""
+        },
+        {
+          "language": "en",
+          "full_text": "Honestly… I never expected it to go so deep.\n\nI went out of curiosity, but ended up hearing more about myself than I understand on my own. Some things resonated so strongly they gave me goosebumps.\n\nI felt calmer inside somehow. There was a sense that nothing is accidental. And now I know where to go.\n\nЕлена, thank you so much. You really are wonderful! Our guide to a world of meaning and understanding.\n\nI am so glad I had this reading.",
+          "short_text": ""
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": false,
+      "sort_order": 6,
+      "home_sort_order": null,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "Спасибо большое! Очень совпадает с моим внутренним ощущением о том, к чему мне стремиться и куда мне идти. Ты подтвердила мои мысли и то, что я думаю в правильном направлении.",
+          "short_text": ""
+        },
+        {
+          "language": "lv",
+          "full_text": "Liels paldies! Tas ļoti sakrīt ar manu iekšējo sajūtu par to, uz ko tiekties un kurp doties. Tu apstiprināji manas domas un to, ka domāju pareizajā virzienā.",
+          "short_text": ""
+        },
+        {
+          "language": "en",
+          "full_text": "Thank you so much! This really matches my inner sense of what to strive for and where to go. You confirmed my thoughts and that I am thinking in the right direction.",
+          "short_text": ""
+        }
+      ]
+    },
+    {
+      "is_active": true,
+      "is_featured": false,
+      "sort_order": 7,
+      "home_sort_order": null,
+      "publication_consent": true,
+      "author_display_name": "",
+      "translations": [
+        {
+          "language": "ru",
+          "full_text": "А ещё у меня есть третий глаз 😅\n\nЯ как раз сегодня о тебе вспомнила, думала написать, что очень крутые разборы. Прям в точку.",
+          "short_text": ""
+        },
+        {
+          "language": "lv",
+          "full_text": "Un man vēl ir trešā acs 😅\n\nTieši šodien atcerējos par Tevi un domāju uzrakstīt, ka analīzes ir ļoti foršas. Tieši mērķī.",
+          "short_text": ""
+        },
+        {
+          "language": "en",
+          "full_text": "And I also have a third eye 😅\n\nI actually thought of you today and was going to write that the readings are really great. Absolutely spot on.",
+          "short_text": ""
+        }
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "year": "2026",
+      "issuer": "Anna Spivak Coaching Academy",
+      "sort_order": 0,
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Коуч-практик ICTA",
+          "description": "Женский коуч и консультант",
+          "alt": "Сертификат ICTA — {name}"
+        },
+        {
+          "language": "lv",
+          "title": "ICTA koučs-praktiķis",
+          "description": "Koučs un konsultants sievietēm",
+          "alt": "ICTA sertifikāts — {name}"
+        },
+        {
+          "language": "en",
+          "title": "ICTA Coach-Practitioner",
+          "description": "Coach and consultant for women",
+          "alt": "ICTA certificate — {name}"
+        }
+      ],
+      "images": [
+        {
+          "language": "ru",
+          "path": "/images/optimized/icta-ru-full.webp"
+        },
+        {
+          "language": "en",
+          "path": "/images/optimized/icta-en-full.webp"
+        }
+      ]
+    },
+    {
+      "year": "2026",
+      "issuer": "GEXA KOD",
+      "sort_order": 1,
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Цифровой нумеролог",
+          "description": "Курс по кармической цифровой психологии",
+          "alt": "Сертификат по цифровой нумерологии — {name}"
+        },
+        {
+          "language": "lv",
+          "title": "Digitālais numerologs",
+          "description": "Kurss karmiskajā digitālajā psiholoģijā",
+          "alt": "Digitālās numeroloģijas sertifikāts — {name}"
+        },
+        {
+          "language": "en",
+          "title": "Digital Numerologist",
+          "description": "Course in karmic digital psychology",
+          "alt": "Digital numerology certificate — {name}"
+        }
+      ],
+      "images": [
+        {
+          "language": "ru",
+          "path": "/images/optimized/numerology-ru-full.webp"
+        },
+        {
+          "language": "lv",
+          "path": "/images/optimized/numerology-lv-full.webp"
+        },
+        {
+          "language": "en",
+          "path": "/images/optimized/numerology-en-full.webp"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "sort_order": 0,
+      "icon_key": "arrow",
+      "translations": [
+        {
+          "language": "ru",
+          "label": "01",
+          "title": "Увидеть себя",
+          "description": "Знакомимся с твоим запросом. Находим сильные стороны и внутренние опоры."
+        },
+        {
+          "language": "lv",
+          "label": "01",
+          "title": "Ieraudzīt sevi",
+          "description": "Iepazīstam tavu jautājumu. Atrodam stiprās puses un iekšējos resursus."
+        },
+        {
+          "language": "en",
+          "label": "01",
+          "title": "See yourself clearly",
+          "description": "We start with your question and explore your strengths and inner resources."
+        }
+      ]
+    },
+    {
+      "sort_order": 1,
+      "icon_key": "arrow",
+      "translations": [
+        {
+          "language": "ru",
+          "label": "02",
+          "title": "Понять, что происходит",
+          "description": "Замечаем привычные сценарии и разбираемся, что действительно важно тебе."
+        },
+        {
+          "language": "lv",
+          "label": "02",
+          "title": "Saprast, kas notiek",
+          "description": "Pamanām ierastos rīcības modeļus un noskaidrojam, kas tev patiesi svarīgs."
+        },
+        {
+          "language": "en",
+          "label": "02",
+          "title": "Understand what’s happening",
+          "description": "We notice familiar patterns and discover what really matters to you."
+        }
+      ]
+    },
+    {
+      "sort_order": 2,
+      "icon_key": "arrow",
+      "translations": [
+        {
+          "language": "ru",
+          "label": "03",
+          "title": "Начать действовать",
+          "description": "Превращаем понимание в небольшие, конкретные шаги. В твоём темпе."
+        },
+        {
+          "language": "lv",
+          "label": "03",
+          "title": "Sākt rīkoties",
+          "description": "Pārvēršam izpratni nelielos, konkrētos soļos. Tavā tempā."
+        },
+        {
+          "language": "en",
+          "label": "03",
+          "title": "Take the next step",
+          "description": "We turn understanding into small, practical steps. At your own pace."
+        }
+      ]
+    }
+  ]
+}

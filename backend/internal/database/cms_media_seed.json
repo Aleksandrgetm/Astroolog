@@ -1,0 +1,127 @@
+[
+  {
+    "storage_path": "/images/optimized/icta-ru-full.webp",
+    "filename": "icta-ru-full.webp",
+    "original_filename": "icta-ru-full.webp",
+    "mime_type": "image/webp",
+    "size": 125522,
+    "width": 1599,
+    "height": 1131,
+    "variants": {
+      "800": "/images/optimized/icta-ru-800.webp",
+      "1200": "/images/optimized/icta-ru-1200.webp",
+      "1599": "/images/optimized/icta-ru-full.webp"
+    }
+  },
+  {
+    "storage_path": "/images/optimized/icta-en-full.webp",
+    "filename": "icta-en-full.webp",
+    "original_filename": "icta-en-full.webp",
+    "mime_type": "image/webp",
+    "size": 120100,
+    "width": 1599,
+    "height": 1131,
+    "variants": {
+      "800": "/images/optimized/icta-en-800.webp",
+      "1200": "/images/optimized/icta-en-1200.webp",
+      "1599": "/images/optimized/icta-en-full.webp"
+    }
+  },
+  {
+    "storage_path": "/images/optimized/numerology-ru-full.webp",
+    "filename": "numerology-ru-full.webp",
+    "original_filename": "numerology-ru-full.webp",
+    "mime_type": "image/webp",
+    "size": 208420,
+    "width": 1600,
+    "height": 1131,
+    "variants": {
+      "800": "/images/optimized/numerology-ru-800.webp",
+      "1200": "/images/optimized/numerology-ru-1200.webp",
+      "1600": "/images/optimized/numerology-ru-full.webp"
+    }
+  },
+  {
+    "storage_path": "/images/optimized/numerology-lv-full.webp",
+    "filename": "numerology-lv-full.webp",
+    "original_filename": "numerology-lv-full.webp",
+    "mime_type": "image/webp",
+    "size": 214466,
+    "width": 1600,
+    "height": 1131,
+    "variants": {
+      "800": "/images/optimized/numerology-lv-800.webp",
+      "1200": "/images/optimized/numerology-lv-1200.webp",
+      "1600": "/images/optimized/numerology-lv-full.webp"
+    }
+  },
+  {
+    "storage_path": "/images/optimized/numerology-en-full.webp",
+    "filename": "numerology-en-full.webp",
+    "original_filename": "numerology-en-full.webp",
+    "mime_type": "image/webp",
+    "size": 213246,
+    "width": 1600,
+    "height": 1131,
+    "variants": {
+      "800": "/images/optimized/numerology-en-800.webp",
+      "1200": "/images/optimized/numerology-en-1200.webp",
+      "1600": "/images/optimized/numerology-en-full.webp"
+    }
+  },
+  {
+    "storage_path": "/images/optimized/expert-1672.webp",
+    "filename": "expert-1672.webp",
+    "original_filename": "expert-1672.webp",
+    "mime_type": "image/webp",
+    "size": 84764,
+    "width": 1672,
+    "height": 941,
+    "variants": {
+      "640": "/images/optimized/expert-640.webp",
+      "960": "/images/optimized/expert-960.webp",
+      "1280": "/images/optimized/expert-1280.webp",
+      "1672": "/images/optimized/expert-1672.webp"
+    }
+  },
+  {
+    "storage_path": "/images/journal-placeholder.webp",
+    "filename": "journal-placeholder.webp",
+    "original_filename": "journal-placeholder.webp",
+    "mime_type": "image/webp",
+    "size": 268042,
+    "width": 1400,
+    "height": 933,
+    "variants": {}
+  },
+  {
+    "storage_path": "/images/relationships-placeholder.webp",
+    "filename": "relationships-placeholder.webp",
+    "original_filename": "relationships-placeholder.webp",
+    "mime_type": "image/webp",
+    "size": 49012,
+    "width": 900,
+    "height": 600,
+    "variants": {}
+  },
+  {
+    "storage_path": "/images/child-placeholder.webp",
+    "filename": "child-placeholder.webp",
+    "original_filename": "child-placeholder.webp",
+    "mime_type": "image/webp",
+    "size": 60322,
+    "width": 900,
+    "height": 600,
+    "variants": {}
+  },
+  {
+    "storage_path": "/images/Hero-new.png",
+    "filename": "Hero-new.png",
+    "original_filename": "Hero-new.png",
+    "mime_type": "image/png",
+    "size": 1658310,
+    "width": 1672,
+    "height": 941,
+    "variants": {}
+  }
+]

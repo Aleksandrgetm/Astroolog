@@ -8,12 +8,17 @@ type Base struct {
 	UpdatedAt time.Time `json:"updated_at"`
 }
 type User struct {
+	IsActive    bool       `json:"is_active" gorm:"not null;default:false"`
+	LastLoginAt *time.Time `json:"last_login_at"`
 	Base
 	Email        string `json:"email" gorm:"uniqueIndex;not null"`
 	PasswordHash string `json:"-" gorm:"not null"`
 	Role         string `json:"role" gorm:"not null;default:client;check:role IN ('client','admin')"`
 }
 type Service struct {
+	AltRU              string `json:"alt_ru"`
+	AltLV              string `json:"alt_lv"`
+	AltEN              string `json:"alt_en"`
 	TitleRU            string `json:"title_ru"`
 	TitleLV            string `json:"title_lv"`
 	TitleEN            string `json:"title_en"`
@@ -55,6 +60,7 @@ type CatalogRevision struct {
 	ID string `gorm:"primaryKey"`
 }
 type BookingOption struct {
+	Image     string    `json:"image"`
 	IsAddon   bool      `json:"is_addon" gorm:"not null;default:false"`
 	ServiceID uint      `json:"service_id" gorm:"not null;index"`
 	Service   Service   `json:"-" gorm:"constraint:OnDelete:RESTRICT"`
@@ -76,11 +82,14 @@ type BookingOption struct {
 }
 
 type Booking struct {
-	SubmissionKey *string `json:"-" gorm:"uniqueIndex"`
-	BonusCode     *string `json:"bonus_code"`
-	BonusTitle    *string `json:"bonus_title"`
-	BonusPrice    *int64  `json:"bonus_price" gorm:"check:bonus_price >= 0"`
-	TotalPrice    *int64  `json:"total_price" gorm:"check:total_price >= 0"`
+	InternalNote   string     `json:"-"`
+	WorkflowStatus string     `json:"workflow_status" gorm:"not null;default:new;check:workflow_status IN ('new','in_progress','completed','archived')"`
+	ConsentAt      *time.Time `json:"consent_at"`
+	SubmissionKey  *string    `json:"-" gorm:"uniqueIndex"`
+	BonusCode      *string    `json:"bonus_code"`
+	BonusTitle     *string    `json:"bonus_title"`
+	BonusPrice     *int64     `json:"bonus_price" gorm:"check:bonus_price >= 0"`
+	TotalPrice     *int64     `json:"total_price" gorm:"check:total_price >= 0"`
 
 	ServiceTitle *string `json:"service_title"`
 	OptionTitle  *string `json:"option_title"`
@@ -101,16 +110,17 @@ type Booking struct {
 	Status        string     `json:"status" gorm:"default:new;check:status IN ('new','confirmed','completed','cancelled')"`
 }
 type ContactRequest struct {
-	Status       string    `json:"status" gorm:"not null;default:new;check:status IN ('new','in_progress','completed','archived')"`
-	InternalNote string    `json:"-"`
-	UpdatedAt    time.Time `json:"updated_at"`
-	Language     string    `json:"language"`
-	ID           uint      `json:"id" gorm:"primaryKey"`
-	Name         string    `json:"name"`
-	Email        string    `json:"email"`
-	Phone        string    `json:"phone"`
-	Message      string    `json:"message"`
-	CreatedAt    time.Time `json:"created_at"`
+	ConsentAt    *time.Time `json:"consent_at"`
+	Status       string     `json:"status" gorm:"not null;default:new;check:status IN ('new','in_progress','completed','archived')"`
+	InternalNote string     `json:"-"`
+	UpdatedAt    time.Time  `json:"updated_at"`
+	Language     string     `json:"language"`
+	ID           uint       `json:"id" gorm:"primaryKey"`
+	Name         string     `json:"name"`
+	Email        string     `json:"email"`
+	Phone        string     `json:"phone"`
+	Message      string     `json:"message"`
+	CreatedAt    time.Time  `json:"created_at"`
 }
 
 // Claim and the resulting request are committed in one transaction.
