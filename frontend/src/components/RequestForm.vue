@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { legalUI } from '../legal/ui'
+import type { LegalLocale } from '../legal/content'
 import { content } from '../stores/content'
 import { useI18n } from 'vue-i18n'
 import { computed, onMounted, reactive, ref, watch, nextTick } from 'vue'
@@ -132,7 +134,7 @@ watch(locale,async()=>{await nextTick();if(form.value?.isValid===false)await for
  <p v-if="bonusSelected && bonus">{{ t('bookingFlow.bonus') }}: {{ getLocalizedField(bonus, 'title') }} — +{{ price(bonus.price) }}</p>
  <strong>{{ t('bookingFlow.total') }}: {{ price(total) }}</strong>
 </div>
-<v-text-field :model-value="format" :label="t('requestForm.sessionFormat')" readonly/></template><v-textarea v-model="data.message" :label="booking?t('requestForm.whatWouldYouLikeToTalkAbout'):t('requestForm.yourQuestion')" :rules="booking?[]:[required]" maxlength="3000" rows="4" counter="3000"/><v-checkbox v-model="data.consent" :rules="[v=>v===true||t('requestForm.yourConsentIsRequiredToSendThis')]"><template #label><span>{{ t('requestForm.iAgreeToThe') }} <LocaleLink to="/privacy" @click.stop>{{ t('requestForm.dataProcessingTerms') }}</LocaleLink></span></template></v-checkbox><p v-if="error" class="form-error" role="alert">{{t(error)}}</p><div v-if="booking" class="form-messengers">
+<v-text-field :model-value="format" :label="t('requestForm.sessionFormat')" readonly/></template><v-textarea v-model="data.message" :label="booking?t('requestForm.whatWouldYouLikeToTalkAbout'):t('requestForm.yourQuestion')" :rules="booking?[]:[required]" maxlength="3000" rows="4" counter="3000"/><v-checkbox v-model="data.consent" :rules="[v=>v===true||t('requestForm.yourConsentIsRequiredToSendThis')]"><template #label><span>{{ legalUI[locale as LegalLocale].privacyConsent }} <LocaleLink to="/privacy" @click.stop>{{ legalUI[locale as LegalLocale].privacyLink }}</LocaleLink></span></template></v-checkbox><p v-if="error" class="form-error" role="alert">{{t(error)}}</p><div v-if="booking" class="form-messengers">
  <p class="form-hint">{{ t('bookingFlow.beforeSend') }}</p>
  <v-btn v-for="messenger in (['whatsapp', 'telegram'] as const)" :key="messenger" type="button" :data-messenger="messenger" color="primary" :variant="messenger === 'whatsapp' ? 'flat' : 'outlined'" :disabled="busy || validating" :loading="(busy || validating) && chosenMessenger === messenger" size="large" class="submit-button" @click="submit(messenger)">
   <MessengerIcon :messenger="messenger" />{{ t((busy || validating) && chosenMessenger === messenger ? 'bookingFlow.saving' : messenger === 'whatsapp' ? 'bookingFlow.sendWhatsApp' : 'bookingFlow.sendTelegram') }}

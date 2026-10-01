@@ -17,7 +17,7 @@ try{
   const lang=path.match(/^\/(lv|en)(\/|$)/)?.[1]||'ru'
   assert.equal(await page.locator('html').getAttribute('lang'),lang,path)
   for(const language of ['ru','lv','en','x-default'])assert.equal(await page.locator(`link[hreflang="${language}"]`).count(),1,path)
-  if(!path.endsWith('/privacy'))assert.ok(!(await page.locator('meta[name="robots"]').getAttribute('content')).includes('noindex'),path)
+  if(! /\/(privacy|cookies|terms)$/.test(path))assert.ok(!(await page.locator('meta[name="robots"]').getAttribute('content')).includes('noindex'),path)
   const errors=await page.evaluate(()=>({alt:[...document.images].filter(i=>!i.hasAttribute('alt')).length,links:[...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href')),schemas:[...document.querySelectorAll('script[type="application/ld+json"]')].map(s=>JSON.parse(s.textContent))}))
   if(path.includes('/directions/')) {
    const breadcrumbs=errors.schemas.find(s=>s['@type']==='BreadcrumbList')
@@ -32,6 +32,6 @@ try{
  }
  const sitemap=await readFile('dist/sitemap.xml','utf8')
  assert.ok(!/\?lang|growth-point|\/404|\/privacy|\/api\//.test(sitemap))
- for(const path of manifest.paths.filter(p=>!p.endsWith('/privacy')))assert.ok(sitemap.includes('<loc>'+manifest.site+path+'</loc>'),path)
+ for(const path of manifest.paths.filter(p=>! /\/(privacy|cookies|terms)$/.test(p)))assert.ok(sitemap.includes('<loc>'+manifest.site+path+'</loc>'),path)
  console.log(`SEO HTML checks passed: ${manifest.paths.length} routes (JavaScript disabled), sitemap.`)
 }finally{await browser.close()}

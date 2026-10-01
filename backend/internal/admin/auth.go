@@ -1,25 +1,27 @@
 package admin
 
 import (
+	"astroolog/backend/internal/config"
 	"astroolog/backend/internal/models"
 	"crypto/rand"
 	"crypto/sha256"
 	"crypto/subtle"
 	"encoding/hex"
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 	"net/http"
-	"net/url"
 	"os"
 	"strings"
 	"time"
 )
 
 type Handler struct {
-	DB    *gorm.DB
-	Store Storage
+	AllowedOrigins []string
+	DB             *gorm.DB
+	Store          Storage
 }
 
 func token() string {
@@ -43,17 +45,17 @@ func audit(db *gorm.DB, user uint, action, kind, id string) error {
 	return db.Create(&models.AdminAuditLog{UserID: user, Action: action, EntityType: kind, EntityID: id, Metadata: models.Document{}}).Error
 }
 func uid(c *gin.Context) uint { return c.MustGet("admin").(models.User).ID }
-func originOK(c *gin.Context) bool {
+func (h Handler) originOK(c *gin.Context) bool {
 	origin := c.GetHeader("Origin")
-	u, e := url.Parse(origin)
-	if e != nil || origin == "" || u.User != nil {
+	if !config.ValidOrigin(origin) {
 		return false
 	}
-	allowed := os.Getenv("APP_ORIGIN")
-	if allowed != "" {
-		return origin == strings.TrimRight(allowed, "/")
+	for _, allowed := range h.AllowedOrigins {
+		if origin == allowed {
+			return true
+		}
 	}
-	return os.Getenv("APP_ENV") != "production" && (u.Host == c.Request.Host || origin == "http://localhost:5173" || origin == "http://127.0.0.1:5173") && (u.Scheme == "http" || u.Scheme == "https")
+	return false
 }
 func (h Handler) throttle(key string, limit int) bool {
 	allowed := false
@@ -80,7 +82,7 @@ func (h Handler) throttle(key string, limit int) bool {
 var dummyPassword, _ = bcrypt.GenerateFromPassword([]byte("dummy-password-not-an-account"), 12)
 
 func (h Handler) Login(c *gin.Context) {
-	if !originOK(c) {
+	if !h.originOK(c) {
 		c.AbortWithStatusJSON(403, gin.H{"error": "Недопустимый источник запроса."})
 		return
 	}
@@ -113,6 +115,15 @@ func (h Handler) Login(c *gin.Context) {
 	csrf := hash("csrf:" + raw)
 	session := models.AdminSession{ID: hash(raw), UserID: user.ID, CSRFHash: hash(csrf), ExpiresAt: time.Now().Add(12 * time.Hour)}
 	e = h.DB.Transaction(func(tx *gorm.DB) error {
+		// Serialize session creation with password reset; a previously verified old hash
+		// must never create a session after the reset has committed.
+		var current models.User
+		if err := tx.Clauses(clause.Locking{Strength: "UPDATE"}).First(&current, user.ID).Error; err != nil {
+			return err
+		}
+		if current.PasswordHash != user.PasswordHash || !current.IsActive || current.Role != "admin" {
+			return fmt.Errorf("credentials changed during login")
+		}
 		if old, e := c.Cookie(cookieName()); e == nil {
 			if e := tx.Delete(&models.AdminSession{}, "id=?", hash(old)).Error; e != nil {
 				return e
@@ -161,14 +172,14 @@ func RequireRole(role string) gin.HandlerFunc {
 		c.Next()
 	}
 }
-func CSRF() gin.HandlerFunc {
+func (h Handler) CSRF() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		if c.Request.Method == http.MethodGet || c.Request.Method == http.MethodHead {
 			c.Next()
 			return
 		}
 		session := c.MustGet("session").(models.AdminSession)
-		if !originOK(c) || subtle.ConstantTimeCompare([]byte(hash(c.GetHeader("X-CSRF-Token"))), []byte(session.CSRFHash)) != 1 {
+		if !h.originOK(c) || subtle.ConstantTimeCompare([]byte(hash(c.GetHeader("X-CSRF-Token"))), []byte(session.CSRFHash)) != 1 {
 			c.AbortWithStatusJSON(403, gin.H{"error": "Обновите страницу: проверка безопасности не пройдена."})
 			return
 		}

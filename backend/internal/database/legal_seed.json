@@ -1,0 +1,1719 @@
+{
+  "pages": [
+    {
+      "key": "privacy",
+      "slug": "/privacy",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Политика конфиденциальности",
+          "meta_title": "Политика конфиденциальности",
+          "meta_description": "Информация об обработке персональных данных, их защите и ваших правах."
+        },
+        {
+          "language": "lv",
+          "title": "Privātuma politika",
+          "meta_title": "Privātuma politika",
+          "meta_description": "Informācija par personas datu apstrādi, aizsardzību un jūsu tiesībām."
+        },
+        {
+          "language": "en",
+          "title": "Privacy Policy",
+          "meta_title": "Privacy Policy",
+          "meta_description": "Information about personal data processing, protection and your rights."
+        }
+      ]
+    },
+    {
+      "key": "cookies",
+      "slug": "/cookies",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Политика cookies",
+          "meta_title": "Политика cookies",
+          "meta_description": "Фактическое браузерное хранение и управление выбором cookies."
+        },
+        {
+          "language": "lv",
+          "title": "Sīkdatņu politika",
+          "meta_title": "Sīkdatņu politika",
+          "meta_description": "Faktiskā datu glabāšana pārlūkā un sīkdatņu izvēles pārvaldība."
+        },
+        {
+          "language": "en",
+          "title": "Cookie Policy",
+          "meta_title": "Cookie Policy",
+          "meta_description": "Actual browser storage and management of cookie choices."
+        }
+      ]
+    },
+    {
+      "key": "terms",
+      "slug": "/terms",
+      "is_active": true,
+      "translations": [
+        {
+          "language": "ru",
+          "title": "Условия оказания услуг",
+          "meta_title": "Условия оказания услуг",
+          "meta_description": "Условия заказа, оплаты, проведения встреч и возврата средств."
+        },
+        {
+          "language": "lv",
+          "title": "Pakalpojumu sniegšanas noteikumi",
+          "meta_title": "Pakalpojumu sniegšanas noteikumi",
+          "meta_description": "Pasūtīšanas, samaksas, tikšanās un atmaksas noteikumi."
+        },
+        {
+          "language": "en",
+          "title": "Terms of Service",
+          "meta_title": "Terms of Service",
+          "meta_description": "Terms for ordering, payment, meetings and refunds."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_key": "legal.privacy.document",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Политика конфиденциальности",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.updated",
+          "label": "Дата обновления"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.title": "Политика конфиденциальности",
+            "legal.privacy.updated": "2026-10-01"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.title": "Privātuma politika",
+            "legal.privacy.updated": "2026-10-01"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.title": "Privacy Policy",
+            "legal.privacy.updated": "2026-10-01"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section1",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Общие положения",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section1.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section1.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section1.title": "Общие положения",
+            "legal.privacy.section1.body": "Эта политика объясняет, какие персональные данные я собираю на сайте, зачем, как их храню и какие у вас есть права. Я обрабатываю данные в соответствии с Регламентом ЕС 2016/679 (GDPR) и законодательством Латвии. Отправляя заявку или пользуясь сайтом, вы подтверждаете, что ознакомились с этой политикой."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section1.title": "Vispārīgie noteikumi",
+            "legal.privacy.section1.body": "Šī politika izskaidro, kādus personas datus es vācu vietnē, kāpēc, kā tos glabāju un kādas ir jūsu tiesības. Es apstrādāju datus saskaņā ar ES Regulu 2016/679 (VDAR) un Latvijas tiesību aktiem. Nosūtot pieteikumu vai izmantojot vietni, jūs apliecināt, ka esat iepazinusies ar šo politiku."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section1.title": "General provisions",
+            "legal.privacy.section1.body": "This policy explains which personal data I collect on the website, why I collect it, how I store it and what rights you have. I process data in accordance with Regulation (EU) 2016/679 (GDPR) and Latvian law. By submitting an enquiry or using the website, you confirm that you have read this policy."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section2",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Кто отвечает за ваши данные",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section2.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section2.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section2.title": "Кто отвечает за ваши данные",
+            "legal.privacy.section2.body": "Оператор данных: Елена Захарова.\nСамозанятое лицо (pašnodarbinātā persona), Латвия.\nКонтакты указаны ниже."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section2.title": "Kas atbild par jūsu datiem",
+            "legal.privacy.section2.body": "Datu pārzinis: Елена Захарова.\nPašnodarbinātā persona, Latvija.\nKontaktinformācija norādīta zemāk."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section2.title": "Who is responsible for your data",
+            "legal.privacy.section2.body": "Data controller: Елена Захарова.\nSelf-employed person (pašnodarbinātā persona), Latvia.\nContact details are provided below."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section3",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Какие данные я собираю",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section3.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section3.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section3.title": "Какие данные я собираю",
+            "legal.privacy.section3.body": "- имя;\n- контактные данные: e-mail, телефон, WhatsApp;\n- дата рождения (в том числе ребёнка, если вы заказываете детскую матрицу);\n- содержание заявки и переписки со мной;\n- данные, необходимые для оплаты;\n- технические данные о посещении сайта (см. раздел «Cookies»).\n\nЯ не прошу вас сообщать данные об особых категориях (например, о здоровье, религии, политических взглядах). Если вы сами упоминаете такие сведения в переписке или заявке, они используются только в рамках консультации и не передаются третьим лицам."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section3.title": "Kādus datus es vācu",
+            "legal.privacy.section3.body": "- vārdu;\n- kontaktinformāciju: e-pastu, tālruni, WhatsApp;\n- dzimšanas datumu (arī bērna dzimšanas datumu, ja pasūtāt bērna matricas analīzi);\n- pieteikuma un sarakstes ar mani saturu;\n- maksājuma veikšanai nepieciešamos datus;\n- tehniskos datus par vietnes apmeklējumu (skatīt sadaļu “Sīkdatnes”).\n\nEs nelūdzu sniegt īpašu kategoriju personas datus, piemēram, par veselību, reliģiju vai politiskajiem uzskatiem. Ja jūs pati šādu informāciju pieminat sarakstē vai pieteikumā, tā tiek izmantota tikai konsultācijas ietvaros un netiek nodota trešajām personām."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section3.title": "What data I collect",
+            "legal.privacy.section3.body": "- your name;\n- contact details: email, telephone number, WhatsApp;\n- date of birth (including your child's date of birth when you order a child matrix reading);\n- the contents of your enquiry and correspondence with me;\n- information needed for payment;\n- technical information about visits to the website (see “Cookies”).\n\nI do not ask you to provide special categories of personal data, such as information about health, religion or political opinions. If you voluntarily mention such information in correspondence or an enquiry, it is used only within the consultation and is not disclosed to third parties."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section4",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Зачем и на каком основании",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section4.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section4.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section4.title": "Зачем и на каком основании",
+            "legal.privacy.section4.body": "- чтобы провести нумерологический разбор, коучинговую сессию или встречу, которую вы заказали, — на основании договора об услугах;\n- чтобы связаться с вами по вашей заявке и ответить на вопросы — на основании вашего согласия, которое вы даёте, отправляя заявку;\n- чтобы принять оплату и вести бухгалтерский учёт — на основании требований закона;\n- чтобы улучшать сайт (аналитика, если подключена) — на основании вашего согласия через баннер cookies.\n\nСогласие можно отозвать в любой момент, это не повлияет на уже оказанные услуги."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section4.title": "Kāpēc un uz kāda pamata dati tiek apstrādāti",
+            "legal.privacy.section4.body": "- lai veiktu jūsu pasūtīto numeroloģisko analīzi, koučinga sesiju vai tikšanos — pamatojoties uz pakalpojumu līgumu;\n- lai sazinātos ar jums par pieteikumu un atbildētu uz jautājumiem — pamatojoties uz piekrišanu, ko sniedzat, nosūtot pieteikumu;\n- lai pieņemtu maksājumu un kārtotu grāmatvedību — pamatojoties uz tiesību aktu prasībām;\n- lai uzlabotu vietni (analītika, ja tā ir pieslēgta) — pamatojoties uz jūsu piekrišanu sīkdatņu paziņojumā.\n\nPiekrišanu var atsaukt jebkurā laikā. Tas neietekmē jau sniegtos pakalpojumus."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section4.title": "Why I process data and on what basis",
+            "legal.privacy.section4.body": "- to provide the numerology reading, coaching session or meeting you have ordered — on the basis of a contract for services;\n- to contact you about your enquiry and answer questions — on the basis of the consent you give when submitting an enquiry;\n- to accept payment and maintain accounting records — on the basis of legal requirements;\n- to improve the website (analytics, if enabled) — on the basis of your consent through the cookie banner.\n\nYou may withdraw your consent at any time. This does not affect services already provided."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section5",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Кому доступны данные",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section5.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section5.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section5.title": "Кому доступны данные",
+            "legal.privacy.section5.body": "Ваши данные хранятся только у меня в закрытом доступе. Я не продаю их и не передаю третьим лицам.\n\nИсключения: технические сервисы, без которых не работают сайт, оплата и связь с вами. Они обрабатывают данные только для этих целей. Также данные могут быть переданы, если этого требует закон.\n\nСайт использует Google Fonts для загрузки шрифтов. При обращении через WhatsApp или Telegram данные передаются выбранному вами мессенджеру.\n\nНекоторые технические сервисы могут обрабатывать данные за пределами ЕС/ЕЭЗ. В этом случае должна обеспечиваться защита данных на уровне, предусмотренном GDPR, например через стандартные договорные условия ЕС."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section5.title": "Kam ir pieejami dati",
+            "legal.privacy.section5.body": "Jūsu dati tiek glabāti pie manis ar ierobežotu piekļuvi. Es tos nepārdodu un nenododu trešajām personām.\n\nIzņēmumi ir tehniskie pakalpojumi, kas nepieciešami vietnes darbībai, maksājumiem un saziņai ar jums. Tie apstrādā datus tikai šiem mērķiem. Datus var nodot arī tad, ja to pieprasa likums.\n\nVietne izmanto Google Fonts fontu ielādei. Sazinoties WhatsApp vai Telegram, dati tiek nodoti jūsu izvēlētajam saziņas pakalpojumam.\n\nDaži tehniskie pakalpojumi var apstrādāt datus ārpus ES/EEZ. Šādā gadījumā jānodrošina VDAR prasībām atbilstoša datu aizsardzība, piemēram, izmantojot ES līguma standartklauzulas."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section5.title": "Who can access your data",
+            "legal.privacy.section5.body": "Your data is held by me with restricted access. I do not sell it or disclose it to third parties.\n\nExceptions are technical services necessary for the website, payment and communication with you. They process data only for these purposes. Data may also be disclosed when required by law.\n\nThe website uses Google Fonts to load fonts. When you contact me through WhatsApp or Telegram, data is transferred to the messenger you choose.\n\nSome technical services may process data outside the EU/EEA. In that case, data must receive the level of protection required by the GDPR, for example through EU standard contractual clauses."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section6",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Как долго я храню данные",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section6.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section6.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section6.title": "Как долго я храню данные",
+            "legal.privacy.section6.body": "Данные хранятся в течение времени, необходимого для целей их обработки, после чего удаляются. Данные об оплате хранятся столько, сколько требует законодательство о бухгалтерском учёте."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section6.title": "Cik ilgi es glabāju datus",
+            "legal.privacy.section6.body": "Dati tiek glabāti tik ilgi, cik nepieciešams to apstrādes mērķiem, un pēc tam dzēsti. Maksājumu dati tiek glabāti tik ilgi, cik to nosaka grāmatvedības tiesību akti."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section6.title": "How long I keep data",
+            "legal.privacy.section6.body": "Data is kept for as long as necessary for the purposes for which it is processed and is then deleted. Payment records are kept for the period required by accounting legislation."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section7",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Безопасность",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section7.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section7.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section7.title": "Безопасность",
+            "legal.privacy.section7.body": "Я принимаю разумные технические и организационные меры, чтобы защитить данные от потери, несанкционированного доступа и раскрытия."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section7.title": "Drošība",
+            "legal.privacy.section7.body": "Es veicu saprātīgus tehniskos un organizatoriskos pasākumus, lai aizsargātu datus pret nozaudēšanu, neatļautu piekļuvi un izpaušanu."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section7.title": "Security",
+            "legal.privacy.section7.body": "I take reasonable technical and organisational measures to protect data against loss, unauthorised access and disclosure."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section8",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Ваши права",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section8.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section8.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section8.title": "Ваши права",
+            "legal.privacy.section8.body": "Вы вправе:\n\n- получить информацию о своих данных и доступ к ним;\n- потребовать исправить или удалить данные;\n- ограничить обработку или возразить против неё;\n- получить данные в переносимом формате;\n- отозвать согласие в любой момент.\n\nНапишите мне по указанному ниже e-mail, я отвечу в течение 30 дней. Если вы считаете, что ваши права нарушены, вы можете подать жалобу в Datu valsts inspekcija (Государственная инспекция данных Латвии)."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section8.title": "Jūsu tiesības",
+            "legal.privacy.section8.body": "Jums ir tiesības:\n\n- saņemt informāciju par saviem datiem un piekļūt tiem;\n- pieprasīt datu labošanu vai dzēšanu;\n- ierobežot apstrādi vai iebilst pret to;\n- saņemt datus pārnesamā formātā;\n- jebkurā laikā atsaukt piekrišanu.\n\nRakstiet uz zemāk norādīto e-pasta adresi. Es atbildēšu 30 dienu laikā. Ja uzskatāt, ka jūsu tiesības ir pārkāptas, varat iesniegt sūdzību Datu valsts inspekcijā."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section8.title": "Your rights",
+            "legal.privacy.section8.body": "You have the right to:\n\n- receive information about your data and access it;\n- request correction or deletion;\n- restrict processing or object to it;\n- receive data in a portable format;\n- withdraw consent at any time.\n\nPlease write to the email address below. I will respond within 30 days. If you believe your rights have been violated, you may lodge a complaint with Datu valsts inspekcija (the Latvian Data State Inspectorate)."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section9",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Данные детей",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section9.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section9.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section9.title": "Данные детей",
+            "legal.privacy.section9.body": "Сайт и услуги предназначены для взрослых. Разбор ребёнка (детская матрица) заказывает и передаёт дату рождения родитель или законный представитель. Самостоятельно оформить заказ может только совершеннолетний пользователь."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section9.title": "Bērnu dati",
+            "legal.privacy.section9.body": "Vietne un pakalpojumi ir paredzēti pieaugušajiem. Bērna analīzi (bērna matricu) pasūta un bērna dzimšanas datumu sniedz vecāks vai likumiskais pārstāvis. Patstāvīgi veikt pasūtījumu drīkst tikai pilngadīgs lietotājs."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section9.title": "Children's data",
+            "legal.privacy.section9.body": "The website and services are intended for adults. A child's reading (child matrix) must be ordered, and the child's date of birth provided, by a parent or legal representative. Only an adult may place an order independently."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section10",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Отзывы",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section10.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section10.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section10.title": "Отзывы",
+            "legal.privacy.section10.body": "Отзывы публикуются только с согласия автора и под тем именем, которое он разрешил."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section10.title": "Atsauksmes",
+            "legal.privacy.section10.body": "Atsauksmes tiek publicētas tikai ar autora piekrišanu un ar viņa atļauto vārdu."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section10.title": "Testimonials",
+            "legal.privacy.section10.body": "Testimonials are published only with the author's consent and under the name they have authorised."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section11",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Cookies",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section11.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section11.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section11.title": "Cookies",
+            "legal.privacy.section11.body": "Сайт использует браузерное хранилище для технической работы и сохранения выбора cookies. Cookie сессии устанавливается только при входе администратора. Подробности и управление согласием — в Политике cookies."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section11.title": "Sīkdatnes",
+            "legal.privacy.section11.body": "Vietne izmanto pārlūka krātuvi tehniskajai darbībai un sīkdatņu izvēles saglabāšanai. Sesijas sīkdatne tiek iestatīta tikai tad, kad piesakās administrators. Plašāka informācija un piekrišanas pārvaldība ir pieejama Sīkdatņu politikā."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section11.title": "Cookies",
+            "legal.privacy.section11.body": "The website uses browser storage for technical operation and to remember cookie choices. A session cookie is set only when an administrator logs in. See the Cookie Policy for details and consent controls."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section12",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Важно",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section12.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section12.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section12.title": "Важно",
+            "legal.privacy.section12.body": "Нумерологический разбор и коучинг не заменяют медицинскую, психологическую, юридическую или финансовую консультацию и не гарантируют конкретного результата. Разбор — это моя авторская интерпретация, основанная на дате рождения, а не автоматизированное решение, принимаемое без участия человека, и не имеет юридических последствий для вас."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section12.title": "Svarīgi",
+            "legal.privacy.section12.body": "Numeroloģiskā analīze un koučings neaizstāj medicīnisku, psiholoģisku, juridisku vai finanšu konsultāciju un negarantē konkrētu rezultātu. Analīze ir mana autores interpretācija, kas balstīta uz dzimšanas datumu, nevis automatizēts lēmums bez cilvēka iesaistes, un tā nerada jums tiesiskas sekas."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section12.title": "Important information",
+            "legal.privacy.section12.body": "Numerology readings and coaching do not replace medical, psychological, legal or financial advice and do not guarantee a particular outcome. A reading is my own interpretation based on a date of birth, rather than an automated decision made without human involvement, and has no legal consequences for you."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.privacy.section13",
+      "page": "privacy",
+      "section_type": "text",
+      "label": "Изменения политики",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.privacy.section13.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.privacy.section13.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.privacy.section13.title": "Изменения политики",
+            "legal.privacy.section13.body": "Я могу обновлять эту политику. Актуальная версия всегда размещена на этой странице, дата изменения указана вверху."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.privacy.section13.title": "Politikas izmaiņas",
+            "legal.privacy.section13.body": "Es varu atjaunināt šo politiku. Aktuālā versija vienmēr ir pieejama šajā lapā, un izmaiņu datums ir norādīts augšā."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.privacy.section13.title": "Changes to this policy",
+            "legal.privacy.section13.body": "I may update this policy. The current version is always available on this page, with the date of the update shown above."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.document",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Условия оказания услуг",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.updated",
+          "label": "Дата обновления"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.title": "Условия оказания услуг",
+            "legal.terms.updated": "2026-10-01"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.title": "Pakalpojumu sniegšanas noteikumi",
+            "legal.terms.updated": "2026-10-01"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.title": "Terms of Service",
+            "legal.terms.updated": "2026-10-01"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section1",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Исполнитель",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section1.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section1.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section1.title": "Исполнитель",
+            "legal.terms.section1.body": "Елена Захарова, нумеролог и женский коуч.\nСамозанятое лицо (pašnodarbinātā persona), Латвия.\nКонтакты указаны ниже."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section1.title": "Pakalpojumu sniedzēja",
+            "legal.terms.section1.body": "Елена Захарова, numeroloģe un sieviešu koučs.\nPašnodarbinātā persona, Latvija.\nKontaktinformācija norādīta zemāk."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section1.title": "Service provider",
+            "legal.terms.section1.body": "Елена Захарова, numerologist and women's coach.\nSelf-employed person (pašnodarbinātā persona), Latvia.\nContact details are provided below."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section2",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Какие услуги я оказываю",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section2.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section2.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section2.title": "Какие услуги я оказываю",
+            "legal.terms.section2.body": "Нумерологические разборы: «Ты и твой потенциал», «Предназначение и деньги», «Отношения», «Детская матрица», «Моя матрица возможностей» (полный разбор).\n\nКоучинговая сессия (40 минут): дополнительная услуга при заказе разбора{addonPrice}.\n\n«Путь к себе»: коучинговое сопровождение на 1, 3 или 6 месяцев с одной онлайн-встречей в неделю.\n\n«Познакомься с собой»: бесплатная онлайн-встреча 20–30 минут.\n\nАктуальные описания и цены указаны на страницах услуг сайта."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section2.title": "Kādus pakalpojumus es sniedzu",
+            "legal.terms.section2.body": "Numeroloģiskās analīzes: “Tu un tavs potenciāls”, “Aicinājums un nauda”, “Attiecības”, “Bērna matrica”, “Mana iespēju matrica” (pilnā analīze).\n\nKoučinga sesija (40 minūtes): papildu pakalpojums, pasūtot analīzi{addonPrice}.\n\n“Ceļš pie sevis”: koučinga atbalsts 1, 3 vai 6 mēnešus ar vienu tiešsaistes tikšanos nedēļā.\n\n“Iepazīsti sevi”: bezmaksas tiešsaistes tikšanās 20–30 minūtes.\n\nAktuālie apraksti un cenas ir norādītas vietnes pakalpojumu lapās."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section2.title": "Services I provide",
+            "legal.terms.section2.body": "Numerology readings: “You and your potential”, “Purpose and money”, “Relationships”, “Child matrix”, “My matrix of possibilities” (full reading).\n\nCoaching session (40 minutes): an additional service when ordering a reading{addonPrice}.\n\n“Path to yourself”: coaching support for 1, 3 or 6 months, with one online meeting per week.\n\n“Get to know yourself”: a free online meeting lasting 20–30 minutes.\n\nCurrent descriptions and prices are shown on the website's service pages."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section3",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Характер услуг",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section3.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section3.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section3.title": "Характер услуг",
+            "legal.terms.section3.body": "Мои услуги являются информационными и консультационными. Они не заменяют медицинскую, психологическую, психотерапевтическую, юридическую или финансовую помощь и не гарантируют конкретного результата. Решения о своей жизни вы принимаете самостоятельно."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section3.title": "Pakalpojumu raksturs",
+            "legal.terms.section3.body": "Mani pakalpojumi ir informatīvi un konsultatīvi. Tie neaizstāj medicīnisku, psiholoģisku, psihoterapeitisku, juridisku vai finanšu palīdzību un negarantē konkrētu rezultātu. Lēmumus par savu dzīvi jūs pieņemat patstāvīgi."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section3.title": "Nature of the services",
+            "legal.terms.section3.body": "My services are informational and consultative. They do not replace medical, psychological, psychotherapeutic, legal or financial assistance and do not guarantee a particular outcome. You make decisions about your own life independently."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section4",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Заказ и оплата",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section4.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section4.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section4.title": "Заказ и оплата",
+            "legal.terms.section4.body": "Заказ оформляется на сайте или по согласованию со мной в WhatsApp / Telegram: +371 29 580 232, e-mail: jelenabobrovska@gmail.com.\n\nЦены указаны на сайте в евро.\n\nСпособ и момент оплаты: полная предоплата до начала работы через платёжную систему."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section4.title": "Pasūtīšana un samaksa",
+            "legal.terms.section4.body": "Pasūtījumu veic vietnē vai vienojoties ar mani WhatsApp / Telegram: +371 29 580 232, e-pasts: jelenabobrovska@gmail.com.\n\nCenas vietnē ir norādītas eiro.\n\nSamaksas veids un laiks: pilna priekšapmaksa pirms darba sākuma, izmantojot maksājumu sistēmu."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section4.title": "Ordering and payment",
+            "legal.terms.section4.body": "Orders are placed on the website or by arrangement with me through WhatsApp / Telegram: +371 29 580 232, email: jelenabobrovska@gmail.com.\n\nPrices on the website are in euros.\n\nPayment method and timing: full payment in advance through a payment system before work begins."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section5",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Формат и сроки",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section5.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section5.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section5.title": "Формат и сроки",
+            "legal.terms.section5.body": "Формат разбора: PDF-документ / онлайн-встреча / запись.\n\nСрок выполнения: нумерологический разбор по 1 сфере 10 рабочих дней после оплаты и получения данных, полный нумерологический разбор по 6 сферам от 20 рабочих дней после оплаты и получения данных\n\nОнлайн-встречи проходят на платформе Zoom / WhatsApp\n\nДля разбора мне нужны корректные данные (дата рождения). За точность переданных данных отвечает заказчик."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section5.title": "Formāts un termiņi",
+            "legal.terms.section5.body": "Analīzes formāts: PDF dokuments / tiešsaistes tikšanās / ieraksts.\n\nIzpildes termiņš: vienas jomas numeroloģiskā analīze — 10 darbdienas pēc samaksas un datu saņemšanas; pilnā sešu dzīves jomu numeroloģiskā analīze — sākot no 20 darbdienām pēc samaksas un datu saņemšanas.\n\nTiešsaistes tikšanās notiek Zoom / WhatsApp.\n\nAnalīzei man ir vajadzīgi precīzi dati (dzimšanas datums). Par sniegto datu precizitāti atbild pasūtītājs."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section5.title": "Format and timeframes",
+            "legal.terms.section5.body": "Reading format: PDF document / online meeting / recording.\n\nCompletion timeframe: a numerology reading covering one area takes 10 working days after payment and receipt of the required information. A full numerology reading covering six areas takes at least 20 working days after payment and receipt of the required information.\n\nOnline meetings take place via Zoom / WhatsApp.\n\nI need accurate information (date of birth) for the reading. The customer is responsible for the accuracy of the information provided."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section6",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Перенос и отмена встреч",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section6.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section6.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section6.title": "Перенос и отмена встреч",
+            "legal.terms.section6.body": "Встречу можно перенести не позднее чем за 24 часа до начала. При более позднем переносе или неявке встреча считается проведённой. Встреча переносится один раз по договорённости."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section6.title": "Tikšanās pārcelšana un atcelšana",
+            "legal.terms.section6.body": "Tikšanos var pārcelt ne vēlāk kā 24 stundas pirms tās sākuma. Ja tikšanās tiek pārcelta vēlāk vai jūs neierodaties, tā tiek uzskatīta par notikušu. Tikšanos pēc vienošanās var pārcelt vienu reizi."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section6.title": "Rescheduling and cancellations",
+            "legal.terms.section6.body": "A meeting may be rescheduled no later than 24 hours before it starts. If it is rescheduled later or you do not attend, the meeting is considered to have taken place. A meeting may be rescheduled once by agreement."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section7",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Возврат средств",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section7.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section7.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section7.title": "Возврат средств",
+            "legal.terms.section7.body": "До начала работы:  полный возврат по запросу.\n\nПосле начала работы над разбором или после проведения встречи услуга считается оказанной, так как выполняется индивидуально, и возврат не производится.\n\nЭти условия не ограничивают ваши законные права потребителя. Если вы заказываете услугу дистанционно и просите начать её до истечения срока на отказ, вы подтверждаете, что понимаете последствия этого для права на отказ от договора."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section7.title": "Naudas atmaksa",
+            "legal.terms.section7.body": "Pirms darba sākuma: pilna atmaksa pēc pieprasījuma.\n\nPēc darba pie analīzes sākšanas vai pēc tikšanās pakalpojums tiek uzskatīts par sniegtu, jo tas tiek veikts individuāli, un atmaksa netiek veikta.\n\nŠie noteikumi neierobežo jūsu likumīgās patērētāja tiesības. Ja pasūtāt pakalpojumu attālināti un lūdzat sākt tā sniegšanu pirms atteikuma termiņa beigām, jūs apliecināt, ka saprotat šīs izvēles sekas attiecībā uz tiesībām atteikties no līguma."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section7.title": "Refunds",
+            "legal.terms.section7.body": "Before work begins: a full refund on request.\n\nOnce work on the reading has begun or a meeting has taken place, the service is considered provided, as it is performed individually, and no refund is made.\n\nThese terms do not limit your statutory consumer rights. If you order a service remotely and ask for it to begin before the withdrawal period expires, you confirm that you understand the consequences for your right to withdraw from the contract."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section8",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Конфиденциальность",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section8.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section8.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section8.title": "Конфиденциальность",
+            "legal.terms.section8.body": "Ваши данные и содержание консультаций конфиденциальны. Подробнее о том, как я обрабатываю данные, написано в Политике конфиденциальности."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section8.title": "Konfidencialitāte",
+            "legal.terms.section8.body": "Jūsu dati un konsultāciju saturs ir konfidenciāli. Plašāka informācija par datu apstrādi ir sniegta Privātuma politikā."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section8.title": "Confidentiality",
+            "legal.terms.section8.body": "Your data and the contents of consultations are confidential. The Privacy Policy explains how I process data."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section9",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Материалы разбора",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section9.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section9.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section9.title": "Материалы разбора",
+            "legal.terms.section9.body": "Разбор и материалы предназначены для вашего личного использования. Их нельзя копировать, распространять и перепродавать без моего письменного согласия."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section9.title": "Analīzes materiāli",
+            "legal.terms.section9.body": "Analīze un materiāli ir paredzēti jūsu personīgai lietošanai. Tos nedrīkst kopēt, izplatīt vai pārdot tālāk bez manas rakstiskas piekrišanas."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section9.title": "Reading materials",
+            "legal.terms.section9.body": "The reading and materials are for your personal use. They may not be copied, distributed or resold without my written consent."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section10",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Разбор для ребёнка",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section10.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section10.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section10.title": "Разбор для ребёнка",
+            "legal.terms.section10.body": "Разбор ребёнка заказывает родитель или законный представитель."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section10.title": "Analīze bērnam",
+            "legal.terms.section10.body": "Bērna analīzi pasūta vecāks vai likumiskais pārstāvis."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section10.title": "Readings for children",
+            "legal.terms.section10.body": "A child's reading must be ordered by a parent or legal representative."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section11",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Отзывы",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section11.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section11.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section11.title": "Отзывы",
+            "legal.terms.section11.body": "Отзывы на сайте публикуются только с согласия автора и под тем именем, которое он разрешил."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section11.title": "Atsauksmes",
+            "legal.terms.section11.body": "Atsauksmes vietnē tiek publicētas tikai ar autora piekrišanu un ar viņa atļauto vārdu."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section11.title": "Testimonials",
+            "legal.terms.section11.body": "Testimonials on the website are published only with the author's consent and under the name they have authorised."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section12",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Споры",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section12.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section12.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section12.title": "Споры",
+            "legal.terms.section12.body": "Вопросы и претензии я стараюсь решить в переговорах: jelenabobrovska@gmail.com Если договориться не удалось, спор рассматривается по законодательству Латвии."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section12.title": "Strīdi",
+            "legal.terms.section12.body": "Jautājumus un pretenzijas es cenšos atrisināt pārrunās: jelenabobrovska@gmail.com. Ja vienoties neizdodas, strīds tiek izskatīts saskaņā ar Latvijas tiesību aktiem."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section12.title": "Disputes",
+            "legal.terms.section12.body": "I aim to resolve questions and complaints through discussion: jelenabobrovska@gmail.com. If no agreement is reached, the dispute is considered under Latvian law."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.terms.section13",
+      "page": "terms",
+      "section_type": "text",
+      "label": "Изменения",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.terms.section13.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.terms.section13.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.terms.section13.title": "Изменения",
+            "legal.terms.section13.body": "Я могу обновлять условия. Актуальная версия размещена на этой странице, к заказам применяются условия, действовавшие на момент заказа."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.terms.section13.title": "Izmaiņas",
+            "legal.terms.section13.body": "Es varu atjaunināt noteikumus. Aktuālā versija ir pieejama šajā lapā. Pasūtījumiem piemēro noteikumus, kas bija spēkā pasūtījuma veikšanas brīdī."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.terms.section13.title": "Changes",
+            "legal.terms.section13.body": "I may update these terms. The current version is available on this page. Orders are governed by the terms in force when the order was placed."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.document",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Политика cookies",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.updated",
+          "label": "Дата обновления"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.title": "Политика cookies",
+            "legal.cookies.updated": "2026-10-01"
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.title": "Sīkdatņu politika",
+            "legal.cookies.updated": "2026-10-01"
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.title": "Cookie Policy",
+            "legal.cookies.updated": "2026-10-01"
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section1",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Что такое cookies",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section1.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section1.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section1.title": "Что такое cookies",
+            "legal.cookies.section1.body": "Cookies — небольшие файлы, которые браузер сохраняет для работы сайта. Браузер также может хранить данные в localStorage и sessionStorage. Эти механизмы не являются cookies; ниже они перечислены отдельно."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section1.title": "Kas ir sīkdatnes",
+            "legal.cookies.section1.body": "Sīkdatnes ir nelieli faili, ko pārlūks saglabā vietnes darbībai. Pārlūks var glabāt datus arī localStorage un sessionStorage krātuvēs. Tie nav sīkdatņu mehānismi un zemāk ir norādīti atsevišķi."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section1.title": "What cookies are",
+            "legal.cookies.section1.body": "Cookies are small files a browser stores to help a website work. Browsers may also store data in localStorage and sessionStorage. These mechanisms are not cookies and are listed separately below."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section2",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Какие данные сохраняет сайт",
+      "critical": true,
+      "read_only": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section2.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section2.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section2.title": "Какие данные сохраняет сайт",
+            "legal.cookies.section2.body": "Обычному посетителю публичный сайт не устанавливает cookies. Для сохранения выбора cookies используется localStorage, а при отправке формы — sessionStorage для защиты от повторной отправки. Язык определяется адресом страницы и не сохраняется в браузерном хранилище."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section2.title": "Kādus datus vietne saglabā",
+            "legal.cookies.section2.body": "Publiskā vietne parastam apmeklētājam neiestata sīkdatnes. Sīkdatņu izvēle tiek saglabāta localStorage, bet, nosūtot formu, sessionStorage tiek izmantota aizsardzībai pret atkārtotu nosūtīšanu. Valodu nosaka lapas adrese, un tā netiek saglabāta pārlūka krātuvē."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section2.title": "What the website stores",
+            "legal.cookies.section2.body": "The public website does not set cookies for ordinary visitors. It uses localStorage to remember cookie choices and sessionStorage when a form is submitted to prevent duplicate submissions. The page address determines the language; no language preference is stored in the browser."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section3",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Необходимое хранение",
+      "critical": true,
+      "read_only": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section3.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section3.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section3.title": "Необходимое хранение",
+            "legal.cookies.section3.body": "Выбор cookies сохраняется, чтобы сайт учитывал ваше решение. Ключ отправки формы позволяет распознать повторную отправку одной заявки. Эти механизмы не используются для рекламы или аналитики."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section3.title": "Nepieciešamā glabāšana",
+            "legal.cookies.section3.body": "Sīkdatņu izvēle tiek saglabāta, lai vietne ievērotu jūsu lēmumu. Formas nosūtīšanas atslēga ļauj atpazīt viena pieteikuma atkārtotu nosūtīšanu. Šie mehānismi netiek izmantoti reklāmai vai analītikai."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section3.title": "Necessary storage",
+            "legal.cookies.section3.body": "Cookie choices are stored so the website can respect your decision. A form submission key helps recognise repeated submissions of the same enquiry. These mechanisms are not used for advertising or analytics."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section4",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Дополнительные категории",
+      "critical": true,
+      "read_only": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section4.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section4.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section4.title": "Дополнительные категории",
+            "legal.cookies.section4.body": "В настоящее время сайт не использует дополнительные функциональные, аналитические и маркетинговые cookies или соответствующие интеграции. Эти категории выключены и недоступны для включения. Принятие cookies не подключает отсутствующие сервисы."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section4.title": "Papildu kategorijas",
+            "legal.cookies.section4.body": "Pašlaik vietne neizmanto papildu funkcionālās, analītiskās vai mārketinga sīkdatnes un attiecīgās integrācijas. Šīs kategorijas ir izslēgtas, un tās nevar ieslēgt. Piekrišana sīkdatnēm nepieslēdz neesošus pakalpojumus."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section4.title": "Optional categories",
+            "legal.cookies.section4.body": "The website currently uses no optional functional, analytics or marketing cookies or related integrations. These categories are off and cannot be enabled. Accepting cookies does not connect services that are not configured."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section5",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Сторонние сервисы",
+      "critical": true,
+      "read_only": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section5.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section5.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section5.title": "Сторонние сервисы",
+            "legal.cookies.section5.body": "Шрифты загружаются с Google Fonts: браузер обращается к fonts.googleapis.com и fonts.gstatic.com и передаёт технические данные соединения, включая IP-адрес. Это внешние запросы, а не аналитическая интеграция сайта.\n\nСсылки WhatsApp и Telegram открывают внешние сервисы только по вашему действию. На этих сервисах действуют их собственные правила обработки данных. Встроенные видео, карты, социальные виджеты и другие сторонние iframe на сайте не используются."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section5.title": "Trešo pušu pakalpojumi",
+            "legal.cookies.section5.body": "Fonti tiek ielādēti no Google Fonts: pārlūks sazinās ar fonts.googleapis.com un fonts.gstatic.com un nosūta savienojuma tehniskos datus, tostarp IP adresi. Tie ir ārēji pieprasījumi, nevis vietnes analītikas integrācija.\n\nWhatsApp un Telegram saites atver ārējos pakalpojumus tikai pēc jūsu darbības. Šiem pakalpojumiem ir savi datu apstrādes noteikumi. Vietnē netiek izmantoti iegulti video, kartes, sociālo tīklu logrīki vai citi trešo pušu iframe."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section5.title": "Third-party services",
+            "legal.cookies.section5.body": "Fonts are loaded from Google Fonts: your browser contacts fonts.googleapis.com and fonts.gstatic.com and sends technical connection information, including your IP address. These are external requests, not a website analytics integration.\n\nWhatsApp and Telegram links open external services only when you choose to use them. Those services have their own data processing policies. The website uses no embedded videos, maps, social widgets or other third-party iframes."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section6",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Как управлять согласием",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section6.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section6.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section6.title": "Как управлять согласием",
+            "legal.cookies.section6.body": "При первом посещении доступны «Принять», «Отклонить» и «Настроить». «Принять» разрешает только реально подключённые дополнительные категории; сейчас таких категорий нет. «Отклонить» оставляет только необходимые механизмы. В настройках можно сохранить выбор.\n\nОткрыть настройки снова можно по ссылке «Настройки cookies» в подвале. При существенном изменении политики или категорий сайт запросит выбор повторно. Согласие на обработку данных в форме отдельно от выбора cookies; отклонение дополнительных cookies не блокирует формы."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section6.title": "Kā pārvaldīt piekrišanu",
+            "legal.cookies.section6.body": "Pirmajā apmeklējumā ir pieejamas pogas “Pieņemt”, “Noraidīt” un “Iestatījumi”. “Pieņemt” atļauj tikai faktiski pieslēgtās papildu kategorijas; pašlaik tādu nav. “Noraidīt” atstāj tikai nepieciešamos mehānismus. Iestatījumos var saglabāt izvēli.\n\nIestatījumus var atvērt atkārtoti, izmantojot saiti “Sīkdatņu iestatījumi” kājenē. Būtiski mainoties politikai vai kategorijām, vietne lūgs izvēlēties vēlreiz. Piekrišana datu apstrādei formā ir atsevišķa no sīkdatņu izvēles; papildu sīkdatņu noraidīšana nebloķē formas."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section6.title": "Managing consent",
+            "legal.cookies.section6.body": "On your first visit, you can choose “Accept”, “Reject” or “Settings”. “Accept” permits only optional categories that are actually configured; currently there are none. “Reject” keeps only necessary mechanisms. You can save your choice in settings.\n\nYou can reopen settings using “Cookie settings” in the footer. If the policy or categories change substantially, the website will ask you to choose again. Consent to data processing in a form is separate from cookie choices; rejecting optional cookies does not block forms."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section7",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Как удалить данные через браузер",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section7.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section7.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section7.title": "Как удалить данные через браузер",
+            "legal.cookies.section7.body": "В настройках конфиденциальности вашего браузера можно удалить cookies и данные этого сайта, включая localStorage и sessionStorage. После удаления сохранённого выбора cookies баннер появится снова. Ограничение браузерного хранилища не мешает просмотру сайта, но выбор может не сохраниться между посещениями."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section7.title": "Kā dzēst datus pārlūkā",
+            "legal.cookies.section7.body": "Pārlūka privātuma iestatījumos var dzēst šīs vietnes sīkdatnes un datus, tostarp localStorage un sessionStorage. Pēc saglabātās izvēles dzēšanas paziņojums tiks parādīts vēlreiz. Pārlūka krātuves ierobežošana netraucē apskatīt vietni, taču izvēle starp apmeklējumiem var netikt saglabāta."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section7.title": "Deleting data in your browser",
+            "legal.cookies.section7.body": "Your browser's privacy settings let you delete this website's cookies and data, including localStorage and sessionStorage. Deleting the stored cookie choice makes the banner appear again. Blocking browser storage does not prevent browsing, but your choice may not be saved between visits."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section8",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Cookies административной области",
+      "critical": true,
+      "read_only": true,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section8.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section8.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section8.title": "Cookies административной области",
+            "legal.cookies.section8.body": "Cookie входа устанавливается только после успешного входа администратора. Обычному посетителю она не выдаётся. Её путь — /: браузер администратора может отправлять её и при запросах публичных страниц того же сайта. Она нужна для административной сессии и не используется для отслеживания посетителей."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section8.title": "Administrēšanas sadaļas sīkdatnes",
+            "legal.cookies.section8.body": "Pieteikšanās sīkdatne tiek iestatīta tikai pēc administratora veiksmīgas pieteikšanās. Parastam apmeklētājam tā netiek izsniegta. Tās ceļš ir /: administratora pārlūks to var nosūtīt arī šīs pašas vietnes publisko lapu pieprasījumos. Tā ir nepieciešama administrēšanas sesijai un netiek izmantota apmeklētāju izsekošanai."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section8.title": "Administrative cookies",
+            "legal.cookies.section8.body": "The login cookie is set only after an administrator logs in successfully. Ordinary visitors do not receive it. Its path is /, so an administrator's browser may also send it with requests to public pages on the same website. It is required for the administrative session and is not used to track visitors."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section9",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Изменения политики",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section9.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section9.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section9.title": "Изменения политики",
+            "legal.cookies.section9.body": "Актуальная версия размещается на этой странице. Дата обновления указана вверху. При добавлении новых технологий список хранения и настройки согласия обновляются."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section9.title": "Politikas izmaiņas",
+            "legal.cookies.section9.body": "Aktuālā versija ir pieejama šajā lapā. Atjaunināšanas datums norādīts augšā. Pievienojot jaunas tehnoloģijas, tiek atjaunināts glabāšanas saraksts un piekrišanas iestatījumi."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section9.title": "Changes to this policy",
+            "legal.cookies.section9.body": "The current version is available on this page. The update date is shown above. When new technologies are added, the storage inventory and consent settings are updated."
+          }
+        }
+      ]
+    },
+    {
+      "section_key": "legal.cookies.section10",
+      "page": "cookies",
+      "section_type": "text",
+      "label": "Контакты",
+      "critical": true,
+      "read_only": false,
+      "settings": {},
+      "fields": [
+        {
+          "key": "legal.cookies.section10.title",
+          "label": "Заголовок"
+        },
+        {
+          "key": "legal.cookies.section10.body",
+          "label": "Текст раздела"
+        }
+      ],
+      "translations": [
+        {
+          "language": "ru",
+          "fields": {
+            "legal.cookies.section10.title": "Контакты",
+            "legal.cookies.section10.body": "Елена Захарова.\nСамозанятое лицо (pašnodarbinātā persona), Латвия."
+          }
+        },
+        {
+          "language": "lv",
+          "fields": {
+            "legal.cookies.section10.title": "Kontaktinformācija",
+            "legal.cookies.section10.body": "Елена Захарова.\nPašnodarbinātā persona, Latvija."
+          }
+        },
+        {
+          "language": "en",
+          "fields": {
+            "legal.cookies.section10.title": "Contact details",
+            "legal.cookies.section10.body": "Елена Захарова.\nSelf-employed person (pašnodarbinātā persona), Latvia."
+          }
+        }
+      ]
+    }
+  ]
+}

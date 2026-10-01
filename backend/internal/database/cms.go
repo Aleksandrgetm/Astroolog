@@ -16,6 +16,7 @@ type SectionDefinition struct {
 	SectionType string          `json:"section_type"`
 	Label       string          `json:"label"`
 	Critical    bool            `json:"critical"`
+	ReadOnly    bool            `json:"read_only"`
 	Settings    models.Document `json:"settings"`
 	Fields      []struct {
 		Key   string `json:"key"`
@@ -46,6 +47,7 @@ func CMSDefinitions() CMSSeedData {
 	if err := json.Unmarshal(cmsSeed, &data); err != nil {
 		panic(err)
 	}
+	data.Sections = append(data.Sections, legalDefinitions().Sections...)
 	return data
 }
 func migrateCMS(db *gorm.DB) error {
@@ -77,6 +79,9 @@ func migrateCMS(db *gorm.DB) error {
 			pages[p.Key] = p.ID
 		}
 		for i, d := range data.Sections {
+			if len(d.SectionKey) >= 6 && d.SectionKey[:6] == "legal." {
+				continue
+			}
 			s := models.PageSection{PageID: pages[d.Page], SectionKey: d.SectionKey, SectionType: d.SectionType, SortOrder: i, IsActive: true, Settings: d.Settings, Translations: d.Translations}
 			if order, ok := map[string]int{"home.hero": 0, "home.supporting": 1, "home.pain": 2, "home.numerology": 3, "home.directions": 4, "home.process": 5, "home.services": 6, "home.about-preview": 7, "home.testimonials": 8, "global.cta": 9}[s.SectionKey]; ok {
 				s.SortOrder = order
@@ -141,7 +146,10 @@ func Migrate(db *gorm.DB) error {
 	if e := migrateCMS(db); e != nil {
 		return e
 	}
-	return migrateCMSMedia(db)
+	if e := migrateCMSMedia(db); e != nil {
+		return e
+	}
+	return migrateLegal(db)
 }
 
 //go:embed cms_media_seed.json

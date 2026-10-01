@@ -2,6 +2,7 @@ package routes
 
 import (
 	"astroolog/backend/internal/admin"
+	"astroolog/backend/internal/config"
 	"astroolog/backend/internal/handlers"
 	"astroolog/backend/internal/middleware"
 	"astroolog/backend/internal/repositories"
@@ -10,8 +11,8 @@ import (
 	"gorm.io/gorm"
 )
 
-func Register(r *gin.Engine, db *gorm.DB) {
-	admin.Register(r, db)
+func Register(r *gin.Engine, db *gorm.DB, cfg config.Config) {
+	admin.Register(r, db, cfg)
 	repo := repositories.Repository{DB: db}
 	h := handlers.Handler{Repo: repo, Requests: services.Requests{Repo: repo}}
 	api := r.Group("/api")

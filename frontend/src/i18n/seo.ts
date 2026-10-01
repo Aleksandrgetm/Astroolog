@@ -19,7 +19,7 @@ export function setPageMeta(title: string, description: string, appendExpert = t
   document.documentElement.lang = locale
   document.title = appendExpert ? `${title} — ${i18n.global.t('siteLayout.expertName')}` : title
   meta('description', description)
-  meta('robots', noindex || base === '/privacy' ? 'noindex, follow' : 'index, follow')
+  meta('robots', noindex || ['/privacy','/cookies','/terms'].includes(base) ? 'noindex, follow' : 'index, follow')
   document.head.querySelectorAll('[data-page-seo], link[rel="canonical"], link[rel="alternate"][hreflang]').forEach(el => el.remove())
   link('canonical', url)
   for (const lang of locales) link('alternate', origin() + languagePath(base, lang), lang)

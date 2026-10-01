@@ -15,7 +15,9 @@
     "test:directions": "node scripts/test-directions.mjs",
     "test:admin:publish": "node scripts/test-admin-publish.mjs",
     "test:admin": "node scripts/test-admin.mjs",
-    "test:booking": "node scripts/test-booking-flow.mjs"
+    "test:booking": "node scripts/test-booking-flow.mjs",
+    "test:consent": "node --experimental-strip-types --test tests/consent.test.ts",
+    "test:legal": "node scripts/sync-legal-seed.mjs --check && node scripts/test-legal.mjs"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",

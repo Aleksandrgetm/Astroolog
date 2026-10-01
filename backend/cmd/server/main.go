@@ -28,7 +28,7 @@ func main() {
 	}
 	router := gin.Default()
 	_ = router.SetTrustedProxies(nil)
-	routes.Register(router, db)
+	routes.Register(router, db, cfg)
 
 	router.GET("/api/health", func(c *gin.Context) {
 		sqlDB, err := db.DB()

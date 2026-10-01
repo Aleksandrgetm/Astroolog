@@ -29,7 +29,7 @@ const router = createRouter({
     { path: '/directions/:slug', component: () => import('../pages/DirectionPage.vue'), meta: { seo: 'direction' } },
     { path: '/services/:slug', component: () => import('../pages/ServicePage.vue'), meta: { seo: 'service' } },
     { path: '/contacts', component: () => import('../pages/ContactsPage.vue'), meta: { seo: 'contacts' } },
-    { path: '/privacy', component: () => import('../pages/PrivacyPage.vue'), meta: { seo: 'privacy' } },
+    ...['privacy','cookies','terms'].map(page=>({ path: '/'+page, component: () => import('../pages/LegalPage.vue'), meta: { seo: page } })),
     { path: '/:pathMatch(.*)*', component: () => import('../pages/NotFoundPage.vue'), meta: { seo: 'notFound' } },
   ].flatMap(route => ['','/lv','/en'].map(prefix=>({...route,path:prefix+route.path}))),
   ],
@@ -53,7 +53,7 @@ router.beforeEach(async to=>{
 })
 function updateRouteMeta() {
   const key = router.currentRoute.value.meta.seo
-  if (key && key !== 'direction') setPageMeta(i18n.global.t(`seo.${key}Title`), i18n.global.t(`seo.${key}Description`), key !== 'reviews', key === 'notFound')
+  if (key && key !== 'direction' && !['privacy','cookies','terms'].includes(String(key))) setPageMeta(i18n.global.t(`seo.${key}Title`), i18n.global.t(`seo.${key}Description`), key !== 'reviews', key === 'notFound')
 }
 router.afterEach(updateRouteMeta)
 // ServicePage owns its metadata after the API response arrives.

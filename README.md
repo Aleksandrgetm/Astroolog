@@ -200,3 +200,29 @@ RU/LV/EN редактируются раздельно с индикатором
 Медиатека загружается только при открытии, по 12 файлов. Доступны поиск, фильтры, предпросмотр и ссылки на места использования. Замена изображения меняет выбор в текущем локальном черновике; её нужно сохранить. Используемые файлы защищены от удаления.
 
 Для редакторов добавлено чтение одной записи `GET /api/admin/entities/:kind/:id`, а медиатека получила поиск, фильтр и сведения о местах использования. Существующие схемы БД и публикация сохранены. Исправлена проверка сохранения SEO: неизменяемые адреса страниц, включая `/`, больше не проверяются как коды услуг.
+
+### Сброс пароля администратора и Origin
+
+Из каталога `backend` выполните `go run ./cmd/admin reset-password`. Команда запрашивает email существующего администратора и дважды новый пароль в локальном терминале без отображения символов. Требования совпадают с `create`: 12–72 байта, bcrypt cost 12. Новый пользователь не создаётся, email/роль/активность не меняются. Изменение хеша, удаление всех сессий пользователя и аудит `password_reset` выполняются атомарно. Аудит содержит только источник `local_cli` и идентификатор затронутого аккаунта, без пароля/хеша. Сам запуск команды без завершённого ввода пароль не меняет.
+
+Admin API читает `Config.AdminAllowedOrigins` из `ADMIN_ALLOWED_ORIGINS` — списка точных origins через запятую с удалением окружающих пробелов. Для локального frontend добавьте в свой непрокоммиченный `backend/.env`:
+
+```dotenv
+ADMIN_ALLOWED_ORIGINS=http://localhost:5174,http://127.0.0.1:5174
+```
+
+Явный список имеет приоритет над `APP_ORIGIN`. Если список отсутствует, используется настроенный `APP_ORIGIN`; если оба значения отсутствуют, только в development разрешены localhost/127.0.0.1:5174. Production по-прежнему требует точный HTTPS `APP_ORIGIN` и не получает localhost fallback. Origin сравнивается целиком, без wildcard и доверия заголовку Host. CSRF и свойства session cookies сохранены. Для изменения списка перезапустите backend.
+
+Проверка CLI с записью в БД: `TEST_DB_NAME=astroolog_admin_final_test go test ./cmd/admin` — только с отдельной тестовой базой. Реальные пароли тесты не меняют.
+
+### Legal documents and cookie consent
+
+Privacy, Terms and Cookies are available in RU/LV/EN at `/privacy`, `/terms`, `/cookies` (with `/lv` and `/en` prefixes). Edit their named sections under **Контент сайта** in the existing CMS. Text remains escaped; blank lines separate paragraphs and lines starting with `- ` form lists. The additional 40-minute meeting price comes from the existing `online-meeting-40` catalog option.
+
+Bundled fallback content lives in `frontend/src/legal/documents.json`. After changing that source, run `node frontend/scripts/sync-legal-seed.mjs`; `--check` verifies parity with the backend seed. The versioned migration adds the new sections without overwriting previous CMS content or later edits. Restart the backend to apply it to an existing installation, then use the existing publication workflow for production HTML.
+
+Consent is managed by `frontend/src/legal/useCookieConsent.ts` and `consent.ts`. The optional integration registry is empty. New integrations must declare a category and start/stop handlers; their loader must only run through the consent controller. Bump `COOKIE_CONSENT_VERSION` when categories/policy materially change. Update the factual inventory and translations alongside technical changes. Technical cookie sections are read-only in CMS and rendered from implementation-maintained content. Cookie selection is separate from mandatory form privacy consent.
+
+Client confirmation still needed before production: enquiry retention period; business registration details if applicable; production domain; hosting and email providers; intended payment provider; international-transfer arrangements. The implementation does not assert the DOCX's example 12-month retention period. Google Fonts is currently requested externally; WhatsApp/Telegram are opened by user action. The booking form records an enquiry and does not collect payment or record acceptance of Terms/early performance before expiry of a withdrawal period; agree that paid-order flow with the client before adding a separate acceptance step.
+
+Validation: `npm run test:consent`, `npm run test:legal` (isolated local server), existing frontend tests, production build/prerender, and backend tests/vet. Browser integration tests must use an isolated database, never the client's working data.

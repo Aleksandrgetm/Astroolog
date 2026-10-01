@@ -1,17 +1,18 @@
 package admin
 
 import (
+	"astroolog/backend/internal/config"
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 	"os"
 )
 
-func Register(r *gin.Engine, db *gorm.DB) {
+func Register(r *gin.Engine, db *gorm.DB, cfg config.Config) {
 	root := os.Getenv("MEDIA_ROOT")
 	if root == "" {
 		root = "./storage/media"
 	}
-	h := Handler{DB: db, Store: LocalStorage{Root: root}}
+	h := Handler{DB: db, AllowedOrigins: cfg.AdminAllowedOrigins, Store: LocalStorage{Root: root}}
 	r.GET("/api/content", h.Public)
 	r.GET("/media/:name", h.ServeMedia)
 	group := r.Group("/api/admin")
@@ -22,7 +23,7 @@ func Register(r *gin.Engine, db *gorm.DB) {
 		c.Next()
 	})
 	group.POST("/auth/login", h.Login)
-	group.Use(h.RequireAuth(), RequireRole("admin"), CSRF())
+	group.Use(h.RequireAuth(), RequireRole("admin"), h.CSRF())
 	group.GET("/auth/me", h.Me)
 	group.POST("/auth/logout", h.Logout)
 	group.GET("/dashboard", h.Dashboard)

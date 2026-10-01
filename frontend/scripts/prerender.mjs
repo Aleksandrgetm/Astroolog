@@ -20,7 +20,7 @@ const server=createServer(async(req,res)=>{try{const path=new URL(req.url,'http:
 await new Promise(r=>server.listen(0,'127.0.0.1',r))
 const address=`http://127.0.0.1:${server.address().port}`
 const languages=['ru','lv','en'],localized=(p,l)=>l==='ru'?p:`/${l}${p}`
-const bases=['/','/about','/services','/reviews','/contacts','/privacy',...services.map(s=>'/services/'+s.slug),...directions.map(d=>'/directions/'+d.slug)]
+const bases=['/','/about','/services','/reviews','/contacts','/privacy','/cookies','/terms',...services.map(s=>'/services/'+s.slug),...directions.map(d=>'/directions/'+d.slug)]
 let browser
 try{
  browser=await chromium.launch(env.PLAYWRIGHT_CHANNEL?{channel:env.PLAYWRIGHT_CHANNEL}:{})
@@ -32,7 +32,7 @@ try{
   await page.goto(address+path,{waitUntil:'networkidle'})
   await page.locator('h1').waitFor()
   if(await page.locator('h1').count()!==1)throw Error('Expected one H1: '+path)
-  await page.evaluate(()=>{document.querySelectorAll('[inert]').forEach(el=>el.remove());window.scrollTo(0,0)})
+  await page.evaluate(()=>{document.querySelectorAll('[data-cookie-banner], [data-cookie-settings]').forEach(el=>el.remove());document.querySelectorAll('[inert]').forEach(el=>el.remove());window.scrollTo(0,0)})
   const output=base==='/__404'?localized('/404.html',lang):path.replace(/\/$/,'')+'/index.html'
   const filename=resolve(root,'.'+output);await mkdir(dirname(filename),{recursive:true})
   await writeFile(filename,'<!doctype html>\n'+await page.locator('html').evaluate(el=>el.outerHTML))
@@ -40,7 +40,7 @@ try{
  }}
  await writeFile(resolve(root,'routes.json'),JSON.stringify({site,paths,services:services.map(s=>s.slug)},null,2))
  const escape=s=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;')
- const entries=bases.filter(p=>p!=='/privacy').flatMap(base=>languages.map(lang=>`<url><loc>${escape(site+localized(base,lang))}</loc>${[...languages,'x-default'].map(l=>`<xhtml:link rel="alternate" hreflang="${l}" href="${escape(site+localized(base,l==='x-default'?'ru':l))}"/>`).join('')}</url>`))
+ const entries=bases.filter(p=>!['/privacy','/cookies','/terms'].includes(p)).flatMap(base=>languages.map(lang=>`<url><loc>${escape(site+localized(base,lang))}</loc>${[...languages,'x-default'].map(l=>`<xhtml:link rel="alternate" hreflang="${l}" href="${escape(site+localized(base,l==='x-default'?'ru':l))}"/>`).join('')}</url>`))
  await writeFile(resolve(root,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'+entries.join('\n')+'</urlset>')
  await writeFile(resolve(root,'robots.txt'),`User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/admin\nSitemap: ${site}/sitemap.xml\n`)
  console.log(`Prerendered ${paths.length} pages and 3 localized 404 pages from live catalog.`)

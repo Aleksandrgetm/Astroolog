@@ -87,6 +87,9 @@ watchEffect(() => {
 .breadcrumbs svg { width:18px;height:18px; }
 .direction-hero > div { min-width:0; }
 .direction-hero h1 { overflow-wrap:break-word; }
+.direction-hero .lead,
+.direction-context,
+.direction-format-intro { white-space:pre-line; }
 .direction-context { color:var(--muted);line-height:1.85; }
 .direction-formats h2 { font-size:clamp(32px,3.2vw,44px); }
 .direction-format-intro { margin-top:24px;line-height:1.85;color:var(--muted);max-width:850px; }

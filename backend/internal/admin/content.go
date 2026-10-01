@@ -244,6 +244,9 @@ func (h Handler) validate(tx *gorm.DB, kind string, v any, old map[string]any) e
 		if def == nil {
 			return errors.New("Неизвестная секция")
 		}
+		if def.ReadOnly {
+			return errors.New("Технические сведения обновляются вместе с кодом сайта")
+		}
 		if def.Critical && !item.IsActive {
 			return errors.New("Обязательную секцию нельзя скрыть")
 		}

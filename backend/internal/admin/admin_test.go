@@ -88,7 +88,8 @@ func TestAdminIntegration(t *testing.T) {
 	gin.SetMode(gin.TestMode)
 	r := gin.New()
 	t.Setenv("MEDIA_ROOT", t.TempDir())
-	Register(r, db)
+	cfg.AdminAllowedOrigins = []string{"http://example.test"}
+	Register(r, db, cfg)
 	request := func(method, path string, data any, cookie *http.Cookie, csrf string) *httptest.ResponseRecorder {
 		var body bytes.Buffer
 		if data != nil {

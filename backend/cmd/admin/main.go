@@ -15,14 +15,21 @@ import (
 )
 
 func main() {
-	if len(os.Args) != 2 || os.Args[1] != "create" {
-		log.Fatal("Usage: go run ./cmd/admin create")
+	if len(os.Args) != 2 || (os.Args[1] != "create" && os.Args[1] != "reset-password") {
+		fmt.Fprintln(os.Stderr, "Usage:\n  go run ./cmd/admin create\n  go run ./cmd/admin reset-password")
+		os.Exit(1)
 	}
 	cfg, e := config.Load()
 	if e != nil {
 		log.Fatal(e)
 	}
 	db := database.Connect(cfg)
+	if os.Args[1] == "reset-password" {
+		if err := resetInteractive(db, os.Stdin, os.Stdout, term.IsTerminal(int(os.Stdin.Fd())), func() ([]byte, error) { return term.ReadPassword(int(os.Stdin.Fd())) }); err != nil {
+			log.Fatal(err)
+		}
+		return
+	}
 	if e = database.Migrate(db); e != nil {
 		log.Fatal(e)
 	}
