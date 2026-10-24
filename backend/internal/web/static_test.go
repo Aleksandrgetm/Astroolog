@@ -5,6 +5,7 @@ import (
 	"net/http/httptest"
 	"os"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
@@ -33,6 +34,36 @@ func TestPublicRouting(t *testing.T) {
 		}
 		if tc.location != "" && w.Header().Get("Location") != tc.location {
 			t.Errorf("%s: redirect %s", tc.path, w.Header().Get("Location"))
+		}
+	}
+}
+
+// Exercise the production asset allowlist with the real generated icons.
+func TestBrandIcons(t *testing.T) {
+	root := t.TempDir()
+	t.Setenv("CMS_RELEASE_ROOT", t.TempDir())
+	os.WriteFile(filepath.Join(root, "routes.json"), []byte(`{"paths":[]}`), 0600)
+	icons := map[string]string{"favicon.svg": "image/svg+xml", "favicon.ico": "image/", "favicon-32x32.png": "image/png", "favicon-192x192.png": "image/png", "apple-touch-icon.png": "image/png"}
+	for name := range icons {
+		data, err := os.ReadFile(filepath.Join("../../../frontend/public", name))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(filepath.Join(root, name), data, 0600); err != nil {
+			t.Fatal(err)
+		}
+	}
+	r := gin.New()
+	if err := Register(r, root, nil); err != nil {
+		t.Fatal(err)
+	}
+	for name, contentType := range icons {
+		for _, method := range []string{"GET", "HEAD"} {
+			w := httptest.NewRecorder()
+			r.ServeHTTP(w, httptest.NewRequest(method, "/"+name+"?v=ez2", nil))
+			if w.Code != 200 || !strings.HasPrefix(w.Header().Get("Content-Type"), contentType) {
+				t.Errorf("%s %s: %d %s", method, name, w.Code, w.Header().Get("Content-Type"))
+			}
 		}
 	}
 }

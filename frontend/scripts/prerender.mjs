@@ -35,7 +35,14 @@ try{
   await page.evaluate(()=>{document.querySelectorAll('[data-cookie-banner], [data-cookie-settings]').forEach(el=>el.remove());document.querySelectorAll('[inert]').forEach(el=>el.remove());window.scrollTo(0,0)})
   const output=base==='/__404'?localized('/404.html',lang):path.replace(/\/$/,'')+'/index.html'
   const filename=resolve(root,'.'+output);await mkdir(dirname(filename),{recursive:true})
-  await writeFile(filename,'<!doctype html>\n'+await page.locator('html').evaluate(el=>el.outerHTML))
+  const html = await page.locator('html').evaluate(el => el.outerHTML)
+
+const cleanHtml = html.replace(
+  /https?:\/\/(?:127\.0\.0\.1|localhost):\d+(?=\/)/g,
+  ''
+)
+
+await writeFile(filename, '<!doctype html>\n' + cleanHtml)
   if(base!=='/__404')paths.push(path)
  }}
  await writeFile(resolve(root,'routes.json'),JSON.stringify({site,paths,services:services.map(s=>s.slug)},null,2))

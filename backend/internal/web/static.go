@@ -132,7 +132,7 @@ func Register(r *gin.Engine, directory string, db *gorm.DB) error {
 			return
 		}
 		// Only asset trees and generated public discovery files are served directly.
-		asset := strings.HasPrefix(p, "/assets/") || strings.HasPrefix(p, "/images/") || strings.HasPrefix(p, "/fonts/") || p == "/robots.txt" || p == "/sitemap.xml" || p == "/favicon.ico"
+		asset := strings.HasPrefix(p, "/assets/") || strings.HasPrefix(p, "/images/") || strings.HasPrefix(p, "/fonts/") || p == "/robots.txt" || p == "/sitemap.xml" || p == "/favicon.ico" || p == "/favicon.svg" || p == "/favicon-32x32.png" || p == "/favicon-192x192.png" || p == "/apple-touch-icon.png"
 		clean := filepath.Clean(filepath.Join(root, p))
 		if asset && strings.HasPrefix(clean, root+string(os.PathSeparator)) && !strings.Contains(p, "/.") {
 			if info, e := os.Stat(clean); e == nil && !info.IsDir() {
