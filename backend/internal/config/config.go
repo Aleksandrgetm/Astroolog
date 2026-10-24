@@ -35,9 +35,24 @@ func Load() (Config, error) {
 				return Config{}, fmt.Errorf("required environment variable %s is missing", key)
 			}
 		}
-		if os.Getenv("DB_SSLMODE") != "verify-full" {
-			return Config{}, fmt.Errorf("production DB_SSLMODE must be verify-full")
-		}
+		dbHost := os.Getenv("DB_HOST")
+sslMode := os.Getenv("DB_SSLMODE")
+
+localDB := dbHost == "127.0.0.1" ||
+    dbHost == "localhost" ||
+    dbHost == "/var/run/postgresql"
+
+if localDB {
+    if sslMode != "disable" && sslMode != "verify-full" {
+        return Config{}, fmt.Errorf(
+            "local production PostgreSQL requires disable or verify-full",
+        )
+    }
+} else if sslMode != "verify-full" {
+    return Config{}, fmt.Errorf(
+        "remote production PostgreSQL requires verify-full",
+    )
+}
 	}
 
 	origins, err := adminOrigins(os.Getenv("APP_ENV"), os.Getenv("ADMIN_ALLOWED_ORIGINS"), os.Getenv("APP_ORIGIN"))
