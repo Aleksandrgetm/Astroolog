@@ -67,3 +67,68 @@ func TestBrandIcons(t *testing.T) {
 		}
 	}
 }
+
+func TestAssetCacheControl(t *testing.T) {
+	root, releases := t.TempDir(), t.TempDir()
+	t.Setenv("CMS_RELEASE_ROOT", releases)
+	write := func(base, name, body string) {
+		t.Helper()
+		path := filepath.Join(base, name)
+		if err := os.MkdirAll(filepath.Dir(path), 0700); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(path, []byte(body), 0600); err != nil {
+			t.Fatal(err)
+		}
+	}
+	write(root, "routes.json", `{"paths":["/"]}`)
+	write(root, "index.html", "HOME")
+	write(root, "admin.html", "ADMIN")
+	for _, name := range []string{"index-Dqm2K3Jx.js", "index-CeXg9BOz.css", "ContentOverview-DlLh7-CH.js", "app.js", "app-123.js", "app-123456789.js", "font-B7mPwVP_.woff2", "image-Dqm2K3Jx.png"} {
+		write(root, "assets/"+name, "CURRENT")
+	}
+	for _, name := range []string{"robots.txt", "sitemap.xml", "images/photo.webp", "fonts/site.woff2"} {
+		write(root, name, "UNCHANGED")
+	}
+	write(releases, "previous/assets/old-Ab12_cdE.js", "PREVIOUS")
+	write(releases, "previous/assets/legacy.js", "LEGACY")
+	r := gin.New()
+	if err := Register(r, root, nil); err != nil {
+		t.Fatal(err)
+	}
+	for _, tc := range []struct {
+		path, cache, body string
+		status            int
+	}{
+		{"/assets/index-Dqm2K3Jx.js", immutableAssetCache, "CURRENT", 200},
+		{"/assets/index-CeXg9BOz.css?v=1", immutableAssetCache, "CURRENT", 200},
+		{"/assets/ContentOverview-DlLh7-CH.js", immutableAssetCache, "CURRENT", 200},
+		{"/assets/app.js", "", "CURRENT", 200},
+		{"/assets/app-123.js", "", "CURRENT", 200},
+		{"/assets/app-123456789.js", "", "CURRENT", 200},
+		{"/assets/font-B7mPwVP_.woff2", "", "CURRENT", 200},
+		{"/assets/image-Dqm2K3Jx.png", "", "CURRENT", 200},
+		{"/", "no-cache", "HOME", 200},
+		{"/admin/login", "no-store", "ADMIN", 200},
+		{"/assets/old-Ab12_cdE.js", immutableAssetCache, "PREVIOUS", 200},
+		{"/assets/legacy.js", "", "LEGACY", 200},
+		{"/assets/missing-Ab12_cdE.js", "", "404 page not found", 404},
+		{"/robots.txt", "", "UNCHANGED", 200},
+		{"/sitemap.xml", "", "UNCHANGED", 200},
+		{"/images/photo.webp", "", "UNCHANGED", 200},
+		{"/fonts/site.woff2", "", "UNCHANGED", 200},
+	} {
+		t.Run(tc.path, func(t *testing.T) {
+			for _, method := range []string{"GET", "HEAD"} {
+				w := httptest.NewRecorder()
+				r.ServeHTTP(w, httptest.NewRequest(method, tc.path, nil))
+				if w.Code != tc.status || w.Header().Get("Cache-Control") != tc.cache {
+					t.Errorf("%s: status=%d cache=%q; want %d %q", method, w.Code, w.Header().Get("Cache-Control"), tc.status, tc.cache)
+				}
+				if method == "GET" && w.Body.String() != tc.body {
+					t.Errorf("body=%q; want %q", w.Body.String(), tc.body)
+				}
+			}
+		})
+	}
+}

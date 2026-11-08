@@ -11,8 +11,15 @@ import (
 	"os"
 	urlpath "path"
 	"path/filepath"
+	"regexp"
 	"strings"
 )
+
+// Vite emits JS/CSS as <name>-<8-character base64url content hash>.<ext>.
+// Keep ordinary files, images and fonts on their existing cache policy.
+var hashedAssetName = regexp.MustCompile(`^/assets/[^/]+-[A-Za-z0-9_-]{8}\.(js|css)$`)
+
+const immutableAssetCache = "public, max-age=31536000, immutable"
 
 type Manifest struct {
 	Site  string   `json:"site"`
@@ -136,6 +143,9 @@ func Register(r *gin.Engine, directory string, db *gorm.DB) error {
 		clean := filepath.Clean(filepath.Join(root, p))
 		if asset && strings.HasPrefix(clean, root+string(os.PathSeparator)) && !strings.Contains(p, "/.") {
 			if info, e := os.Stat(clean); e == nil && !info.IsDir() {
+				if hashedAssetName.MatchString(p) {
+					c.Header("Cache-Control", immutableAssetCache)
+				}
 				c.File(clean)
 				return
 			}
@@ -151,7 +161,9 @@ func Register(r *gin.Engine, directory string, db *gorm.DB) error {
 			}
 			for _, candidate := range candidates {
 				if info, e := os.Stat(candidate); e == nil && !info.IsDir() {
-					c.Header("Cache-Control", "public,max-age=31536000,immutable")
+					if hashedAssetName.MatchString(p) {
+						c.Header("Cache-Control", immutableAssetCache)
+					}
 					c.File(candidate)
 					return
 				}
